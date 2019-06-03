@@ -17,326 +17,1325 @@ $EndDescr
 $Comp
 L Connector:AVR-JTAG-10 J5
 U 1 1 5D0FEAD2
-P 6910 1800
-F 0 "J5" H 6530 1846 50  0000 R CNN
-F 1 "AVR-JTAG-10" H 6530 1755 50  0000 R CNN
-F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" V 6760 1950 50  0001 C CNN
-F 3 " ~" H 5635 1250 50  0001 C CNN
-	1    6910 1800
+P 9420 1920
+F 0 "J5" H 9040 1966 50  0000 R CNN
+F 1 "AVR-JTAG-10" H 9040 1875 50  0000 R CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" V 9270 2070 50  0001 C CNN
+F 3 " ~" H 8145 1370 50  0001 C CNN
+	1    9420 1920
 	1    0    0    -1  
 $EndComp
-$Comp
-L Oscillator:LTC6930IMS8 U?
-U 1 1 5D1120E1
-P 3850 3820
-AR Path="/5D1120E1" Ref="U?"  Part="1" 
-AR Path="/5D0F9837/5D1120E1" Ref="U2"  Part="1" 
-F 0 "U2" H 4294 3916 50  0000 L CNN
-F 1 "LTC6930IMS8 7.3728MHz" H 4294 3825 50  0000 L CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 3900 3070 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/NB3N511-D.PDF" H 3900 2970 50  0001 C CNN
-	1    3850 3820
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 3780 3250 3780
-$Comp
-L Switch:SW_DIP_x03 SW?
-U 1 1 5D1120E8
-P 2750 3880
-AR Path="/5D1120E8" Ref="SW?"  Part="1" 
-AR Path="/5D0F9837/5D1120E8" Ref="SW1"  Part="1" 
-F 0 "SW1" H 2750 4347 50  0000 C CNN
-F 1 "SW_DIP_x03" H 2750 4256 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_6.7x9.18mm_W8.61mm_P2.54mm_LowProfile" H 2750 3880 50  0001 C CNN
-F 3 "~" H 2750 3880 50  0001 C CNN
-	1    2750 3880
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 3880 3050 3990
-Wire Wire Line
-	3050 3990 3080 3990
-Wire Wire Line
-	3450 3570 3420 3570
-Wire Wire Line
-	3050 3570 3050 3680
-$Comp
-L Device:R_Small R?
-U 1 1 5D1120F2
-P 3080 4250
-AR Path="/5D1120F2" Ref="R?"  Part="1" 
-AR Path="/5D0F9837/5D1120F2" Ref="R2"  Part="1" 
-F 0 "R2" H 3139 4296 50  0000 L CNN
-F 1 "1K" H 3139 4205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3080 4250 50  0001 C CNN
-F 3 "~" H 3080 4250 50  0001 C CNN
-	1    3080 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5D1120F8
-P 3250 4250
-AR Path="/5D1120F8" Ref="R?"  Part="1" 
-AR Path="/5D0F9837/5D1120F8" Ref="R3"  Part="1" 
-F 0 "R3" H 3309 4296 50  0000 L CNN
-F 1 "1K" H 3309 4205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3250 4250 50  0001 C CNN
-F 3 "~" H 3250 4250 50  0001 C CNN
-	1    3250 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5D1120FE
-P 3420 4250
-AR Path="/5D1120FE" Ref="R?"  Part="1" 
-AR Path="/5D0F9837/5D1120FE" Ref="R4"  Part="1" 
-F 0 "R4" H 3479 4296 50  0000 L CNN
-F 1 "1K" H 3479 4205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3420 4250 50  0001 C CNN
-F 3 "~" H 3420 4250 50  0001 C CNN
-	1    3420 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3420 4150 3420 3570
-Connection ~ 3420 3570
-Wire Wire Line
-	3420 3570 3050 3570
-Wire Wire Line
-	3250 4150 3250 3780
-Connection ~ 3250 3780
-Wire Wire Line
-	3250 3780 3450 3780
-Wire Wire Line
-	3080 4150 3080 3990
-Connection ~ 3080 3990
-Wire Wire Line
-	3080 3990 3450 3990
-Wire Wire Line
-	3080 4350 3080 4410
-Wire Wire Line
-	3080 4410 3250 4410
-Wire Wire Line
-	3420 4410 3420 4350
-Wire Wire Line
-	3250 4350 3250 4410
-Connection ~ 3250 4410
-Wire Wire Line
-	3250 4410 3420 4410
-Wire Wire Line
-	3250 4420 3250 4500
-$Comp
-L power:GND #PWR?
-U 1 1 5D112114
-P 3250 4500
-AR Path="/5D112114" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D112114" Ref="#PWR09"  Part="1" 
-F 0 "#PWR09" H 3250 4250 50  0001 C CNN
-F 1 "GND" H 3255 4327 50  0000 C CNN
-F 2 "" H 3250 4500 50  0001 C CNN
-F 3 "" H 3250 4500 50  0001 C CNN
-	1    3250 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3790 4220 3860 4220
-Wire Wire Line
-	3860 4220 3860 4300
-$Comp
-L power:GND #PWR?
-U 1 1 5D11211C
-P 3860 4300
-AR Path="/5D11211C" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D11211C" Ref="#PWR08"  Part="1" 
-F 0 "#PWR08" H 3860 4050 50  0001 C CNN
-F 1 "GND" H 3865 4127 50  0000 C CNN
-F 2 "" H 3860 4300 50  0001 C CNN
-F 3 "" H 3860 4300 50  0001 C CNN
-	1    3860 4300
-	1    0    0    -1  
-$EndComp
-Connection ~ 3860 4220
-Wire Wire Line
-	3860 4220 3930 4220
-Wire Wire Line
-	2450 3680 2390 3680
-Wire Wire Line
-	2390 3680 2390 3780
-Wire Wire Line
-	2390 3880 2450 3880
-Wire Wire Line
-	2450 3780 2390 3780
-Connection ~ 2390 3780
-Wire Wire Line
-	2390 3780 2390 3880
-Wire Wire Line
-	3770 3320 3770 3280
-Wire Wire Line
-	3770 3280 3850 3280
-Wire Wire Line
-	3930 3280 3930 3320
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D11212D
-P 3850 3280
-AR Path="/5CFABACD/5D11212D" Ref="#PWR?"  Part="1" 
-AR Path="/5D11212D" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D11212D" Ref="#PWR05"  Part="1" 
-F 0 "#PWR05" H 3850 3130 50  0001 C CNN
-F 1 "+3V3" H 3750 3440 50  0000 L CNN
-F 2 "" H 3850 3280 50  0001 C CNN
-F 3 "" H 3850 3280 50  0001 C CNN
-	1    3850 3280
-	1    0    0    -1  
-$EndComp
-Connection ~ 3850 3280
-Wire Wire Line
-	3850 3280 3930 3280
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D112135
-P 2210 3680
-AR Path="/5CFABACD/5D112135" Ref="#PWR?"  Part="1" 
-AR Path="/5D112135" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D112135" Ref="#PWR06"  Part="1" 
-F 0 "#PWR06" H 2210 3530 50  0001 C CNN
-F 1 "+3V3" H 2110 3840 50  0000 L CNN
-F 2 "" H 2210 3680 50  0001 C CNN
-F 3 "" H 2210 3680 50  0001 C CNN
-	1    2210 3680
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2210 3680 2210 3780
-Wire Wire Line
-	2210 3780 2390 3780
-Text GLabel 4250 3570 2    50   Output ~ 0
-IO1_CLK1
-$Comp
-L Oscillator:CB3LV-3I-50M0000 X?
-U 1 1 5D11213E
-P 3290 1830
-AR Path="/5D11213E" Ref="X?"  Part="1" 
-AR Path="/5D0F9837/5D11213E" Ref="X1"  Part="1" 
-F 0 "X1" H 3630 1670 50  0000 R CNN
-F 1 "CB3LV-3I-50M0000" H 4290 1570 50  0000 R CNN
-F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CA-4Pin_7.0x5.0mm_HandSoldering" H 3290 1480 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/96/008-0256-0-786323.pdf" H 3190 1830 50  0001 C CNN
-	1    3290 1830
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3190 1530 3190 1480
-Wire Wire Line
-	3190 1480 3290 1480
-Wire Wire Line
-	3390 1480 3390 1530
-Wire Wire Line
-	3290 2130 3290 2170
-$Comp
-L power:GND #PWR?
-U 1 1 5D112148
-P 3290 2210
-AR Path="/5D112148" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D112148" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 3290 1960 50  0001 C CNN
-F 1 "GND" H 3295 2037 50  0000 C CNN
-F 2 "" H 3290 2210 50  0001 C CNN
-F 3 "" H 3290 2210 50  0001 C CNN
-	1    3290 2210
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D11214E
-P 3290 1440
-AR Path="/5D11214E" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D11214E" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 3290 1290 50  0001 C CNN
-F 1 "+3V3" H 3170 1600 50  0000 L CNN
-F 2 "" H 3290 1440 50  0001 C CNN
-F 3 "" H 3290 1440 50  0001 C CNN
-	1    3290 1440
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3290 1440 3290 1480
-Connection ~ 3290 1480
-Wire Wire Line
-	3290 1480 3390 1480
-$Comp
-L Device:R_Small R?
-U 1 1 5D112157
-P 3810 1830
-AR Path="/5D112157" Ref="R?"  Part="1" 
-AR Path="/5D0F9837/5D112157" Ref="R1"  Part="1" 
-F 0 "R1" V 4006 1830 50  0000 C CNN
-F 1 "22R5" V 3915 1830 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3810 1830 50  0001 C CNN
-F 3 "~" H 3810 1830 50  0001 C CNN
-	1    3810 1830
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3590 1830 3710 1830
-Wire Wire Line
-	3910 1830 4000 1830
-Text GLabel 4000 1830 2    50   Output ~ 0
-IO1_CLK0
-$Comp
-L Device:C C?
-U 1 1 5D112165
-P 2750 1840
-AR Path="/5CFABACD/5D112165" Ref="C?"  Part="1" 
-AR Path="/5D112165" Ref="C?"  Part="1" 
-AR Path="/5D0F9837/5D112165" Ref="C17"  Part="1" 
-F 0 "C17" H 2865 1886 50  0000 L CNN
-F 1 "100nF" H 2865 1795 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2788 1690 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 2750 1840 50  0001 C CNN
-F 4 "KEMET" H -2550 -4860 50  0001 C CNN "MFR"
-F 5 "C0805C104K4RACTU" H -2550 -4860 50  0001 C CNN "MPN"
-F 6 "Mouser" H -2550 -4860 50  0001 C CNN "SPR"
-F 7 "80-C0805C104K4R" H -2550 -4860 50  0001 C CNN "SPN"
-F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -2550 -4860 50  0001 C CNN "SPURL"
-	1    2750 1840
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 1480 3190 1480
-Connection ~ 3190 1480
-Wire Wire Line
-	2750 1990 2750 2170
-Wire Wire Line
-	2750 2170 3290 2170
-Connection ~ 3290 2170
-Wire Wire Line
-	3290 2170 3290 2210
 $Comp
 L Connector_Generic:Conn_01x06 J3
 U 1 1 5D1210D9
-P 9190 1720
-F 0 "J3" H 9270 1712 50  0000 L CNN
-F 1 "Conn_01x06" H 9270 1621 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 9190 1720 50  0001 C CNN
-F 3 "~" H 9190 1720 50  0001 C CNN
-	1    9190 1720
+P 10570 3170
+F 0 "J3" H 10650 3162 50  0000 L CNN
+F 1 "Conn_01x06" H 10650 3071 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 10570 3170 50  0001 C CNN
+F 3 "~" H 10570 3170 50  0001 C CNN
+	1    10570 3170
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J6
 U 1 1 5D122332
-P 9200 2540
-F 0 "J6" H 9280 2532 50  0000 L CNN
-F 1 "Conn_01x06" H 9280 2441 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 9200 2540 50  0001 C CNN
-F 3 "~" H 9200 2540 50  0001 C CNN
-	1    9200 2540
+P 10580 3990
+F 0 "J6" H 10660 3982 50  0000 L CNN
+F 1 "Conn_01x06" H 10660 3891 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 10580 3990 50  0001 C CNN
+F 3 "~" H 10580 3990 50  0001 C CNN
+	1    10580 3990
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J7
+U 1 1 5CF77AF9
+P 1300 3130
+F 0 "J7" H 1070 3119 50  0000 R CNN
+F 1 "USB_B_Micro" H 1070 3028 50  0000 R CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 1450 3080 50  0001 C CNN
+F 3 "~" H 1450 3080 50  0001 C CNN
+	1    1300 3130
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_USB:FT2232H U7
+U 1 1 5CF809C1
+P 6200 4030
+F 0 "U7" H 5230 6170 50  0000 C CNN
+F 1 "FT2232H" H 6190 4700 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 6200 4030 50  0001 C CNN
+F 3 "http://www.ftdichip.com/Products/ICs/FT2232H.html" H 6200 4030 50  0001 C CNN
+	1    6200 4030
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5CF8EB7A
+P 4570 5430
+F 0 "Y1" V 4524 5561 50  0000 L CNN
+F 1 "CTS-445 12Mhz" V 4290 5140 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm_HandSoldering" H 4570 5430 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/96/008-0360-0-786290.pdf" H 4570 5430 50  0001 C CNN
+	1    4570 5430
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 5230 4570 5230
+Wire Wire Line
+	4570 5230 4570 5280
+Wire Wire Line
+	5000 5630 4570 5630
+Wire Wire Line
+	4570 5630 4570 5580
+$Comp
+L Device:C_Small C31
+U 1 1 5CF92A29
+P 4140 5430
+F 0 "C31" H 4232 5476 50  0000 L CNN
+F 1 "18pF" H 4232 5385 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4140 5430 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/UPY-GP_NP0_16V-to-50V_16-1109089.pdf" H 4140 5430 50  0001 C CNN
+	1    4140 5430
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C32
+U 1 1 5CF9557E
+P 4570 5870
+F 0 "C32" H 4662 5916 50  0000 L CNN
+F 1 "18pF" H 4662 5825 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4570 5870 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/UPY-GP_NP0_16V-to-50V_16-1109089.pdf" H 4570 5870 50  0001 C CNN
+	1    4570 5870
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 1480 2750 1690
+	4570 5770 4570 5630
+Connection ~ 4570 5630
+Wire Wire Line
+	4140 5330 4140 5230
+Wire Wire Line
+	4140 5230 4570 5230
+Connection ~ 4570 5230
+Wire Wire Line
+	4140 5530 4140 5600
+$Comp
+L power:GND #PWR039
+U 1 1 5CF97589
+P 4140 5600
+F 0 "#PWR039" H 4140 5350 50  0001 C CNN
+F 1 "GND" H 4145 5427 50  0000 C CNN
+F 2 "" H 4140 5600 50  0001 C CNN
+F 3 "" H 4140 5600 50  0001 C CNN
+	1    4140 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4570 5970 4570 6040
+$Comp
+L power:GND #PWR040
+U 1 1 5CF9842F
+P 4570 6040
+F 0 "#PWR040" H 4570 5790 50  0001 C CNN
+F 1 "GND" H 4575 5867 50  0000 C CNN
+F 2 "" H 4570 6040 50  0001 C CNN
+F 3 "" H 4570 6040 50  0001 C CNN
+	1    4570 6040
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5830 5000 6230
+Wire Wire Line
+	5000 6230 5600 6230
+Connection ~ 5600 6230
+Wire Wire Line
+	5600 6230 5800 6230
+Connection ~ 5800 6230
+Wire Wire Line
+	5800 6230 5900 6230
+Connection ~ 5900 6230
+Wire Wire Line
+	5900 6230 6000 6230
+Connection ~ 6000 6230
+Wire Wire Line
+	6000 6230 6100 6230
+Connection ~ 6100 6230
+Wire Wire Line
+	6100 6230 6200 6230
+Connection ~ 6200 6230
+Wire Wire Line
+	6200 6230 6300 6230
+Connection ~ 6300 6230
+Wire Wire Line
+	6300 6230 6400 6230
+Connection ~ 6400 6230
+Wire Wire Line
+	6400 6230 6500 6230
+Wire Wire Line
+	6500 6230 6500 6300
+$Comp
+L power:GND #PWR041
+U 1 1 5CF98EBA
+P 6500 6300
+F 0 "#PWR041" H 6500 6050 50  0001 C CNN
+F 1 "GND" H 6505 6127 50  0000 C CNN
+F 2 "" H 6500 6300 50  0001 C CNN
+F 3 "" H 6500 6300 50  0001 C CNN
+	1    6500 6300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 6230
+$Comp
+L Memory_EEPROM:93LCxxBxxOT U9
+U 1 1 5CF99C82
+P 2940 4930
+F 0 "U9" H 2710 5190 50  0000 C CNN
+F 1 "93LCxxBxxOT" H 3310 4630 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2940 4930 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001749K.pdf" H 2940 4930 50  0001 C CNN
+	1    2940 4930
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CFA1095
+P 2330 2480
+AR Path="/5CFA1095" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5CFA1095" Ref="C29"  Part="1" 
+F 0 "C29" H 2190 2390 50  0000 L CNN
+F 1 "2.2uF" H 2360 2390 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2368 2330 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 2330 2480 50  0001 C CNN
+F 4 "KEMET" H -2970 -4220 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -2970 -4220 50  0001 C CNN "MPN"
+F 6 "Mouser" H -2970 -4220 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -2970 -4220 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -2970 -4220 50  0001 C CNN "SPURL"
+	1    2330 2480
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CFA10A0
+P 3400 2470
+AR Path="/5CFA10A0" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5CFA10A0" Ref="C28"  Part="1" 
+F 0 "C28" H 3515 2516 50  0000 L CNN
+F 1 "100nF" H 3515 2425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3438 2320 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 3400 2470 50  0001 C CNN
+F 4 "KEMET" H -1900 -4230 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -1900 -4230 50  0001 C CNN "MPN"
+F 6 "Mouser" H -1900 -4230 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -1900 -4230 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -1900 -4230 50  0001 C CNN "SPURL"
+	1    3400 2470
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2920 2560 2920 2720
+Connection ~ 2920 2720
+Wire Wire Line
+	2920 2720 2330 2720
+$Comp
+L Device:C C?
+U 1 1 5CFA10AE
+P 3730 2480
+AR Path="/5CFA10AE" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5CFA10AE" Ref="C30"  Part="1" 
+F 0 "C30" H 3845 2526 50  0000 L CNN
+F 1 "100nF" H 3845 2435 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3768 2330 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 3730 2480 50  0001 C CNN
+F 4 "KEMET" H -1570 -4220 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -1570 -4220 50  0001 C CNN "MPN"
+F 6 "Mouser" H -1570 -4220 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -1570 -4220 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -1570 -4220 50  0001 C CNN "SPURL"
+	1    3730 2480
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3320 2120 3730 2120
+Connection ~ 3730 2120
+Wire Wire Line
+	3730 2120 3870 2120
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CFA10B7
+P 3870 2120
+AR Path="/5CFA10B7" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5CFA10B7" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 3870 1970 50  0001 C CNN
+F 1 "+3V3" V 3885 2248 50  0000 L CNN
+F 2 "" H 3870 2120 50  0001 C CNN
+F 3 "" H 3870 2120 50  0001 C CNN
+	1    3870 2120
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5CFA10BD
+P 3870 2250
+AR Path="/5CFA10BD" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5CFA10BD" Ref="#PWR035"  Part="1" 
+F 0 "#PWR035" H 3870 2100 50  0001 C CNN
+F 1 "+1V8" V 3885 2378 50  0000 L CNN
+F 2 "" H 3870 2250 50  0001 C CNN
+F 3 "" H 3870 2250 50  0001 C CNN
+	1    3870 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Regulator_Linear:MIC5356-SGYMME U?
+U 1 1 5CFA10C3
+P 2920 2260
+AR Path="/5CFA10C3" Ref="U?"  Part="1" 
+AR Path="/5D0F9837/5CFA10C3" Ref="U8"  Part="1" 
+F 0 "U8" H 2920 2627 50  0000 C CNN
+F 1 "MIC5356-SGYMME" H 2920 2536 50  0000 C CNN
+F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP2.5x3mm_Mask1.73x2.36mm_ThermalVias" H 4320 2010 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic5355_6.pdf" H 1720 2550 50  0001 C CNN
+	1    2920 2260
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2920 2720 3400 2720
+Wire Wire Line
+	3730 2630 3730 2720
+Wire Wire Line
+	3400 2620 3400 2720
+Connection ~ 3400 2720
+Wire Wire Line
+	3400 2720 3730 2720
+Wire Wire Line
+	3730 2120 3730 2330
+Wire Wire Line
+	2330 2630 2330 2720
+Wire Wire Line
+	2330 2330 2330 2120
+Wire Wire Line
+	2330 2120 2520 2120
+Wire Wire Line
+	2520 2400 2520 2290
+Connection ~ 2520 2290
+Connection ~ 2520 2120
+Wire Wire Line
+	2520 2120 2520 2200
+Connection ~ 2520 2200
+Wire Wire Line
+	2520 2200 2520 2290
+$Comp
+L power:GND #PWR?
+U 1 1 5CFA10DA
+P 2920 2720
+AR Path="/5CFA10DA" Ref="#PWR?"  Part="1" 
+AR Path="/5CB63856/5CFA10DA" Ref="#PWR?"  Part="1" 
+AR Path="/5CB5AB00/5CB63856/5CFA10DA" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5CFA10DA" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5CFA10DA" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 2920 2470 50  0001 C CNN
+F 1 "GND" H 2925 2547 50  0000 C CNN
+F 2 "" H 2920 2720 50  0001 C CNN
+F 3 "" H 2920 2720 50  0001 C CNN
+	1    2920 2720
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3320 2250 3400 2250
+Wire Wire Line
+	3400 2320 3400 2250
+Connection ~ 3400 2250
+Wire Wire Line
+	3400 2250 3870 2250
+Wire Wire Line
+	1600 2930 1960 2930
+Wire Wire Line
+	6000 1830 6100 1830
+Wire Wire Line
+	6200 1830 6200 1840
+Connection ~ 6200 1830
+Connection ~ 6100 1830
+Wire Wire Line
+	6100 1830 6200 1830
+Wire Wire Line
+	6100 1830 6100 1750
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5CFC18A3
+P 6100 1750
+AR Path="/5CFC18A3" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5CFC18A3" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 6100 1600 50  0001 C CNN
+F 1 "+1V8" V 6115 1878 50  0000 L CNN
+F 2 "" H 6100 1750 50  0001 C CNN
+F 3 "" H 6100 1750 50  0001 C CNN
+	1    6100 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1830 6500 1830
+Connection ~ 6500 1830
+Wire Wire Line
+	6500 1830 6550 1830
+Connection ~ 6600 1830
+Wire Wire Line
+	6600 1830 6700 1830
+Wire Wire Line
+	6550 1830 6550 1750
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CFC77CC
+P 6550 1750
+AR Path="/5CFC77CC" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5CFC77CC" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 6550 1600 50  0001 C CNN
+F 1 "+3V3" V 6565 1878 50  0000 L CNN
+F 2 "" H 6550 1750 50  0001 C CNN
+F 3 "" H 6550 1750 50  0001 C CNN
+	1    6550 1750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5000 2130
+NoConn ~ 5000 2330
+Wire Wire Line
+	1960 2930 1960 2120
+Wire Wire Line
+	1960 2120 2330 2120
+Connection ~ 2330 2120
+Wire Wire Line
+	1600 3130 1700 3130
+Wire Wire Line
+	5000 4930 4140 4930
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CFDB406
+P 2940 4630
+AR Path="/5CFDB406" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5CFDB406" Ref="#PWR037"  Part="1" 
+F 0 "#PWR037" H 2940 4480 50  0001 C CNN
+F 1 "+3V3" V 2955 4758 50  0000 L CNN
+F 2 "" H 2940 4630 50  0001 C CNN
+F 3 "" H 2940 4630 50  0001 C CNN
+	1    2940 4630
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2540 4830 2540 4260
+Wire Wire Line
+	2540 4260 3380 4260
+Wire Wire Line
+	5000 4260 5000 4730
+Wire Wire Line
+	2940 5230 2940 5300
+$Comp
+L power:GND #PWR038
+U 1 1 5CFDDA6F
+P 2940 5300
+F 0 "#PWR038" H 2940 5050 50  0001 C CNN
+F 1 "GND" H 2945 5127 50  0000 C CNN
+F 2 "" H 2940 5300 50  0001 C CNN
+F 3 "" H 2940 5300 50  0001 C CNN
+	1    2940 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J9
+U 1 1 5CF5A1BA
+P 9560 5450
+F 0 "J9" V 9564 5630 50  0000 L CNN
+F 1 "Conn_02x04_Counter_Clockwise" V 9655 5630 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 9560 5450 50  0001 C CNN
+F 3 "~" H 9560 5450 50  0001 C CNN
+	1    9560 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5CF57157
+P 3670 980
+F 0 "L1" V 3860 980 50  0000 C CNN
+F 1 "600ohm" V 3769 980 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3670 980 50  0001 C CNN
+F 3 "~" H 3670 980 50  0001 C CNN
+	1    3670 980 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 5CF5939C
+P 3670 1200
+F 0 "L2" V 3860 1200 50  0000 C CNN
+F 1 "600ohm" V 3769 1200 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3670 1200 50  0001 C CNN
+F 3 "~" H 3670 1200 50  0001 C CNN
+	1    3670 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CF5C18F
+P 4770 1470
+AR Path="/5CF5C18F" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5CF5C18F" Ref="C39"  Part="1" 
+F 0 "C39" H 4630 1380 50  0000 L CNN
+F 1 "4.7uF" H 4800 1380 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4808 1320 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 4770 1470 50  0001 C CNN
+F 4 "KEMET" H -530 -5230 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -530 -5230 50  0001 C CNN "MPN"
+F 6 "Mouser" H -530 -5230 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -530 -5230 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -530 -5230 50  0001 C CNN "SPURL"
+	1    4770 1470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CF5DB61
+P 4020 1470
+AR Path="/5CF5DB61" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5CF5DB61" Ref="C37"  Part="1" 
+F 0 "C37" H 3880 1380 50  0000 L CNN
+F 1 "4.7uF" H 4050 1380 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4058 1320 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 4020 1470 50  0001 C CNN
+F 4 "KEMET" H -1280 -5230 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -1280 -5230 50  0001 C CNN "MPN"
+F 6 "Mouser" H -1280 -5230 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -1280 -5230 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -1280 -5230 50  0001 C CNN "SPURL"
+	1    4020 1470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CF6AFA0
+P 5060 1470
+AR Path="/5CF6AFA0" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5CF6AFA0" Ref="C40"  Part="1" 
+F 0 "C40" H 5175 1516 50  0000 L CNN
+F 1 "100nF" H 5175 1425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5098 1320 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 5060 1470 50  0001 C CNN
+F 4 "KEMET" H -240 -5230 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -240 -5230 50  0001 C CNN "MPN"
+F 6 "Mouser" H -240 -5230 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -240 -5230 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -240 -5230 50  0001 C CNN "SPURL"
+	1    5060 1470
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1830 5800 980 
+Wire Wire Line
+	3820 1200 4770 1200
+Wire Wire Line
+	5700 1200 5700 1830
+Wire Wire Line
+	4020 1320 4020 980 
+Connection ~ 4020 980 
+Wire Wire Line
+	4020 980  3820 980 
+Wire Wire Line
+	4770 1320 4770 1200
+Connection ~ 4770 1200
+Wire Wire Line
+	4770 1200 5060 1200
+Wire Wire Line
+	5060 1320 5060 1200
+Connection ~ 5060 1200
+Wire Wire Line
+	5060 1200 5700 1200
+$Comp
+L Device:C C?
+U 1 1 5CF6AF95
+P 4320 1470
+AR Path="/5CF6AF95" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5CF6AF95" Ref="C38"  Part="1" 
+F 0 "C38" H 4435 1516 50  0000 L CNN
+F 1 "100nF" H 4435 1425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4358 1320 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 4320 1470 50  0001 C CNN
+F 4 "KEMET" H -980 -5230 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -980 -5230 50  0001 C CNN "MPN"
+F 6 "Mouser" H -980 -5230 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -980 -5230 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -980 -5230 50  0001 C CNN "SPURL"
+	1    4320 1470
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4020 980  4320 980 
+Wire Wire Line
+	4320 980  4320 1320
+Connection ~ 4320 980 
+Wire Wire Line
+	4320 980  5800 980 
+Wire Wire Line
+	4020 1620 4020 1710
+Wire Wire Line
+	4020 1710 4320 1710
+Wire Wire Line
+	5060 1710 5060 1620
+Wire Wire Line
+	4770 1620 4770 1710
+Connection ~ 4770 1710
+Wire Wire Line
+	4770 1710 5060 1710
+Wire Wire Line
+	4320 1620 4320 1710
+Connection ~ 4320 1710
+Wire Wire Line
+	4320 1710 4550 1710
+$Comp
+L power:GND #PWR?
+U 1 1 5CF8CBF8
+P 4550 1760
+AR Path="/5CF8CBF8" Ref="#PWR?"  Part="1" 
+AR Path="/5CB63856/5CF8CBF8" Ref="#PWR?"  Part="1" 
+AR Path="/5CB5AB00/5CB63856/5CF8CBF8" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5CF8CBF8" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5CF8CBF8" Ref="#PWR030"  Part="1" 
+F 0 "#PWR030" H 4550 1510 50  0001 C CNN
+F 1 "GND" H 4555 1587 50  0000 C CNN
+F 2 "" H 4550 1760 50  0001 C CNN
+F 3 "" H 4550 1760 50  0001 C CNN
+	1    4550 1760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1760 4550 1710
+Connection ~ 4550 1710
+Wire Wire Line
+	4550 1710 4770 1710
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CF92A33
+P 3520 980
+AR Path="/5CF92A33" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5CF92A33" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 3520 830 50  0001 C CNN
+F 1 "+3V3" V 3535 1108 50  0000 L CNN
+F 2 "" H 3520 980 50  0001 C CNN
+F 3 "" H 3520 980 50  0001 C CNN
+	1    3520 980 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CF949E1
+P 3520 1200
+AR Path="/5CF949E1" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5CF949E1" Ref="#PWR029"  Part="1" 
+F 0 "#PWR029" H 3520 1050 50  0001 C CNN
+F 1 "+3V3" V 3535 1328 50  0000 L CNN
+F 2 "" H 3520 1200 50  0001 C CNN
+F 3 "" H 3520 1200 50  0001 C CNN
+	1    3520 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1700 3650 1700 3130
+Connection ~ 1700 3130
+Wire Wire Line
+	1700 3130 5000 3130
+Wire Wire Line
+	1600 3230 2500 3230
+Connection ~ 2500 3230
+Wire Wire Line
+	2500 3230 5000 3230
+Wire Wire Line
+	2100 4060 2100 4050
+Wire Wire Line
+	2500 3650 2500 3230
+Wire Wire Line
+	2500 3660 2500 3650
+Connection ~ 2500 3650
+$Comp
+L Power_Protection:TPD2EUSB30 U6
+U 1 1 5CF9696A
+P 2100 3650
+F 0 "U6" H 2100 4017 50  0000 C CNN
+F 1 "TPD2EUSB30" H 2100 3926 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:Texas_DRT-3" H 1350 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf" H 2100 3650 50  0001 C CNN
+	1    2100 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4060 1600 3330
+$Comp
+L Device:C C?
+U 1 1 5CFAD747
+P 1310 3840
+AR Path="/5CFAD747" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5CFAD747" Ref="C41"  Part="1" 
+F 0 "C41" H 1425 3886 50  0000 L CNN
+F 1 "100nF" H 1425 3795 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1348 3690 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 1310 3840 50  0001 C CNN
+F 4 "KEMET" H -3990 -2860 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -3990 -2860 50  0001 C CNN "MPN"
+F 6 "Mouser" H -3990 -2860 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -3990 -2860 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -3990 -2860 50  0001 C CNN "SPURL"
+	1    1310 3840
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5CFB0AB4
+P 1050 3840
+F 0 "R4" H 1120 3886 50  0000 L CNN
+F 1 "1M" H 1120 3795 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 980 3840 50  0001 C CNN
+F 3 "~" H 1050 3840 50  0001 C CNN
+	1    1050 3840
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4060 1860 4060
+Wire Wire Line
+	1050 3990 1050 4060
+Wire Wire Line
+	1050 4060 1310 4060
+Connection ~ 1600 4060
+Wire Wire Line
+	1310 3990 1310 4060
+Connection ~ 1310 4060
+Wire Wire Line
+	1310 4060 1600 4060
+Wire Wire Line
+	1050 3690 1200 3690
+Wire Wire Line
+	1300 3530 1200 3530
+Wire Wire Line
+	1200 3530 1200 3690
+Connection ~ 1200 3530
+Connection ~ 1200 3690
+Wire Wire Line
+	1200 3690 1310 3690
+$Comp
+L power:GND #PWR?
+U 1 1 5CFC1A10
+P 1860 4060
+AR Path="/5CFC1A10" Ref="#PWR?"  Part="1" 
+AR Path="/5CB63856/5CFC1A10" Ref="#PWR?"  Part="1" 
+AR Path="/5CB5AB00/5CB63856/5CFC1A10" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5CFC1A10" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5CFC1A10" Ref="#PWR059"  Part="1" 
+F 0 "#PWR059" H 1860 3810 50  0001 C CNN
+F 1 "GND" H 1865 3887 50  0000 C CNN
+F 2 "" H 1860 4060 50  0001 C CNN
+F 3 "" H 1860 4060 50  0001 C CNN
+	1    1860 4060
+	1    0    0    -1  
+$EndComp
+Connection ~ 1860 4060
+Wire Wire Line
+	1860 4060 1600 4060
+$Comp
+L Device:R R3
+U 1 1 5CFC81BF
+P 4710 3630
+F 0 "R3" V 4780 3676 50  0000 L CNN
+F 1 "1K" V 4710 3580 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4640 3630 50  0001 C CNN
+F 3 "~" H 4710 3630 50  0001 C CNN
+	1    4710 3630
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CFCE9B1
+P 4710 3430
+F 0 "R2" V 4780 3476 50  0000 L CNN
+F 1 "12K" V 4710 3380 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4640 3430 50  0001 C CNN
+F 3 "~" H 4710 3430 50  0001 C CNN
+	1    4710 3430
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4860 3630 5000 3630
+Wire Wire Line
+	4860 3430 5000 3430
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CFD8402
+P 4470 3630
+AR Path="/5CFD8402" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5CFD8402" Ref="#PWR031"  Part="1" 
+F 0 "#PWR031" H 4470 3480 50  0001 C CNN
+F 1 "+3V3" V 4485 3758 50  0000 L CNN
+F 2 "" H 4470 3630 50  0001 C CNN
+F 3 "" H 4470 3630 50  0001 C CNN
+	1    4470 3630
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4470 3630 4560 3630
+Wire Wire Line
+	4560 3430 4000 3430
+Wire Wire Line
+	4000 3430 4000 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5CFE1C69
+P 4000 3700
+AR Path="/5CFE1C69" Ref="#PWR?"  Part="1" 
+AR Path="/5CB63856/5CFE1C69" Ref="#PWR?"  Part="1" 
+AR Path="/5CB5AB00/5CB63856/5CFE1C69" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5CFE1C69" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5CFE1C69" Ref="#PWR057"  Part="1" 
+F 0 "#PWR057" H 4000 3450 50  0001 C CNN
+F 1 "GND" H 4005 3527 50  0000 C CNN
+F 2 "" H 4000 3700 50  0001 C CNN
+F 3 "" H 4000 3700 50  0001 C CNN
+	1    4000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5CFE5AF6
+P 3380 4080
+F 0 "R16" H 3450 4126 50  0000 L CNN
+F 1 "10K" H 3450 4035 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3310 4080 50  0001 C CNN
+F 3 "~" H 3380 4080 50  0001 C CNN
+	1    3380 4080
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5CFEC7AE
+P 3560 4080
+F 0 "R17" H 3630 4126 50  0000 L CNN
+F 1 "10K" H 3630 4035 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3490 4080 50  0001 C CNN
+F 3 "~" H 3560 4080 50  0001 C CNN
+	1    3560 4080
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5CFEFB83
+P 3720 4080
+F 0 "R18" H 3790 4126 50  0000 L CNN
+F 1 "10K" H 3790 4035 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3650 4080 50  0001 C CNN
+F 3 "~" H 3720 4080 50  0001 C CNN
+	1    3720 4080
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5CFF32B2
+P 3990 5020
+F 0 "R19" V 4060 5066 50  0000 L CNN
+F 1 "2K2" V 3990 4970 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3920 5020 50  0001 C CNN
+F 3 "~" H 3990 5020 50  0001 C CNN
+	1    3990 5020
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4140 5020 4140 4930
+Connection ~ 4140 4930
+Wire Wire Line
+	3340 5020 3340 5030
+Wire Wire Line
+	3720 4230 3720 5020
+Wire Wire Line
+	3340 5020 3720 5020
+Connection ~ 3720 5020
+Wire Wire Line
+	3720 5020 3840 5020
+Wire Wire Line
+	3380 4230 3380 4260
+Connection ~ 3380 4260
+Wire Wire Line
+	3380 4260 5000 4260
+Wire Wire Line
+	3340 4930 4140 4930
+Wire Wire Line
+	3340 4830 3560 4830
+Wire Wire Line
+	3560 4230 3560 4830
+Connection ~ 3560 4830
+Wire Wire Line
+	3560 4830 5000 4830
+Wire Wire Line
+	3380 3930 3380 3890
+Wire Wire Line
+	3380 3890 3560 3890
+Wire Wire Line
+	3720 3890 3720 3930
+Wire Wire Line
+	3560 3930 3560 3890
+Connection ~ 3560 3890
+Wire Wire Line
+	3560 3890 3720 3890
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D01CFBE
+P 3560 3800
+AR Path="/5D01CFBE" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5D01CFBE" Ref="#PWR058"  Part="1" 
+F 0 "#PWR058" H 3560 3650 50  0001 C CNN
+F 1 "+3V3" V 3575 3928 50  0000 L CNN
+F 2 "" H 3560 3800 50  0001 C CNN
+F 3 "" H 3560 3800 50  0001 C CNN
+	1    3560 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3560 3800 3560 3890
+$Comp
+L Device:C C?
+U 1 1 5D0471A9
+P 810 6000
+AR Path="/5CFABACD/5D0471A9" Ref="C?"  Part="1" 
+AR Path="/5D0471A9" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5D0471A9" Ref="C42"  Part="1" 
+F 0 "C42" H 925 6046 50  0000 L CNN
+F 1 "100nF" H 925 5955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 848 5850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 810 6000 50  0001 C CNN
+F 4 "KEMET" H -4490 -700 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -4490 -700 50  0001 C CNN "MPN"
+F 6 "Mouser" H -4490 -700 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -4490 -700 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -4490 -700 50  0001 C CNN "SPURL"
+	1    810  6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D0471B4
+P 1180 6000
+AR Path="/5CFABACD/5D0471B4" Ref="C?"  Part="1" 
+AR Path="/5D0471B4" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5D0471B4" Ref="C43"  Part="1" 
+F 0 "C43" H 1295 6046 50  0000 L CNN
+F 1 "100nF" H 1295 5955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1218 5850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 1180 6000 50  0001 C CNN
+F 4 "KEMET" H -4120 -700 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -4120 -700 50  0001 C CNN "MPN"
+F 6 "Mouser" H -4120 -700 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -4120 -700 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -4120 -700 50  0001 C CNN "SPURL"
+	1    1180 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2030 5850 2030 5790
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D0471BB
+P 2030 5790
+AR Path="/5CFABACD/5D0471BB" Ref="#PWR?"  Part="1" 
+AR Path="/5D0471BB" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5D0471BB" Ref="#PWR060"  Part="1" 
+F 0 "#PWR060" H 2030 5640 50  0001 C CNN
+F 1 "+3V3" H 1930 5950 50  0000 L CNN
+F 2 "" H 2030 5790 50  0001 C CNN
+F 3 "" H 2030 5790 50  0001 C CNN
+	1    2030 5790
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D0471C1
+P 2030 6230
+AR Path="/5D0471C1" Ref="#PWR?"  Part="1" 
+AR Path="/5CB63856/5D0471C1" Ref="#PWR?"  Part="1" 
+AR Path="/5CB5AB00/5CB63856/5D0471C1" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D0471C1" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5D0471C1" Ref="#PWR061"  Part="1" 
+F 0 "#PWR061" H 2030 5980 50  0001 C CNN
+F 1 "GND" H 2035 6057 50  0000 C CNN
+F 2 "" H 2030 6230 50  0001 C CNN
+F 3 "" H 2030 6230 50  0001 C CNN
+	1    2030 6230
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2030 6150 2030 6230
+$Comp
+L Device:C C?
+U 1 1 5D0471CD
+P 2030 6000
+AR Path="/5CFABACD/5D0471CD" Ref="C?"  Part="1" 
+AR Path="/5D0471CD" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5D0471CD" Ref="C45"  Part="1" 
+F 0 "C45" H 2145 6046 50  0000 L CNN
+F 1 "100nF" H 2145 5955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2068 5850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 2030 6000 50  0001 C CNN
+F 4 "KEMET" H -3270 -700 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -3270 -700 50  0001 C CNN "MPN"
+F 6 "Mouser" H -3270 -700 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -3270 -700 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -3270 -700 50  0001 C CNN "SPURL"
+	1    2030 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D0471D8
+P 1610 6000
+AR Path="/5CFABACD/5D0471D8" Ref="C?"  Part="1" 
+AR Path="/5D0471D8" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5D0471D8" Ref="C44"  Part="1" 
+F 0 "C44" H 1725 6046 50  0000 L CNN
+F 1 "100nF" H 1725 5955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1648 5850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 1610 6000 50  0001 C CNN
+F 4 "KEMET" H -3690 -700 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -3690 -700 50  0001 C CNN "MPN"
+F 6 "Mouser" H -3690 -700 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -3690 -700 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -3690 -700 50  0001 C CNN "SPURL"
+	1    1610 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1180 6150 1610 6150
+Connection ~ 1610 6150
+Connection ~ 2030 6150
+Connection ~ 1610 5850
+Wire Wire Line
+	1610 5850 1180 5850
+Connection ~ 2030 5850
+Connection ~ 1180 5850
+Connection ~ 1180 6150
+Wire Wire Line
+	810  5850 1180 5850
+Wire Wire Line
+	810  6150 1180 6150
+$Comp
+L Device:C C?
+U 1 1 5D047209
+P 1290 7060
+AR Path="/5CFABACD/5D047209" Ref="C?"  Part="1" 
+AR Path="/5D047209" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5D047209" Ref="C46"  Part="1" 
+F 0 "C46" H 1405 7106 50  0000 L CNN
+F 1 "100nF" H 1405 7015 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1328 6910 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 1290 7060 50  0001 C CNN
+F 4 "KEMET" H -4010 360 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -4010 360 50  0001 C CNN "MPN"
+F 6 "Mouser" H -4010 360 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -4010 360 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -4010 360 50  0001 C CNN "SPURL"
+	1    1290 7060
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D047214
+P 1640 7060
+AR Path="/5CFABACD/5D047214" Ref="C?"  Part="1" 
+AR Path="/5D047214" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5D047214" Ref="C47"  Part="1" 
+F 0 "C47" H 1755 7106 50  0000 L CNN
+F 1 "100nF" H 1755 7015 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1678 6910 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 1640 7060 50  0001 C CNN
+F 4 "KEMET" H -3660 360 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -3660 360 50  0001 C CNN "MPN"
+F 6 "Mouser" H -3660 360 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -3660 360 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -3660 360 50  0001 C CNN "SPURL"
+	1    1640 7060
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1840 6910 1840 6850
+$Comp
+L power:GND #PWR?
+U 1 1 5D04721B
+P 1840 7290
+AR Path="/5D04721B" Ref="#PWR?"  Part="1" 
+AR Path="/5CB63856/5D04721B" Ref="#PWR?"  Part="1" 
+AR Path="/5CB5AB00/5CB63856/5D04721B" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D04721B" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5D04721B" Ref="#PWR063"  Part="1" 
+F 0 "#PWR063" H 1840 7040 50  0001 C CNN
+F 1 "GND" H 1845 7117 50  0000 C CNN
+F 2 "" H 1840 7290 50  0001 C CNN
+F 3 "" H 1840 7290 50  0001 C CNN
+	1    1840 7290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1840 7210 1840 7290
+$Comp
+L Device:C C?
+U 1 1 5D047227
+P 2030 7060
+AR Path="/5CFABACD/5D047227" Ref="C?"  Part="1" 
+AR Path="/5D047227" Ref="C?"  Part="1" 
+AR Path="/5D0F9837/5D047227" Ref="C48"  Part="1" 
+F 0 "C48" H 2145 7106 50  0000 L CNN
+F 1 "100nF" H 2145 7015 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2068 6910 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 2030 7060 50  0001 C CNN
+F 4 "KEMET" H -3270 360 50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -3270 360 50  0001 C CNN "MPN"
+F 6 "Mouser" H -3270 360 50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -3270 360 50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -3270 360 50  0001 C CNN "SPURL"
+	1    2030 7060
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2030 6910 1840 6910
+Connection ~ 1840 6910
+Connection ~ 1840 7210
+Wire Wire Line
+	1840 7210 2030 7210
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5D04723C
+P 1840 6850
+AR Path="/5D04723C" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D04723C" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5D04723C" Ref="#PWR062"  Part="1" 
+F 0 "#PWR062" H 1840 6700 50  0001 C CNN
+F 1 "+1V8" H 1740 7020 50  0000 L CNN
+F 2 "" H 1840 6850 50  0001 C CNN
+F 3 "" H 1840 6850 50  0001 C CNN
+	1    1840 6850
+	1    0    0    -1  
+$EndComp
+Connection ~ 1640 6910
+Wire Wire Line
+	1640 6910 1840 6910
+Connection ~ 1640 7210
+Wire Wire Line
+	1640 7210 1840 7210
+Wire Wire Line
+	1290 6910 1640 6910
+Wire Wire Line
+	1290 7210 1640 7210
+Wire Wire Line
+	1610 6150 2030 6150
+Wire Wire Line
+	1610 5850 2030 5850
+NoConn ~ 7400 3030
+NoConn ~ 7400 2540
+NoConn ~ 7400 2630
+NoConn ~ 7400 2730
+NoConn ~ 7400 2830
+NoConn ~ 7400 3130
+NoConn ~ 7400 3230
+NoConn ~ 7400 3330
+NoConn ~ 7400 3430
+NoConn ~ 7400 3530
+NoConn ~ 7400 3630
+NoConn ~ 7400 3730
+Text GLabel 7950 2130 2    50   Output ~ 0
+JTAG_TCK
+Text GLabel 7950 2230 2    50   Output ~ 0
+JTAG_TDI
+Text GLabel 7940 2330 2    50   Input ~ 0
+JTAG_TDO
+$Comp
+L Device:R R24
+U 1 1 5D0CD95D
+P 7680 2130
+F 0 "R24" V 7760 2090 50  0000 L CNN
+F 1 "22R" V 7680 2080 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7610 2130 50  0001 C CNN
+F 3 "~" H 7680 2130 50  0001 C CNN
+	1    7680 2130
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 5D0D32BC
+P 7680 2230
+F 0 "R25" V 7730 2330 50  0000 L CNN
+F 1 "22R" V 7680 2180 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7610 2230 50  0001 C CNN
+F 3 "~" H 7680 2230 50  0001 C CNN
+	1    7680 2230
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 5D0D8E3D
+P 7680 2330
+F 0 "R26" V 7720 2430 50  0000 L CNN
+F 1 "22R" V 7680 2280 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7610 2330 50  0001 C CNN
+F 3 "~" H 7680 2330 50  0001 C CNN
+	1    7680 2330
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7960 2430 2    50   Output ~ 0
+JTAG_TMS
+$Comp
+L Device:R R27
+U 1 1 5D110CFE
+P 7680 2430
+F 0 "R27" V 7600 2380 50  0000 L CNN
+F 1 "22R" V 7680 2380 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7610 2430 50  0001 C CNN
+F 3 "~" H 7680 2430 50  0001 C CNN
+	1    7680 2430
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 2130 7530 2130
+Wire Wire Line
+	7400 2230 7530 2230
+Wire Wire Line
+	7400 2330 7530 2330
+Wire Wire Line
+	7400 2430 7530 2430
+Wire Wire Line
+	7830 2130 7950 2130
+Wire Wire Line
+	7830 2230 7950 2230
+Wire Wire Line
+	7830 2330 7940 2330
+Wire Wire Line
+	7830 2430 7960 2430
+Text GLabel 10480 2130 2    50   Output ~ 0
+JTAG_TDI
+Text GLabel 10480 2030 2    50   Input ~ 0
+JTAG_TDO
+Text GLabel 10480 1920 2    50   Output ~ 0
+JTAG_TMS
+Text GLabel 10480 1820 2    50   Output ~ 0
+JTAG_TCK
+Wire Wire Line
+	9920 2120 10390 2120
+Wire Wire Line
+	10480 2120 10480 2130
+Wire Wire Line
+	9920 2020 10280 2020
+Wire Wire Line
+	10480 2020 10480 2030
+Wire Wire Line
+	9920 1920 10150 1920
+Wire Wire Line
+	9920 1820 10030 1820
+$Comp
+L Device:R R20
+U 1 1 5D1CAE9F
+P 10030 1190
+F 0 "R20" H 10100 1236 50  0000 L CNN
+F 1 "10K" H 10100 1145 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9960 1190 50  0001 C CNN
+F 3 "~" H 10030 1190 50  0001 C CNN
+	1    10030 1190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5D1CAEA5
+P 10150 1190
+F 0 "R21" H 10220 1236 50  0000 L CNN
+F 1 "10K" H 10220 1145 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10080 1190 50  0001 C CNN
+F 3 "~" H 10150 1190 50  0001 C CNN
+	1    10150 1190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5D1CAEAB
+P 10280 1190
+F 0 "R22" H 10350 1236 50  0000 L CNN
+F 1 "10K" H 10350 1145 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10210 1190 50  0001 C CNN
+F 3 "~" H 10280 1190 50  0001 C CNN
+	1    10280 1190
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D1CAEB7
+P 10210 820
+AR Path="/5D1CAEB7" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5D1CAEB7" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 10210 670 50  0001 C CNN
+F 1 "+3V3" V 10225 948 50  0000 L CNN
+F 2 "" H 10210 820 50  0001 C CNN
+F 3 "" H 10210 820 50  0001 C CNN
+	1    10210 820 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5D1D1C15
+P 10390 1190
+F 0 "R23" H 10460 1236 50  0000 L CNN
+F 1 "10K" H 10460 1145 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10320 1190 50  0001 C CNN
+F 3 "~" H 10390 1190 50  0001 C CNN
+	1    10390 1190
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10030 1040 10150 1040
+Connection ~ 10150 1040
+Wire Wire Line
+	10150 1040 10210 1040
+Connection ~ 10280 1040
+Wire Wire Line
+	10280 1040 10390 1040
+Wire Wire Line
+	10210 820  10210 1040
+Connection ~ 10210 1040
+Wire Wire Line
+	10210 1040 10280 1040
+Wire Wire Line
+	10030 1340 10030 1820
+Connection ~ 10030 1820
+Wire Wire Line
+	10030 1820 10480 1820
+Wire Wire Line
+	10150 1340 10150 1920
+Connection ~ 10150 1920
+Wire Wire Line
+	10150 1920 10480 1920
+Wire Wire Line
+	10280 1340 10280 2020
+Connection ~ 10280 2020
+Wire Wire Line
+	10280 2020 10480 2020
+Wire Wire Line
+	10390 1340 10390 2120
+Connection ~ 10390 2120
+Wire Wire Line
+	10390 2120 10480 2120
+NoConn ~ 7400 5830
+$Comp
+L power:GND #PWR?
+U 1 1 5D229721
+P 9420 2520
+AR Path="/5D229721" Ref="#PWR?"  Part="1" 
+AR Path="/5CB63856/5D229721" Ref="#PWR?"  Part="1" 
+AR Path="/5CB5AB00/5CB63856/5D229721" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D229721" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5D229721" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 9420 2270 50  0001 C CNN
+F 1 "GND" H 9425 2347 50  0000 C CNN
+F 2 "" H 9420 2520 50  0001 C CNN
+F 3 "" H 9420 2520 50  0001 C CNN
+	1    9420 2520
+	1    0    0    -1  
+$EndComp
+Connection ~ 6550 1830
+Wire Wire Line
+	6550 1830 6600 1830
 $EndSCHEMATC
