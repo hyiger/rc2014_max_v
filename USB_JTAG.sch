@@ -18,9 +18,9 @@ $Comp
 L Connector:AVR-JTAG-10 J5
 U 1 1 5D0FEAD2
 P 9420 1920
-F 0 "J5" H 9040 1966 50  0000 R CNN
-F 1 "AVR-JTAG-10" H 9040 1875 50  0000 R CNN
-F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" V 9270 2070 50  0001 C CNN
+F 0 "J5" H 9460 1920 50  0000 R CNN
+F 1 "AVR-JTAG-10" H 9180 2420 50  0000 R CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal" V 9270 2070 50  0001 C CNN
 F 3 " ~" H 8145 1370 50  0001 C CNN
 	1    9420 1920
 	1    0    0    -1  
@@ -1108,14 +1108,14 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5D1CAEB7
-P 10180 820
+P 10230 820
 AR Path="/5D1CAEB7" Ref="#PWR?"  Part="1" 
 AR Path="/5D0F9837/5D1CAEB7" Ref="#PWR027"  Part="1" 
-F 0 "#PWR027" H 10180 670 50  0001 C CNN
-F 1 "+3V3" V 10195 948 50  0000 L CNN
-F 2 "" H 10180 820 50  0001 C CNN
-F 3 "" H 10180 820 50  0001 C CNN
-	1    10180 820 
+F 0 "#PWR027" H 10230 670 50  0001 C CNN
+F 1 "+3V3" V 10245 948 50  0000 L CNN
+F 2 "" H 10230 820 50  0001 C CNN
+F 3 "" H 10230 820 50  0001 C CNN
+	1    10230 820 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1158,36 +1158,10 @@ $EndComp
 Connection ~ 6550 1830
 Wire Wire Line
 	6550 1830 6600 1830
-$Comp
-L Device:R_Pack04 RN1
-U 1 1 5CF8ACD2
-P 10230 1140
-AR Path="/5D0F9837/5CF8ACD2" Ref="RN1"  Part="1" 
-AR Path="/5CF8ACD2" Ref="RN?"  Part="1" 
-AR Path="/5CFABACD/5CF8ACD2" Ref="RN?"  Part="1" 
-F 0 "RN1" H 9900 1240 50  0000 C CNN
-F 1 "10K" H 9904 1140 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 10505 1140 50  0001 C CNN
-F 3 "~" H 10230 1140 50  0001 C CNN
-	1    10230 1140
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10030 940  10130 940 
 Wire Wire Line
 	10330 940  10330 950 
-Connection ~ 10330 940 
-Connection ~ 10130 940 
 Wire Wire Line
-	10130 940  10180 940 
-Connection ~ 10230 940 
-Wire Wire Line
-	10230 940  10330 940 
-Wire Wire Line
-	10180 820  10180 940 
-Connection ~ 10180 940 
-Wire Wire Line
-	10180 940  10230 940 
+	10230 820  10230 940 
 $Comp
 L Device:R_Pack04 RN2
 U 1 1 5CFE9E43
@@ -1232,4 +1206,69 @@ Wire Wire Line
 	3530 3830 3580 3830
 NoConn ~ 7400 5530
 NoConn ~ 7400 5430
+Wire Wire Line
+	10230 940  10330 940 
+Connection ~ 10230 940 
+Connection ~ 10330 940 
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 5CF8ACD2
+P 10230 1140
+AR Path="/5D0F9837/5CF8ACD2" Ref="RN1"  Part="1" 
+AR Path="/5CF8ACD2" Ref="RN?"  Part="1" 
+AR Path="/5CFABACD/5CF8ACD2" Ref="RN?"  Part="1" 
+F 0 "RN1" H 9900 1240 50  0000 C CNN
+F 1 "10K" H 9904 1140 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 10505 1140 50  0001 C CNN
+F 3 "~" H 10230 1140 50  0001 C CNN
+	1    10230 1140
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10130 940  10230 940 
+Wire Wire Line
+	10030 940  10030 880 
+Wire Wire Line
+	10030 880  9750 880 
+Wire Wire Line
+	9750 880  9750 940 
+$Comp
+L power:GND #PWR?
+U 1 1 5D1A4182
+P 9750 940
+AR Path="/5D1A4182" Ref="#PWR?"  Part="1" 
+AR Path="/5CB63856/5D1A4182" Ref="#PWR?"  Part="1" 
+AR Path="/5CB5AB00/5CB63856/5D1A4182" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D1A4182" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5D1A4182" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 9750 690 50  0001 C CNN
+F 1 "GND" H 9755 767 50  0000 C CNN
+F 2 "" H 9750 940 50  0001 C CNN
+F 3 "" H 9750 940 50  0001 C CNN
+	1    9750 940 
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9920 1720
+NoConn ~ 9420 1320
+Wire Wire Line
+	9920 1620 9920 1230
+Wire Wire Line
+	9920 1230 9320 1230
+Wire Wire Line
+	9320 1230 9320 1320
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D1D069F
+P 9320 1110
+AR Path="/5D1D069F" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5D1D069F" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 9320 960 50  0001 C CNN
+F 1 "+3V3" V 9335 1238 50  0000 L CNN
+F 2 "" H 9320 1110 50  0001 C CNN
+F 3 "" H 9320 1110 50  0001 C CNN
+	1    9320 1110
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9320 1110 9320 1230
 $EndSCHEMATC

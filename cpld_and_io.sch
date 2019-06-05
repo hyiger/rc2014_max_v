@@ -1107,19 +1107,19 @@ Text GLabel 7370 3630 0    50   3State ~ 0
 D1_F
 Text GLabel 7370 3530 0    50   3State ~ 0
 D0_F
-Text GLabel 7370 4930 0    50   Input ~ 0
+Text GLabel 10570 2430 2    50   Input ~ 0
 ~BUSACK_F
-Text GLabel 7370 4830 0    50   Input ~ 0
+Text GLabel 10570 2530 2    50   Input ~ 0
 ~PAGE_F
-Text GLabel 7370 4430 0    50   Input ~ 0
+Text GLabel 10570 2930 2    50   Input ~ 0
 ~MREQ_F
-Text GLabel 7370 4530 0    50   Input ~ 0
+Text GLabel 10570 2830 2    50   Input ~ 0
 ~WR_F
-Text GLabel 7370 4630 0    50   Input ~ 0
+Text GLabel 10570 2730 2    50   Input ~ 0
 ~RD_F
-Text GLabel 7370 4730 0    50   Input ~ 0
+Text GLabel 10570 2630 2    50   Input ~ 0
 ~IORQ_F
-Text GLabel 7370 4330 0    50   Input ~ 0
+Text GLabel 10570 3030 2    50   Input ~ 0
 ~M1_F
 Text GLabel 7370 2430 0    50   Input ~ 0
 CLK_F
@@ -1171,7 +1171,7 @@ Text GLabel 10570 1830 2    50   Output ~ 0
 ~INT_F
 Text GLabel 10570 1730 2    50   Output ~ 0
 ~RESET_F
-Text GLabel 10570 2830 2    50   Output ~ 0
+Text GLabel 6040 1990 2    50   Output ~ 0
 RX_A_F
 $Comp
 L power:GND #PWR?
@@ -1681,4 +1681,20 @@ Text GLabel 4350 6100 2    50   3State ~ 0
 GPIO_15
 Text GLabel 4350 6200 2    50   3State ~ 0
 GPIO_16
+Text GLabel 7370 5030 0    50   3State ~ 0
+D7_F
+Text GLabel 7370 4930 0    50   3State ~ 0
+D6_F
+Text GLabel 7370 4830 0    50   3State ~ 0
+D5_F
+Text GLabel 7370 4730 0    50   3State ~ 0
+D4_F
+Text GLabel 7370 4630 0    50   3State ~ 0
+D3_F
+Text GLabel 7370 4530 0    50   3State ~ 0
+D2_F
+Text GLabel 7370 4430 0    50   3State ~ 0
+D1_F
+Text GLabel 7370 4330 0    50   3State ~ 0
+D0_F
 $EndSCHEMATC
