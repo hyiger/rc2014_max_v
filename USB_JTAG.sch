@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -23,28 +23,6 @@ F 1 "AVR-JTAG-10" H 9040 1875 50  0000 R CNN
 F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" V 9270 2070 50  0001 C CNN
 F 3 " ~" H 8145 1370 50  0001 C CNN
 	1    9420 1920
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x06 J3
-U 1 1 5D1210D9
-P 10570 3170
-F 0 "J3" H 10650 3162 50  0000 L CNN
-F 1 "Conn_01x06" H 10650 3071 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 10570 3170 50  0001 C CNN
-F 3 "~" H 10570 3170 50  0001 C CNN
-	1    10570 3170
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x06 J6
-U 1 1 5D122332
-P 10580 3990
-F 0 "J6" H 10660 3982 50  0000 L CNN
-F 1 "Conn_01x06" H 10660 3891 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 10580 3990 50  0001 C CNN
-F 3 "~" H 10580 3990 50  0001 C CNN
-	1    10580 3990
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -441,17 +419,6 @@ F 3 "" H 2940 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J9
-U 1 1 5CF5A1BA
-P 9560 5450
-F 0 "J9" V 9564 5630 50  0000 L CNN
-F 1 "Conn_02x04_Counter_Clockwise" V 9655 5630 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 9560 5450 50  0001 C CNN
-F 3 "~" H 9560 5450 50  0001 C CNN
-	1    9560 5450
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:L L1
 U 1 1 5CF57157
 P 3670 980
@@ -798,39 +765,6 @@ F 3 "" H 4000 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R16
-U 1 1 5CFE5AF6
-P 3380 4080
-F 0 "R16" H 3450 4126 50  0000 L CNN
-F 1 "10K" H 3450 4035 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3310 4080 50  0001 C CNN
-F 3 "~" H 3380 4080 50  0001 C CNN
-	1    3380 4080
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R17
-U 1 1 5CFEC7AE
-P 3560 4080
-F 0 "R17" H 3630 4126 50  0000 L CNN
-F 1 "10K" H 3630 4035 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3490 4080 50  0001 C CNN
-F 3 "~" H 3560 4080 50  0001 C CNN
-	1    3560 4080
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R18
-U 1 1 5CFEFB83
-P 3720 4080
-F 0 "R18" H 3790 4126 50  0000 L CNN
-F 1 "10K" H 3790 4035 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3650 4080 50  0001 C CNN
-F 3 "~" H 3720 4080 50  0001 C CNN
-	1    3720 4080
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R19
 U 1 1 5CFF32B2
 P 3990 5020
@@ -847,12 +781,12 @@ Connection ~ 4140 4930
 Wire Wire Line
 	3340 5020 3340 5030
 Wire Wire Line
-	3720 4230 3720 5020
+	3580 4230 3580 5020
 Wire Wire Line
-	3340 5020 3720 5020
-Connection ~ 3720 5020
+	3340 5020 3580 5020
+Connection ~ 3580 5020
 Wire Wire Line
-	3720 5020 3840 5020
+	3580 5020 3840 5020
 Wire Wire Line
 	3380 4230 3380 4260
 Connection ~ 3380 4260
@@ -861,38 +795,25 @@ Wire Wire Line
 Wire Wire Line
 	3340 4930 4140 4930
 Wire Wire Line
-	3340 4830 3560 4830
+	3340 4830 3480 4830
 Wire Wire Line
-	3560 4230 3560 4830
-Connection ~ 3560 4830
+	3480 4230 3480 4830
+Connection ~ 3480 4830
 Wire Wire Line
-	3560 4830 5000 4830
-Wire Wire Line
-	3380 3930 3380 3890
-Wire Wire Line
-	3380 3890 3560 3890
-Wire Wire Line
-	3720 3890 3720 3930
-Wire Wire Line
-	3560 3930 3560 3890
-Connection ~ 3560 3890
-Wire Wire Line
-	3560 3890 3720 3890
+	3480 4830 5000 4830
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5D01CFBE
-P 3560 3800
+P 3530 3740
 AR Path="/5D01CFBE" Ref="#PWR?"  Part="1" 
 AR Path="/5D0F9837/5D01CFBE" Ref="#PWR058"  Part="1" 
-F 0 "#PWR058" H 3560 3650 50  0001 C CNN
-F 1 "+3V3" V 3575 3928 50  0000 L CNN
-F 2 "" H 3560 3800 50  0001 C CNN
-F 3 "" H 3560 3800 50  0001 C CNN
-	1    3560 3800
+F 0 "#PWR058" H 3530 3590 50  0001 C CNN
+F 1 "+3V3" V 3545 3868 50  0000 L CNN
+F 2 "" H 3530 3740 50  0001 C CNN
+F 3 "" H 3530 3740 50  0001 C CNN
+	1    3530 3740
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3560 3800 3560 3890
 $Comp
 L Device:C C?
 U 1 1 5D0471A9
@@ -1140,58 +1061,14 @@ NoConn ~ 7400 3430
 NoConn ~ 7400 3530
 NoConn ~ 7400 3630
 NoConn ~ 7400 3730
-Text GLabel 7950 2130 2    50   Output ~ 0
+Text GLabel 8050 2130 2    50   Output ~ 0
 JTAG_TCK
-Text GLabel 7950 2230 2    50   Output ~ 0
+Text GLabel 8050 2230 2    50   Output ~ 0
 JTAG_TDI
-Text GLabel 7940 2330 2    50   Input ~ 0
+Text GLabel 8040 2330 2    50   Input ~ 0
 JTAG_TDO
-$Comp
-L Device:R R24
-U 1 1 5D0CD95D
-P 7680 2130
-F 0 "R24" V 7760 2090 50  0000 L CNN
-F 1 "22R" V 7680 2080 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7610 2130 50  0001 C CNN
-F 3 "~" H 7680 2130 50  0001 C CNN
-	1    7680 2130
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R25
-U 1 1 5D0D32BC
-P 7680 2230
-F 0 "R25" V 7730 2330 50  0000 L CNN
-F 1 "22R" V 7680 2180 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7610 2230 50  0001 C CNN
-F 3 "~" H 7680 2230 50  0001 C CNN
-	1    7680 2230
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R26
-U 1 1 5D0D8E3D
-P 7680 2330
-F 0 "R26" V 7720 2430 50  0000 L CNN
-F 1 "22R" V 7680 2280 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7610 2330 50  0001 C CNN
-F 3 "~" H 7680 2330 50  0001 C CNN
-	1    7680 2330
-	0    -1   -1   0   
-$EndComp
-Text GLabel 7960 2430 2    50   Output ~ 0
+Text GLabel 8060 2430 2    50   Output ~ 0
 JTAG_TMS
-$Comp
-L Device:R R27
-U 1 1 5D110CFE
-P 7680 2430
-F 0 "R27" V 7600 2380 50  0000 L CNN
-F 1 "22R" V 7680 2380 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7610 2430 50  0001 C CNN
-F 3 "~" H 7680 2430 50  0001 C CNN
-	1    7680 2430
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7400 2130 7530 2130
 Wire Wire Line
@@ -1201,13 +1078,13 @@ Wire Wire Line
 Wire Wire Line
 	7400 2430 7530 2430
 Wire Wire Line
-	7830 2130 7950 2130
+	7930 2130 8050 2130
 Wire Wire Line
-	7830 2230 7950 2230
+	7930 2230 8050 2230
 Wire Wire Line
-	7830 2330 7940 2330
+	7930 2330 8040 2330
 Wire Wire Line
-	7830 2430 7960 2430
+	7930 2430 8060 2430
 Text GLabel 10480 2130 2    50   Output ~ 0
 JTAG_TDI
 Text GLabel 10480 2030 2    50   Input ~ 0
@@ -1217,107 +1094,50 @@ JTAG_TMS
 Text GLabel 10480 1820 2    50   Output ~ 0
 JTAG_TCK
 Wire Wire Line
-	9920 2120 10390 2120
+	9920 2120 10330 2120
 Wire Wire Line
 	10480 2120 10480 2130
 Wire Wire Line
-	9920 2020 10280 2020
+	9920 2020 10230 2020
 Wire Wire Line
 	10480 2020 10480 2030
 Wire Wire Line
-	9920 1920 10150 1920
+	9920 1920 10130 1920
 Wire Wire Line
 	9920 1820 10030 1820
 $Comp
-L Device:R R20
-U 1 1 5D1CAE9F
-P 10030 1190
-F 0 "R20" H 10100 1236 50  0000 L CNN
-F 1 "10K" H 10100 1145 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9960 1190 50  0001 C CNN
-F 3 "~" H 10030 1190 50  0001 C CNN
-	1    10030 1190
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R21
-U 1 1 5D1CAEA5
-P 10150 1190
-F 0 "R21" H 10220 1236 50  0000 L CNN
-F 1 "10K" H 10220 1145 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10080 1190 50  0001 C CNN
-F 3 "~" H 10150 1190 50  0001 C CNN
-	1    10150 1190
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R22
-U 1 1 5D1CAEAB
-P 10280 1190
-F 0 "R22" H 10350 1236 50  0000 L CNN
-F 1 "10K" H 10350 1145 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10210 1190 50  0001 C CNN
-F 3 "~" H 10280 1190 50  0001 C CNN
-	1    10280 1190
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR?
 U 1 1 5D1CAEB7
-P 10210 820
+P 10180 820
 AR Path="/5D1CAEB7" Ref="#PWR?"  Part="1" 
 AR Path="/5D0F9837/5D1CAEB7" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 10210 670 50  0001 C CNN
-F 1 "+3V3" V 10225 948 50  0000 L CNN
-F 2 "" H 10210 820 50  0001 C CNN
-F 3 "" H 10210 820 50  0001 C CNN
-	1    10210 820 
+F 0 "#PWR0101" H 10180 670 50  0001 C CNN
+F 1 "+3V3" V 10195 948 50  0000 L CNN
+F 2 "" H 10180 820 50  0001 C CNN
+F 3 "" H 10180 820 50  0001 C CNN
+	1    10180 820 
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R23
-U 1 1 5D1D1C15
-P 10390 1190
-F 0 "R23" H 10460 1236 50  0000 L CNN
-F 1 "10K" H 10460 1145 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10320 1190 50  0001 C CNN
-F 3 "~" H 10390 1190 50  0001 C CNN
-	1    10390 1190
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10030 1040 10150 1040
-Connection ~ 10150 1040
-Wire Wire Line
-	10150 1040 10210 1040
-Connection ~ 10280 1040
-Wire Wire Line
-	10280 1040 10390 1040
-Wire Wire Line
-	10210 820  10210 1040
-Connection ~ 10210 1040
-Wire Wire Line
-	10210 1040 10280 1040
 Wire Wire Line
 	10030 1340 10030 1820
 Connection ~ 10030 1820
 Wire Wire Line
 	10030 1820 10480 1820
 Wire Wire Line
-	10150 1340 10150 1920
-Connection ~ 10150 1920
+	10130 1340 10130 1920
+Connection ~ 10130 1920
 Wire Wire Line
-	10150 1920 10480 1920
+	10130 1920 10480 1920
 Wire Wire Line
-	10280 1340 10280 2020
-Connection ~ 10280 2020
+	10230 1340 10230 2020
+Connection ~ 10230 2020
 Wire Wire Line
-	10280 2020 10480 2020
+	10230 2020 10480 2020
 Wire Wire Line
-	10390 1340 10390 2120
-Connection ~ 10390 2120
+	10330 1340 10330 2120
+Connection ~ 10330 2120
 Wire Wire Line
-	10390 2120 10480 2120
+	10330 2120 10480 2120
 NoConn ~ 7400 5830
 $Comp
 L power:GND #PWR?
@@ -1338,4 +1158,76 @@ $EndComp
 Connection ~ 6550 1830
 Wire Wire Line
 	6550 1830 6600 1830
+$Comp
+L Device:R_Pack04 RN5
+U 1 1 5CF8ACD2
+P 10230 1140
+AR Path="/5D0F9837/5CF8ACD2" Ref="RN5"  Part="1" 
+AR Path="/5CF8ACD2" Ref="RN?"  Part="1" 
+AR Path="/5CFABACD/5CF8ACD2" Ref="RN?"  Part="1" 
+F 0 "RN5" H 9900 1240 50  0000 C CNN
+F 1 "10K" H 9904 1140 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 10505 1140 50  0001 C CNN
+F 3 "~" H 10230 1140 50  0001 C CNN
+	1    10230 1140
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10030 940  10130 940 
+Wire Wire Line
+	10330 940  10330 950 
+Connection ~ 10330 940 
+Connection ~ 10130 940 
+Wire Wire Line
+	10130 940  10180 940 
+Connection ~ 10230 940 
+Wire Wire Line
+	10230 940  10330 940 
+Wire Wire Line
+	10180 820  10180 940 
+Connection ~ 10180 940 
+Wire Wire Line
+	10180 940  10230 940 
+$Comp
+L Device:R_Pack04 RN6
+U 1 1 5CFE9E43
+P 7730 2330
+AR Path="/5D0F9837/5CFE9E43" Ref="RN6"  Part="1" 
+AR Path="/5CFE9E43" Ref="RN?"  Part="1" 
+AR Path="/5CFABACD/5CFE9E43" Ref="RN?"  Part="1" 
+F 0 "RN6" V 7330 2330 50  0000 C CNN
+F 1 "22R" V 7404 2330 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 8005 2330 50  0001 C CNN
+F 3 "~" H 7730 2330 50  0001 C CNN
+	1    7730 2330
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack04 RN7
+U 1 1 5D0181F6
+P 3580 4030
+AR Path="/5D0F9837/5D0181F6" Ref="RN7"  Part="1" 
+AR Path="/5D0181F6" Ref="RN?"  Part="1" 
+AR Path="/5CFABACD/5D0181F6" Ref="RN?"  Part="1" 
+F 0 "RN7" H 3250 4130 50  0000 C CNN
+F 1 "10K" H 3254 4030 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 3855 4030 50  0001 C CNN
+F 3 "~" H 3580 4030 50  0001 C CNN
+	1    3580 4030
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3680 4230
+Wire Wire Line
+	3380 3830 3480 3830
+Connection ~ 3480 3830
+Wire Wire Line
+	3480 3830 3530 3830
+Connection ~ 3580 3830
+Wire Wire Line
+	3580 3830 3680 3830
+Wire Wire Line
+	3530 3740 3530 3830
+Connection ~ 3530 3830
+Wire Wire Line
+	3530 3830 3580 3830
 $EndSCHEMATC
