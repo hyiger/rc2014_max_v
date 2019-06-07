@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -782,54 +782,54 @@ Wire Wire Line
 $Comp
 L Device:LED_Small D?
 U 1 1 5D1B162E
-P 3280 1720
+P 3580 1720
 AR Path="/5CFABACD/5D1B162E" Ref="D?"  Part="1" 
 AR Path="/5CF9C1ED/5D1B162E" Ref="D5"  Part="1" 
-F 0 "D5" V 3340 1830 50  0000 R CNN
-F 1 "Blue" V 3235 1652 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3280 1720 50  0001 C CNN
-F 3 "~" V 3280 1720 50  0001 C CNN
-	1    3280 1720
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5D1B1634
-P 3380 1720
-AR Path="/5CFABACD/5D1B1634" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B1634" Ref="D6"  Part="1" 
-F 0 "D6" V 3440 1830 50  0000 R CNN
-F 1 "Blue" V 3335 1652 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3380 1720 50  0001 C CNN
-F 3 "~" V 3380 1720 50  0001 C CNN
-	1    3380 1720
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5D1B163A
-P 3480 1720
-AR Path="/5CFABACD/5D1B163A" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B163A" Ref="D7"  Part="1" 
-F 0 "D7" V 3540 1830 50  0000 R CNN
-F 1 "Blue" V 3435 1652 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3480 1720 50  0001 C CNN
-F 3 "~" V 3480 1720 50  0001 C CNN
-	1    3480 1720
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5D1B1640
-P 3580 1720
-AR Path="/5CFABACD/5D1B1640" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B1640" Ref="D8"  Part="1" 
-F 0 "D8" V 3640 1830 50  0000 R CNN
+F 0 "D5" V 3640 1830 50  0000 R CNN
 F 1 "Blue" V 3535 1652 50  0001 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3580 1720 50  0001 C CNN
 F 3 "~" V 3580 1720 50  0001 C CNN
 	1    3580 1720
-	0    -1   -1   0   
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5D1B1634
+P 3480 1720
+AR Path="/5CFABACD/5D1B1634" Ref="D?"  Part="1" 
+AR Path="/5CF9C1ED/5D1B1634" Ref="D6"  Part="1" 
+F 0 "D6" V 3540 1830 50  0000 R CNN
+F 1 "Blue" V 3435 1652 50  0001 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3480 1720 50  0001 C CNN
+F 3 "~" V 3480 1720 50  0001 C CNN
+	1    3480 1720
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5D1B163A
+P 3380 1720
+AR Path="/5CFABACD/5D1B163A" Ref="D?"  Part="1" 
+AR Path="/5CF9C1ED/5D1B163A" Ref="D7"  Part="1" 
+F 0 "D7" V 3440 1830 50  0000 R CNN
+F 1 "Blue" V 3335 1652 50  0001 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3380 1720 50  0001 C CNN
+F 3 "~" V 3380 1720 50  0001 C CNN
+	1    3380 1720
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5D1B1640
+P 3280 1720
+AR Path="/5CFABACD/5D1B1640" Ref="D?"  Part="1" 
+AR Path="/5CF9C1ED/5D1B1640" Ref="D8"  Part="1" 
+F 0 "D8" V 3340 1830 50  0000 R CNN
+F 1 "Blue" V 3235 1652 50  0001 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3280 1720 50  0001 C CNN
+F 3 "~" V 3280 1720 50  0001 C CNN
+	1    3280 1720
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	3180 1620 3180 1480
@@ -841,26 +841,26 @@ Wire Wire Line
 	3480 1620 3480 1480
 Wire Wire Line
 	3580 1620 3580 1480
-Text GLabel 3180 1910 3    50   Output ~ 0
+Text GLabel 2880 1910 3    50   Output ~ 0
 LED4
 Wire Wire Line
-	3180 1820 3180 1910
-Text GLabel 3280 1910 3    50   Output ~ 0
+	2880 1820 2880 1910
+Text GLabel 3580 1910 3    50   Output ~ 0
 LED5
 Wire Wire Line
-	3280 1820 3280 1910
-Text GLabel 3380 1910 3    50   Output ~ 0
+	3580 1820 3580 1910
+Text GLabel 3480 1910 3    50   Output ~ 0
 LED6
 Wire Wire Line
-	3380 1820 3380 1910
-Text GLabel 3480 1910 3    50   Output ~ 0
+	3480 1820 3480 1910
+Text GLabel 3380 1910 3    50   Output ~ 0
 LED7
 Wire Wire Line
-	3480 1820 3480 1910
-Text GLabel 3580 1910 3    50   Output ~ 0
+	3380 1820 3380 1910
+Text GLabel 3280 1910 3    50   Output ~ 0
 LED8
 Wire Wire Line
-	3580 1820 3580 1910
+	3280 1820 3280 1910
 Wire Wire Line
 	3580 1000 3580 1080
 Wire Wire Line
@@ -1149,16 +1149,16 @@ Wire Wire Line
 Wire Wire Line
 	2880 1080 2880 1000
 Wire Wire Line
-	3080 1820 3080 1910
-Text GLabel 3080 1910 3    50   Output ~ 0
-LED3
-Wire Wire Line
 	2980 1820 2980 1910
 Text GLabel 2980 1910 3    50   Output ~ 0
+LED3
+Wire Wire Line
+	3080 1820 3080 1910
+Text GLabel 3080 1910 3    50   Output ~ 0
 LED2
 Wire Wire Line
-	2880 1820 2880 1910
-Text GLabel 2880 1910 3    50   Output ~ 0
+	3180 1820 3180 1910
+Text GLabel 3180 1910 3    50   Output ~ 0
 LED1
 Wire Wire Line
 	2980 1620 2980 1480
@@ -1169,54 +1169,54 @@ Wire Wire Line
 $Comp
 L Device:LED_Small D?
 U 1 1 5D1B16E7
-P 3180 1720
+P 2880 1720
 AR Path="/5CFABACD/5D1B16E7" Ref="D?"  Part="1" 
 AR Path="/5CF9C1ED/5D1B16E7" Ref="D4"  Part="1" 
-F 0 "D4" V 3240 1830 50  0000 R CNN
-F 1 "Blue" V 3135 1652 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3180 1720 50  0001 C CNN
-F 3 "~" V 3180 1720 50  0001 C CNN
-	1    3180 1720
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5D1B16ED
-P 3080 1720
-AR Path="/5CFABACD/5D1B16ED" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B16ED" Ref="D3"  Part="1" 
-F 0 "D3" V 3140 1830 50  0000 R CNN
-F 1 "Blue" V 3035 1652 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3080 1720 50  0001 C CNN
-F 3 "~" V 3080 1720 50  0001 C CNN
-	1    3080 1720
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5D1B16F3
-P 2980 1720
-AR Path="/5CFABACD/5D1B16F3" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B16F3" Ref="D2"  Part="1" 
-F 0 "D2" V 3040 1830 50  0000 R CNN
-F 1 "Blue" V 2935 1652 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2980 1720 50  0001 C CNN
-F 3 "~" V 2980 1720 50  0001 C CNN
-	1    2980 1720
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5D1B16F9
-P 2880 1720
-AR Path="/5CFABACD/5D1B16F9" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B16F9" Ref="D1"  Part="1" 
-F 0 "D1" V 2940 1830 50  0000 R CNN
+F 0 "D4" V 2940 1830 50  0000 R CNN
 F 1 "Blue" V 2835 1652 50  0001 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2880 1720 50  0001 C CNN
 F 3 "~" V 2880 1720 50  0001 C CNN
 	1    2880 1720
-	0    -1   -1   0   
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5D1B16ED
+P 2980 1720
+AR Path="/5CFABACD/5D1B16ED" Ref="D?"  Part="1" 
+AR Path="/5CF9C1ED/5D1B16ED" Ref="D3"  Part="1" 
+F 0 "D3" V 3040 1830 50  0000 R CNN
+F 1 "Blue" V 2935 1652 50  0001 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2980 1720 50  0001 C CNN
+F 3 "~" V 2980 1720 50  0001 C CNN
+	1    2980 1720
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5D1B16F3
+P 3080 1720
+AR Path="/5CFABACD/5D1B16F3" Ref="D?"  Part="1" 
+AR Path="/5CF9C1ED/5D1B16F3" Ref="D2"  Part="1" 
+F 0 "D2" V 3140 1830 50  0000 R CNN
+F 1 "Blue" V 3035 1652 50  0001 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3080 1720 50  0001 C CNN
+F 3 "~" V 3080 1720 50  0001 C CNN
+	1    3080 1720
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5D1B16F9
+P 3180 1720
+AR Path="/5CFABACD/5D1B16F9" Ref="D?"  Part="1" 
+AR Path="/5CF9C1ED/5D1B16F9" Ref="D1"  Part="1" 
+F 0 "D1" V 3240 1830 50  0000 R CNN
+F 1 "Blue" V 3135 1652 50  0001 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3180 1720 50  0001 C CNN
+F 3 "~" V 3180 1720 50  0001 C CNN
+	1    3180 1720
+	0    1    -1   0   
 $EndComp
 Text GLabel 10170 1990 2    50   Input ~ 0
 VCC_GPIO
