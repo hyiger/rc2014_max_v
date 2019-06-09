@@ -554,14 +554,14 @@ Connection ~ 5530 1740
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5D3A9E6E
-P 6260 1680
+P 5890 1680
 AR Path="/5D3A9E6E" Ref="#PWR?"  Part="1" 
 AR Path="/5D2A5E4A/5D3A9E6E" Ref="#PWR065"  Part="1" 
-F 0 "#PWR065" H 6260 1530 50  0001 C CNN
-F 1 "+3V3" V 6275 1808 50  0000 L CNN
-F 2 "" H 6260 1680 50  0001 C CNN
-F 3 "" H 6260 1680 50  0001 C CNN
-	1    6260 1680
+F 0 "#PWR065" H 5890 1530 50  0001 C CNN
+F 1 "+3V3" V 5905 1808 50  0000 L CNN
+F 2 "" H 5890 1680 50  0001 C CNN
+F 3 "" H 5890 1680 50  0001 C CNN
+	1    5890 1680
 	1    0    0    -1  
 $EndComp
 Connection ~ 6580 3470
@@ -574,7 +574,6 @@ Connection ~ 5590 1740
 Wire Wire Line
 	6480 3470 6580 3470
 Connection ~ 6480 3470
-Connection ~ 6350 1740
 Wire Wire Line
 	6380 3470 6480 3470
 Connection ~ 6380 3470
@@ -595,25 +594,17 @@ Wire Wire Line
 	6160 3470 6270 3470
 Connection ~ 6160 3470
 Wire Wire Line
-	6660 1740 6760 1740
-Connection ~ 6660 1740
+	6660 1740 6710 1740
 Wire Wire Line
 	6050 3470 6100 3470
 Connection ~ 6050 3470
 Wire Wire Line
-	5840 1740 5940 1740
-Connection ~ 5940 1740
-Wire Wire Line
-	6190 1740 6260 1740
-Connection ~ 6190 1740
+	5840 1740 5890 1740
 Wire Wire Line
 	5550 3470 5670 3470
 Connection ~ 5670 3470
 Wire Wire Line
-	6090 1740 6190 1740
-Wire Wire Line
-	5940 1740 6090 1740
-Connection ~ 6090 1740
+	6090 1740 6130 1740
 Wire Wire Line
 	6690 3470 6790 3470
 Wire Wire Line
@@ -623,10 +614,7 @@ Wire Wire Line
 	5940 3470 6050 3470
 Connection ~ 5940 3470
 Wire Wire Line
-	6450 1740 6660 1740
-Wire Wire Line
-	6350 1740 6450 1740
-Connection ~ 6450 1740
+	6350 1740 6390 1740
 Wire Wire Line
 	5840 3470 5940 3470
 Wire Wire Line
@@ -652,10 +640,7 @@ F 9 "5M1270ZT144C5N" H 7900 4140 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6260 1680 6260 1740
-Connection ~ 6260 1740
-Wire Wire Line
-	6260 1740 6350 1740
+	5890 1680 5890 1740
 Wire Wire Line
 	6100 3470 6100 3550
 $Comp
@@ -1010,4 +995,61 @@ Wire Wire Line
 	1670 5280 2090 5280
 Wire Wire Line
 	1670 4980 2090 4980
+Connection ~ 5890 1740
+Wire Wire Line
+	5890 1740 5940 1740
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D01A953
+P 6130 1680
+AR Path="/5D01A953" Ref="#PWR?"  Part="1" 
+AR Path="/5D2A5E4A/5D01A953" Ref="#PWR091"  Part="1" 
+F 0 "#PWR091" H 6130 1530 50  0001 C CNN
+F 1 "+3V3" V 6145 1808 50  0000 L CNN
+F 2 "" H 6130 1680 50  0001 C CNN
+F 3 "" H 6130 1680 50  0001 C CNN
+	1    6130 1680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6130 1680 6130 1740
+Connection ~ 6130 1740
+Wire Wire Line
+	6130 1740 6190 1740
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D02A315
+P 6390 1680
+AR Path="/5D02A315" Ref="#PWR?"  Part="1" 
+AR Path="/5D2A5E4A/5D02A315" Ref="#PWR092"  Part="1" 
+F 0 "#PWR092" H 6390 1530 50  0001 C CNN
+F 1 "+3V3" V 6405 1808 50  0000 L CNN
+F 2 "" H 6390 1680 50  0001 C CNN
+F 3 "" H 6390 1680 50  0001 C CNN
+	1    6390 1680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6390 1680 6390 1740
+Connection ~ 6390 1740
+Wire Wire Line
+	6390 1740 6450 1740
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D0321C3
+P 6710 1680
+AR Path="/5D0321C3" Ref="#PWR?"  Part="1" 
+AR Path="/5D2A5E4A/5D0321C3" Ref="#PWR093"  Part="1" 
+F 0 "#PWR093" H 6710 1530 50  0001 C CNN
+F 1 "+3V3" V 6725 1808 50  0000 L CNN
+F 2 "" H 6710 1680 50  0001 C CNN
+F 3 "" H 6710 1680 50  0001 C CNN
+	1    6710 1680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6710 1680 6710 1740
+Connection ~ 6710 1740
+Wire Wire Line
+	6710 1740 6760 1740
 $EndSCHEMATC
