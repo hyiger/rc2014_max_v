@@ -17,18 +17,18 @@ $EndDescr
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5CC15484
-P 1110 6940
-F 0 "#FLG02" H 1110 7015 50  0001 C CNN
-F 1 "PWR_FLAG" V 1110 7067 50  0000 L CNN
-F 2 "" H 1110 6940 50  0001 C CNN
-F 3 "~" H 1110 6940 50  0001 C CNN
-	1    1110 6940
-	-1   0    0    1   
+P 1770 6600
+F 0 "#FLG02" H 1770 6675 50  0001 C CNN
+F 1 "PWR_FLAG" V 1770 6727 50  0000 L CNN
+F 2 "" H 1770 6600 50  0001 C CNN
+F 3 "~" H 1770 6600 50  0001 C CNN
+	1    1770 6600
+	-1   0    0    -1  
 $EndComp
 Text GLabel 1430 3740 2    50   Output ~ 0
 GND
 Text GLabel 1430 3840 2    50   Output ~ 0
-5V
+5V_R
 Text GLabel 1430 4640 2    50   Input ~ 0
 ~NMI
 Text GLabel 1430 4540 2    50   Input ~ 0
@@ -40,70 +40,54 @@ Text GLabel 1430 4340 2    50   Input ~ 0
 Text GLabel 1430 4240 2    50   Output ~ 0
 ~BUSACK
 Wire Wire Line
-	860  6640 870  6640
+	1520 6900 1530 6900
 Wire Wire Line
-	860  6940 870  6940
+	1520 6600 1530 6600
 $Comp
 L Device:C C15
 U 1 1 5CEC908F
-P 870 6790
-F 0 "C15" H 985 6836 50  0000 L CNN
-F 1 "100nF" H 985 6745 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 908 6640 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 870 6790 50  0001 C CNN
-F 4 "KEMET" H -4430 90  50  0001 C CNN "MFR"
-F 5 "C0805C104K4RACTU" H -4430 90  50  0001 C CNN "MPN"
-F 6 "Mouser" H -4430 90  50  0001 C CNN "SPR"
-F 7 "80-C0805C104K4R" H -4430 90  50  0001 C CNN "SPN"
-F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -4430 90  50  0001 C CNN "SPURL"
-	1    870  6790
-	1    0    0    -1  
+P 1530 6750
+F 0 "C15" H 1645 6796 50  0000 L CNN
+F 1 "100nF" H 1645 6705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1568 6600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 1530 6750 50  0001 C CNN
+F 4 "KEMET" H -3770 50  50  0001 C CNN "MFR"
+F 5 "C0805C104K4RACTU" H -3770 50  50  0001 C CNN "MPN"
+F 6 "Mouser" H -3770 50  50  0001 C CNN "SPR"
+F 7 "80-C0805C104K4R" H -3770 50  50  0001 C CNN "SPN"
+F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -3770 50  50  0001 C CNN "SPURL"
+	1    1530 6750
+	1    0    0    1   
 $EndComp
-Text GLabel 1310 6640 2    50   Output ~ 0
+Text GLabel 1970 6900 2    50   Output ~ 0
 GND
-Text GLabel 1310 6940 2    50   Output ~ 0
-5V
+Text GLabel 1970 6600 2    50   Output ~ 0
+5V_R
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5CBC2E1E
-P 1110 6640
-F 0 "#FLG01" H 1110 6715 50  0001 C CNN
-F 1 "PWR_FLAG" V 1110 6767 50  0000 L CNN
-F 2 "" H 1110 6640 50  0001 C CNN
-F 3 "~" H 1110 6640 50  0001 C CNN
-	1    1110 6640
-	1    0    0    -1  
+P 1770 6900
+F 0 "#FLG01" H 1770 6975 50  0001 C CNN
+F 1 "PWR_FLAG" V 1770 7027 50  0000 L CNN
+F 2 "" H 1770 6900 50  0001 C CNN
+F 3 "~" H 1770 6900 50  0001 C CNN
+	1    1770 6900
+	1    0    0    1   
 $EndComp
 Text GLabel 1430 4040 2    50   Output ~ 0
 ~PAGE
 Text GLabel 1430 4140 2    50   Output ~ 0
 CLK2
-Connection ~ 1110 6940
+Connection ~ 1770 6600
+Connection ~ 1770 6900
 Wire Wire Line
-	1110 6940 1250 6940
-Connection ~ 1110 6640
+	1770 6900 1910 6900
+Connection ~ 1530 6900
 Wire Wire Line
-	1110 6640 1310 6640
-Connection ~ 870  6640
+	1530 6900 1770 6900
+Connection ~ 1530 6600
 Wire Wire Line
-	870  6640 1110 6640
-Connection ~ 870  6940
-Wire Wire Line
-	870  6940 1110 6940
-$Comp
-L power:+5V #PWR031
-U 1 1 5CE7D1AE
-P 1250 6940
-F 0 "#PWR031" H 1250 6790 50  0001 C CNN
-F 1 "+5V" H 1265 7113 50  0000 C CNN
-F 2 "" H 1250 6940 50  0001 C CNN
-F 3 "" H 1250 6940 50  0001 C CNN
-	1    1250 6940
-	1    0    0    -1  
-$EndComp
-Connection ~ 1250 6940
-Wire Wire Line
-	1250 6940 1310 6940
+	1530 6600 1770 6600
 $Comp
 L Connector:Conn_01x01_Female J1
 U 1 1 5CB841EA
@@ -168,7 +152,7 @@ A8
 Text GLabel 870  2740 2    50   Output ~ 0
 A9
 Text GLabel 870  3840 2    50   Output ~ 0
-5V
+5V_R
 Text GLabel 870  3740 2    50   Output ~ 0
 GND
 Text GLabel 870  3940 2    50   Output ~ 0
@@ -302,20 +286,6 @@ F0 "Power" 50
 F1 "power.sch" 50
 $EndSheet
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5D00EC12
-P 3330 700
-AR Path="/5CFABACD/5D00EC12" Ref="#PWR?"  Part="1" 
-AR Path="/5D00EC12" Ref="#PWR01"  Part="1" 
-AR Path="/5CF9C1ED/5D00EC12" Ref="#PWR?"  Part="1" 
-F 0 "#PWR01" H 3330 550 50  0001 C CNN
-F 1 "+3V3" H 3230 870 50  0000 L CNN
-F 2 "" H 3330 700 50  0001 C CNN
-F 3 "" H 3330 700 50  0001 C CNN
-	1    3330 700 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR09
 U 1 1 5D00EC18
 P 3430 2100
@@ -342,19 +312,6 @@ F 1 "TXB0108PWR" H 3730 730 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3430 650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3430 1300 50  0001 C CNN
 	1    3430 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5D017713
-P 3530 700
-AR Path="/5CFABACD/5D017713" Ref="#PWR?"  Part="1" 
-AR Path="/5D017713" Ref="#PWR02"  Part="1" 
-F 0 "#PWR02" H 3530 550 50  0001 C CNN
-F 1 "+5V" H 3545 873 50  0000 C CNN
-F 2 "" H 3530 700 50  0001 C CNN
-F 3 "" H 3530 700 50  0001 C CNN
-	1    3530 700 
 	1    0    0    -1  
 $EndComp
 Text GLabel 3830 1300 2    50   Input ~ 0
@@ -390,20 +347,6 @@ A11_F
 Text GLabel 3030 1300 0    50   Output ~ 0
 A10_F
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5D0527AE
-P 3360 2550
-AR Path="/5CFABACD/5D0527AE" Ref="#PWR?"  Part="1" 
-AR Path="/5D0527AE" Ref="#PWR011"  Part="1" 
-AR Path="/5CF9C1ED/5D0527AE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR011" H 3360 2400 50  0001 C CNN
-F 1 "+3V3" H 3260 2720 50  0000 L CNN
-F 2 "" H 3360 2550 50  0001 C CNN
-F 3 "" H 3360 2550 50  0001 C CNN
-	1    3360 2550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR015
 U 1 1 5D0527B4
 P 3460 3950
@@ -430,19 +373,6 @@ F 1 "TXB0108PWR" H 3760 2580 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3460 2500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3460 3150 50  0001 C CNN
 	1    3460 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5D0527D3
-P 3560 2550
-AR Path="/5CFABACD/5D0527D3" Ref="#PWR?"  Part="1" 
-AR Path="/5D0527D3" Ref="#PWR012"  Part="1" 
-F 0 "#PWR012" H 3560 2400 50  0001 C CNN
-F 1 "+5V" H 3575 2723 50  0000 C CNN
-F 2 "" H 3560 2550 50  0001 C CNN
-F 3 "" H 3560 2550 50  0001 C CNN
-	1    3560 2550
 	1    0    0    -1  
 $EndComp
 Text GLabel 3860 2950 2    50   Input ~ 0
@@ -478,20 +408,6 @@ A1_F
 Text GLabel 3060 2950 0    50   Output ~ 0
 A0_F
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5D0AFE98
-P 3360 4390
-AR Path="/5CFABACD/5D0AFE98" Ref="#PWR?"  Part="1" 
-AR Path="/5D0AFE98" Ref="#PWR019"  Part="1" 
-AR Path="/5CF9C1ED/5D0AFE98" Ref="#PWR?"  Part="1" 
-F 0 "#PWR019" H 3360 4240 50  0001 C CNN
-F 1 "+3V3" H 3260 4560 50  0000 L CNN
-F 2 "" H 3360 4390 50  0001 C CNN
-F 3 "" H 3360 4390 50  0001 C CNN
-	1    3360 4390
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR027
 U 1 1 5D0AFE9E
 P 3460 5790
@@ -521,33 +437,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3460 4990 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 5D0AFEBD
-P 3560 4390
-AR Path="/5CFABACD/5D0AFEBD" Ref="#PWR?"  Part="1" 
-AR Path="/5D0AFEBD" Ref="#PWR020"  Part="1" 
-F 0 "#PWR020" H 3560 4240 50  0001 C CNN
-F 1 "+5V" H 3575 4563 50  0000 C CNN
-F 2 "" H 3560 4390 50  0001 C CNN
-F 3 "" H 3560 4390 50  0001 C CNN
-	1    3560 4390
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D0AFED3
-P 3390 6240
-AR Path="/5CFABACD/5D0AFED3" Ref="#PWR?"  Part="1" 
-AR Path="/5D0AFED3" Ref="#PWR029"  Part="1" 
-AR Path="/5CF9C1ED/5D0AFED3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR029" H 3390 6090 50  0001 C CNN
-F 1 "+3V3" H 3290 6410 50  0000 L CNN
-F 2 "" H 3390 6240 50  0001 C CNN
-F 3 "" H 3390 6240 50  0001 C CNN
-	1    3390 6240
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR032
 U 1 1 5D0AFED9
 P 3490 7640
@@ -574,19 +463,6 @@ F 1 "TXB0108PWR" H 3790 6270 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3490 6190 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3490 6840 50  0001 C CNN
 	1    3490 6940
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5D0AFEF8
-P 3590 6240
-AR Path="/5CFABACD/5D0AFEF8" Ref="#PWR?"  Part="1" 
-AR Path="/5D0AFEF8" Ref="#PWR030"  Part="1" 
-F 0 "#PWR030" H 3590 6090 50  0001 C CNN
-F 1 "+5V" H 3605 6413 50  0000 C CNN
-F 2 "" H 3590 6240 50  0001 C CNN
-F 3 "" H 3590 6240 50  0001 C CNN
-	1    3590 6240
 	1    0    0    -1  
 $EndComp
 Text GLabel 3860 5390 2    50   3State ~ 0
@@ -638,20 +514,6 @@ D13
 Text GLabel 3890 7340 2    50   3State ~ 0
 D12
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5D0FF9BB
-P 5710 730
-AR Path="/5CFABACD/5D0FF9BB" Ref="#PWR?"  Part="1" 
-AR Path="/5D0FF9BB" Ref="#PWR03"  Part="1" 
-AR Path="/5CF9C1ED/5D0FF9BB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR03" H 5710 580 50  0001 C CNN
-F 1 "+3V3" H 5610 900 50  0000 L CNN
-F 2 "" H 5710 730 50  0001 C CNN
-F 3 "" H 5710 730 50  0001 C CNN
-	1    5710 730 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR010
 U 1 1 5D0FF9C1
 P 5810 2130
@@ -681,33 +543,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 5810 1330 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 5D0FF9E0
-P 5910 730
-AR Path="/5CFABACD/5D0FF9E0" Ref="#PWR?"  Part="1" 
-AR Path="/5D0FF9E0" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 5910 580 50  0001 C CNN
-F 1 "+5V" H 5925 903 50  0000 C CNN
-F 2 "" H 5910 730 50  0001 C CNN
-F 3 "" H 5910 730 50  0001 C CNN
-	1    5910 730 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D0FF9E6
-P 5740 2580
-AR Path="/5CFABACD/5D0FF9E6" Ref="#PWR?"  Part="1" 
-AR Path="/5D0FF9E6" Ref="#PWR013"  Part="1" 
-AR Path="/5CF9C1ED/5D0FF9E6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR013" H 5740 2430 50  0001 C CNN
-F 1 "+3V3" H 5640 2750 50  0000 L CNN
-F 2 "" H 5740 2580 50  0001 C CNN
-F 3 "" H 5740 2580 50  0001 C CNN
-	1    5740 2580
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR016
 U 1 1 5D0FF9EC
 P 5840 3980
@@ -721,19 +556,6 @@ F 1 "GND" H 5845 3807 50  0000 C CNN
 F 2 "" H 5840 3980 50  0001 C CNN
 F 3 "" H 5840 3980 50  0001 C CNN
 	1    5840 3980
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5D0FFA0B
-P 5940 2580
-AR Path="/5CFABACD/5D0FFA0B" Ref="#PWR?"  Part="1" 
-AR Path="/5D0FFA0B" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 5940 2430 50  0001 C CNN
-F 1 "+5V" H 5955 2753 50  0000 C CNN
-F 2 "" H 5940 2580 50  0001 C CNN
-F 3 "" H 5940 2580 50  0001 C CNN
-	1    5940 2580
 	1    0    0    -1  
 $EndComp
 Text GLabel 6240 3580 2    50   Output ~ 0
@@ -773,20 +595,6 @@ Text GLabel 5440 3380 0    50   Input ~ 0
 Text GLabel 5440 3580 0    50   Input ~ 0
 ~HALT_F
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5D1452AA
-P 5750 4380
-AR Path="/5CFABACD/5D1452AA" Ref="#PWR?"  Part="1" 
-AR Path="/5D1452AA" Ref="#PWR017"  Part="1" 
-AR Path="/5CF9C1ED/5D1452AA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR017" H 5750 4230 50  0001 C CNN
-F 1 "+3V3" H 5650 4550 50  0000 L CNN
-F 2 "" H 5750 4380 50  0001 C CNN
-F 3 "" H 5750 4380 50  0001 C CNN
-	1    5750 4380
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR026
 U 1 1 5D1452B0
 P 5850 5780
@@ -800,19 +608,6 @@ F 1 "GND" H 5855 5607 50  0000 C CNN
 F 2 "" H 5850 5780 50  0001 C CNN
 F 3 "" H 5850 5780 50  0001 C CNN
 	1    5850 5780
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5D1452CF
-P 5950 4380
-AR Path="/5CFABACD/5D1452CF" Ref="#PWR?"  Part="1" 
-AR Path="/5D1452CF" Ref="#PWR018"  Part="1" 
-F 0 "#PWR018" H 5950 4230 50  0001 C CNN
-F 1 "+5V" H 5965 4553 50  0000 C CNN
-F 2 "" H 5950 4380 50  0001 C CNN
-F 3 "" H 5950 4380 50  0001 C CNN
-	1    5950 4380
 	1    0    0    -1  
 $EndComp
 Text GLabel 6250 4980 2    50   Input ~ 0
@@ -1025,20 +820,6 @@ Wire Wire Line
 	8040 6110 8040 6190
 Wire Wire Line
 	8040 5810 8040 5750
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D0147F2
-P 8040 5750
-AR Path="/5CFABACD/5D0147F2" Ref="#PWR?"  Part="1" 
-AR Path="/5D0147F2" Ref="#PWR025"  Part="1" 
-AR Path="/5D2A5E4A/5D0147F2" Ref="#PWR?"  Part="1" 
-F 0 "#PWR025" H 8040 5600 50  0001 C CNN
-F 1 "+3V3" H 7940 5910 50  0000 L CNN
-F 2 "" H 8040 5750 50  0001 C CNN
-F 3 "" H 8040 5750 50  0001 C CNN
-	1    8040 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8430 4870 8790 4870
 Wire Wire Line
@@ -1074,20 +855,6 @@ Wire Wire Line
 	6780 5170 7200 5170
 Wire Wire Line
 	8050 4870 8050 4810
-$Comp
-L power:+5V #PWR?
-U 1 1 5CFFCBBE
-P 8050 4810
-AR Path="/5CFABACD/5CFFCBBE" Ref="#PWR?"  Part="1" 
-AR Path="/5CFFCBBE" Ref="#PWR023"  Part="1" 
-AR Path="/5D2A5E4A/5CFFCBBE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR023" H 8050 4660 50  0001 C CNN
-F 1 "+5V" H 8065 4983 50  0000 C CNN
-F 2 "" H 8050 4810 50  0001 C CNN
-F 3 "" H 8050 4810 50  0001 C CNN
-	1    8050 4810
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR024
 U 1 1 5CFFCBB8
@@ -1380,20 +1147,6 @@ Wire Wire Line
 Connection ~ 7860 1390
 Wire Wire Line
 	7860 1390 7960 1390
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D1DAF09
-P 7810 1250
-AR Path="/5CFABACD/5D1DAF09" Ref="#PWR?"  Part="1" 
-AR Path="/5D1DAF09" Ref="#PWR07"  Part="1" 
-AR Path="/5CF9C1ED/5D1DAF09" Ref="#PWR?"  Part="1" 
-F 0 "#PWR07" H 7810 1100 50  0001 C CNN
-F 1 "+3V3" H 7710 1420 50  0000 L CNN
-F 2 "" H 7810 1250 50  0001 C CNN
-F 3 "" H 7810 1250 50  0001 C CNN
-	1    7810 1250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7810 1250 7810 1390
 Connection ~ 7810 1390
@@ -1511,4 +1264,73 @@ F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 5840 3180 50  0001 C CNN
 	1    5840 3280
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D018E14
+P 1910 6600
+AR Path="/5CFABACD/5D018E14" Ref="#PWR?"  Part="1" 
+AR Path="/5D018E14" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 1910 6450 50  0001 C CNN
+F 1 "+5V" H 1925 6773 50  0000 C CNN
+F 2 "" H 1910 6600 50  0001 C CNN
+F 3 "" H 1910 6600 50  0001 C CNN
+	1    1910 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1770 6600 1910 6600
+Connection ~ 1910 6600
+Wire Wire Line
+	1910 6600 1970 6600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D01DBE0
+P 1910 6900
+AR Path="/5CFABACD/5D01DBE0" Ref="#PWR?"  Part="1" 
+AR Path="/5D01DBE0" Ref="#PWR0104"  Part="1" 
+AR Path="/5CF9C1ED/5D01DBE0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0104" H 1910 6750 50  0001 C CNN
+F 1 "+3V3" H 1810 7070 50  0000 L CNN
+F 2 "" H 1910 6900 50  0001 C CNN
+F 3 "" H 1910 6900 50  0001 C CNN
+	1    1910 6900
+	-1   0    0    1   
+$EndComp
+Connection ~ 1910 6900
+Wire Wire Line
+	1910 6900 1970 6900
+Text GLabel 3390 6240 1    50   Output ~ 0
+3V3
+Text GLabel 3590 6240 1    50   Output ~ 0
+5V
+Text GLabel 3360 4390 1    50   Output ~ 0
+3V3
+Text GLabel 3560 4390 1    50   Output ~ 0
+5V
+Text GLabel 5750 4380 1    50   Output ~ 0
+3V3
+Text GLabel 5950 4380 1    50   Output ~ 0
+5V
+Text GLabel 5740 2580 1    50   Output ~ 0
+3V3
+Text GLabel 5940 2580 1    50   Output ~ 0
+5V
+Text GLabel 3360 2550 1    50   Output ~ 0
+3V3
+Text GLabel 3560 2550 1    50   Output ~ 0
+5V
+Text GLabel 3330 700  1    50   Output ~ 0
+3V3
+Text GLabel 3530 700  1    50   Output ~ 0
+5V
+Text GLabel 5710 730  1    50   Output ~ 0
+3V3
+Text GLabel 5910 730  1    50   Output ~ 0
+5V
+Text GLabel 7810 1250 1    50   Output ~ 0
+3V3
+Text GLabel 8040 5750 1    50   Output ~ 0
+3V3
+Text GLabel 8050 4810 1    50   Output ~ 0
+5V
 $EndSCHEMATC

@@ -52,21 +52,6 @@ F 3 "" H 5530 2500 50  0001 C CNN
 	1    5530 2500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D0055A7
-P 5530 1730
-AR Path="/5D0055A7" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D0055A7" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5D0055A7" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5CFFC458/5D0055A7" Ref="#PWR063"  Part="1" 
-F 0 "#PWR063" H 5530 1580 50  0001 C CNN
-F 1 "+3V3" H 5410 1890 50  0000 L CNN
-F 2 "" H 5530 1730 50  0001 C CNN
-F 3 "" H 5530 1730 50  0001 C CNN
-	1    5530 1730
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5530 1730 5530 1770
 Connection ~ 5530 1770
@@ -203,21 +188,6 @@ Connection ~ 2740 1640
 Wire Wire Line
 	2740 1640 2840 1640
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5D00B94C
-P 2740 1540
-AR Path="/5D00B94C" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D00B94C" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5D00B94C" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5CFFC458/5D00B94C" Ref="#PWR062"  Part="1" 
-F 0 "#PWR062" H 2740 1390 50  0001 C CNN
-F 1 "+3V3" H 2620 1700 50  0000 L CNN
-F 2 "" H 2740 1540 50  0001 C CNN
-F 3 "" H 2740 1540 50  0001 C CNN
-	1    2740 1540
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C31
 U 1 1 5D00C0F7
 P 1820 1110
@@ -268,21 +238,6 @@ Wire Wire Line
 	2010 1210 2200 1210
 Wire Wire Line
 	2010 1010 2010 910 
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D00F92A
-P 2010 910
-AR Path="/5D00F92A" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D00F92A" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5D00F92A" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5CFFC458/5D00F92A" Ref="#PWR060"  Part="1" 
-F 0 "#PWR060" H 2010 760 50  0001 C CNN
-F 1 "+3V3" H 1890 1070 50  0000 L CNN
-F 2 "" H 2010 910 50  0001 C CNN
-F 3 "" H 2010 910 50  0001 C CNN
-	1    2010 910 
-	1    0    0    -1  
-$EndComp
 Connection ~ 2010 1010
 Wire Wire Line
 	2010 1010 2200 1010
@@ -339,21 +294,6 @@ Wire Wire Line
 Connection ~ 1290 1800
 Wire Wire Line
 	1290 1800 1390 1800
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D01ACA8
-P 1290 1740
-AR Path="/5D01ACA8" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D01ACA8" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5D01ACA8" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5CFFC458/5D01ACA8" Ref="#PWR064"  Part="1" 
-F 0 "#PWR064" H 1290 1590 50  0001 C CNN
-F 1 "+3V3" H 1170 1900 50  0000 L CNN
-F 2 "" H 1290 1740 50  0001 C CNN
-F 3 "" H 1290 1740 50  0001 C CNN
-	1    1290 1740
-	1    0    0    -1  
-$EndComp
 Text GLabel 4020 3670 0    50   Input ~ 0
 CLK_7_3728_Mhz
 Text GLabel 4020 3770 0    50   Input ~ 0
@@ -362,4 +302,12 @@ Text GLabel 6240 2120 2    50   Output ~ 0
 CLK_100Mhz
 Text Notes 1650 2320 0    50   ~ 0
 I2C
+Text GLabel 5530 1730 1    50   Output ~ 0
+3V3
+Text GLabel 2740 1540 1    50   Output ~ 0
+3V3
+Text GLabel 2010 910  1    50   Output ~ 0
+3V3
+Text GLabel 1290 1740 1    50   Output ~ 0
+3V3
 $EndSCHEMATC

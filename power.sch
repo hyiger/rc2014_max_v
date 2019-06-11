@@ -75,8 +75,6 @@ F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0
 	1    2950 3670
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2950 3310 3090 3310
 $Comp
 L rc2014_max_v-rescue:MIC5356-SGYMME-Regulator_Linear U?
 U 1 1 5D2BC445
@@ -132,8 +130,6 @@ F 3 "" H 2140 3910 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2620 3510 2620 3440
-Wire Wire Line
-	2620 3440 3090 3440
 Wire Wire Line
 	5530 1680 5530 1740
 Connection ~ 5530 1740
@@ -497,9 +493,9 @@ Connection ~ 2950 3310
 Wire Wire Line
 	2540 3440 2620 3440
 Connection ~ 2620 3440
-Text GLabel 3090 3310 2    50   Output ~ 0
+Text GLabel 3260 3310 2    50   Output ~ 0
 3V3
-Text GLabel 3090 3440 2    50   Output ~ 0
+Text GLabel 3260 3440 2    50   Output ~ 0
 1V8
 Text GLabel 2090 4920 1    50   Output ~ 0
 3V3
@@ -576,12 +572,52 @@ Wire Wire Line
 	6690 3470 6580 3470
 Wire Wire Line
 	5380 1740 5480 1740
-Wire Wire Line
-	5530 1740 5590 1740
 Connection ~ 5480 1740
-Wire Wire Line
-	5480 1740 5530 1740
 Connection ~ 5590 1740
 Wire Wire Line
 	5590 1740 5700 1740
+Wire Wire Line
+	2950 3310 3260 3310
+Wire Wire Line
+	2620 3440 3260 3440
+Wire Wire Line
+	2140 1440 2140 1540
+Text GLabel 2140 1660 3    50   Output ~ 0
+5V
+$Comp
+L Jumper:Jumper_3_Bridged12 JP?
+U 1 1 5D02332B
+P 2140 1290
+AR Path="/5D02332B" Ref="JP?"  Part="1" 
+AR Path="/5CF9C1ED/5D02332B" Ref="JP?"  Part="1" 
+AR Path="/5D2A5E4A/5D02332B" Ref="JP2"  Part="1" 
+F 0 "JP2" H 2140 1494 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 2140 1403 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2140 1290 50  0001 C CNN
+F 3 "~" H 2140 1290 50  0001 C CNN
+	1    2140 1290
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5D023331
+P 2140 1540
+AR Path="/5CF9C1ED/5D023331" Ref="#FLG?"  Part="1" 
+AR Path="/5D2A5E4A/5D023331" Ref="#FLG0101"  Part="1" 
+F 0 "#FLG0101" H 2140 1615 50  0001 C CNN
+F 1 "PWR_FLAG" H 2140 1713 50  0000 C CNN
+F 2 "" H 2140 1540 50  0001 C CNN
+F 3 "~" H 2140 1540 50  0001 C CNN
+	1    2140 1540
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2140 1540
+Wire Wire Line
+	2140 1540 2140 1660
+Text GLabel 1800 1290 0    50   Input ~ 0
+5V_U
+Wire Wire Line
+	1800 1290 1890 1290
+Text GLabel 2390 1290 2    50   Input ~ 0
+5V_R
 $EndSCHEMATC

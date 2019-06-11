@@ -498,8 +498,6 @@
     (add_net "Net-(RN4-Pad2)")
     (add_net "Net-(U14-Pad2)")
     (add_net "Net-(U14-Pad3)")
-    (add_net "Net-(U18-Pad3)")
-    (add_net "Net-(U18-Pad6)")
     (add_net OE_A)
     (add_net OE_C)
     (add_net OE_D)
@@ -2681,6 +2679,11 @@
     (pad 1 smd rect (at -2.63 2.6 270) (size 1.98 3) (layers F.Cu F.Paste F.Mask)
       (net 20 +3V3))
     (model ${KISYS3DMOD}/Oscillator.3dshapes/Oscillator_SMD_SeikoEpson_SG8002CA-4Pin_7.0x5.0mm_HandSoldering.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KISYS3DMOD}/Oscillator.3dshapes/Oscillator_SMD_Abracon_ASV-4Pin_7.0x5.1mm.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

@@ -89,138 +89,6 @@ F 3 "" H 6500 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6500 6230
-$Comp
-L Device:C C?
-U 1 1 5CFA1095
-P 2330 2480
-AR Path="/5CFA1095" Ref="C?"  Part="1" 
-AR Path="/5D0F9837/5CFA1095" Ref="C21"  Part="1" 
-F 0 "C21" H 2190 2390 50  0000 L CNN
-F 1 "2.2uF" H 2360 2390 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2368 2330 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 2330 2480 50  0001 C CNN
-F 4 "KEMET" H -2970 -4220 50  0001 C CNN "MFR"
-F 5 "C0805C104K4RACTU" H -2970 -4220 50  0001 C CNN "MPN"
-F 6 "Mouser" H -2970 -4220 50  0001 C CNN "SPR"
-F 7 "80-C0805C104K4R" H -2970 -4220 50  0001 C CNN "SPN"
-F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -2970 -4220 50  0001 C CNN "SPURL"
-	1    2330 2480
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5CFA10A0
-P 3400 2470
-AR Path="/5CFA10A0" Ref="C?"  Part="1" 
-AR Path="/5D0F9837/5CFA10A0" Ref="C20"  Part="1" 
-F 0 "C20" H 3515 2516 50  0000 L CNN
-F 1 "100nF" H 3515 2425 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3438 2320 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 3400 2470 50  0001 C CNN
-F 4 "KEMET" H -1900 -4230 50  0001 C CNN "MFR"
-F 5 "C0805C104K4RACTU" H -1900 -4230 50  0001 C CNN "MPN"
-F 6 "Mouser" H -1900 -4230 50  0001 C CNN "SPR"
-F 7 "80-C0805C104K4R" H -1900 -4230 50  0001 C CNN "SPN"
-F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -1900 -4230 50  0001 C CNN "SPURL"
-	1    3400 2470
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2920 2560 2920 2720
-Connection ~ 2920 2720
-Wire Wire Line
-	2920 2720 2330 2720
-$Comp
-L Device:C C?
-U 1 1 5CFA10AE
-P 3730 2480
-AR Path="/5CFA10AE" Ref="C?"  Part="1" 
-AR Path="/5D0F9837/5CFA10AE" Ref="C22"  Part="1" 
-F 0 "C22" H 3845 2526 50  0000 L CNN
-F 1 "100nF" H 3845 2435 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3768 2330 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 3730 2480 50  0001 C CNN
-F 4 "KEMET" H -1570 -4220 50  0001 C CNN "MFR"
-F 5 "C0805C104K4RACTU" H -1570 -4220 50  0001 C CNN "MPN"
-F 6 "Mouser" H -1570 -4220 50  0001 C CNN "SPR"
-F 7 "80-C0805C104K4R" H -1570 -4220 50  0001 C CNN "SPN"
-F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0AnBnWHyRQFCCI5cSbRT%2F1Gdrl2EbPVM%3D" H -1570 -4220 50  0001 C CNN "SPURL"
-	1    3730 2480
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3320 2120 3730 2120
-Connection ~ 3730 2120
-Wire Wire Line
-	3730 2120 3870 2120
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5CFA10B7
-P 3870 2120
-AR Path="/5CFA10B7" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CFA10B7" Ref="#PWR038"  Part="1" 
-F 0 "#PWR038" H 3870 1970 50  0001 C CNN
-F 1 "+3V3" V 3885 2248 50  0000 L CNN
-F 2 "" H 3870 2120 50  0001 C CNN
-F 3 "" H 3870 2120 50  0001 C CNN
-	1    3870 2120
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5CFA10BD
-P 3870 2250
-AR Path="/5CFA10BD" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CFA10BD" Ref="#PWR039"  Part="1" 
-F 0 "#PWR039" H 3870 2100 50  0001 C CNN
-F 1 "+1V8" V 3885 2378 50  0000 L CNN
-F 2 "" H 3870 2250 50  0001 C CNN
-F 3 "" H 3870 2250 50  0001 C CNN
-	1    3870 2250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2920 2720 3400 2720
-Wire Wire Line
-	3730 2630 3730 2720
-Wire Wire Line
-	3400 2620 3400 2720
-Connection ~ 3400 2720
-Wire Wire Line
-	3400 2720 3730 2720
-Wire Wire Line
-	3730 2120 3730 2330
-Wire Wire Line
-	2330 2630 2330 2720
-Wire Wire Line
-	2330 2330 2330 2120
-Wire Wire Line
-	2330 2120 2460 2120
-$Comp
-L power:GND #PWR?
-U 1 1 5CFA10DA
-P 2920 2720
-AR Path="/5CFA10DA" Ref="#PWR?"  Part="1" 
-AR Path="/5CB63856/5CFA10DA" Ref="#PWR?"  Part="1" 
-AR Path="/5CB5AB00/5CB63856/5CFA10DA" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5CFA10DA" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CFA10DA" Ref="#PWR042"  Part="1" 
-F 0 "#PWR042" H 2920 2470 50  0001 C CNN
-F 1 "GND" H 2925 2547 50  0000 C CNN
-F 2 "" H 2920 2720 50  0001 C CNN
-F 3 "" H 2920 2720 50  0001 C CNN
-	1    2920 2720
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3320 2250 3400 2250
-Wire Wire Line
-	3400 2320 3400 2250
-Connection ~ 3400 2250
-Wire Wire Line
-	3400 2250 3870 2250
-Wire Wire Line
-	1600 2930 1960 2930
 Wire Wire Line
 	6000 1830 6100 1830
 Wire Wire Line
@@ -231,19 +99,6 @@ Wire Wire Line
 	6100 1830 6200 1830
 Wire Wire Line
 	6100 1830 6100 1750
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5CFC18A3
-P 6100 1750
-AR Path="/5CFC18A3" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CFC18A3" Ref="#PWR035"  Part="1" 
-F 0 "#PWR035" H 6100 1600 50  0001 C CNN
-F 1 "+1V8" V 6115 1878 50  0000 L CNN
-F 2 "" H 6100 1750 50  0001 C CNN
-F 3 "" H 6100 1750 50  0001 C CNN
-	1    6100 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6400 1830 6500 1830
 Connection ~ 6500 1830
@@ -254,43 +109,12 @@ Wire Wire Line
 	6600 1830 6700 1830
 Wire Wire Line
 	6550 1830 6550 1750
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5CFC77CC
-P 6550 1750
-AR Path="/5CFC77CC" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CFC77CC" Ref="#PWR036"  Part="1" 
-F 0 "#PWR036" H 6550 1600 50  0001 C CNN
-F 1 "+3V3" V 6565 1878 50  0000 L CNN
-F 2 "" H 6550 1750 50  0001 C CNN
-F 3 "" H 6550 1750 50  0001 C CNN
-	1    6550 1750
-	1    0    0    -1  
-$EndComp
 NoConn ~ 5000 2130
 NoConn ~ 5000 2330
-Wire Wire Line
-	1960 2930 1960 2120
-Wire Wire Line
-	1960 2120 2330 2120
-Connection ~ 2330 2120
 Wire Wire Line
 	1600 3130 1700 3130
 Wire Wire Line
 	5000 4930 4140 4930
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5CFDB406
-P 2940 4630
-AR Path="/5CFDB406" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CFDB406" Ref="#PWR050"  Part="1" 
-F 0 "#PWR050" H 2940 4480 50  0001 C CNN
-F 1 "+3V3" V 2955 4758 50  0000 L CNN
-F 2 "" H 2940 4630 50  0001 C CNN
-F 3 "" H 2940 4630 50  0001 C CNN
-	1    2940 4630
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2540 4830 2540 4260
 Wire Wire Line
@@ -404,7 +228,7 @@ Wire Wire Line
 	5060 1320 5060 1200
 Connection ~ 5060 1200
 Wire Wire Line
-	5060 1200 5700 1200
+	5060 1200 5570 1200
 $Comp
 L Device:C C?
 U 1 1 5CF6AF95
@@ -467,32 +291,6 @@ Wire Wire Line
 Connection ~ 4550 1710
 Wire Wire Line
 	4550 1710 4770 1710
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5CF92A33
-P 3520 980
-AR Path="/5CF92A33" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CF92A33" Ref="#PWR033"  Part="1" 
-F 0 "#PWR033" H 3520 830 50  0001 C CNN
-F 1 "+3V3" V 3535 1108 50  0000 L CNN
-F 2 "" H 3520 980 50  0001 C CNN
-F 3 "" H 3520 980 50  0001 C CNN
-	1    3520 980 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5CF949E1
-P 3520 1200
-AR Path="/5CF949E1" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CF949E1" Ref="#PWR034"  Part="1" 
-F 0 "#PWR034" H 3520 1050 50  0001 C CNN
-F 1 "+3V3" V 3535 1328 50  0000 L CNN
-F 2 "" H 3520 1200 50  0001 C CNN
-F 3 "" H 3520 1200 50  0001 C CNN
-	1    3520 1200
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1700 3650 1700 3130
 Connection ~ 1700 3130
@@ -619,19 +417,6 @@ Wire Wire Line
 	4860 3630 5000 3630
 Wire Wire Line
 	4860 3430 5000 3430
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5CFD8402
-P 4470 3630
-AR Path="/5CFD8402" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CFD8402" Ref="#PWR044"  Part="1" 
-F 0 "#PWR044" H 4470 3480 50  0001 C CNN
-F 1 "+3V3" V 4485 3758 50  0000 L CNN
-F 2 "" H 4470 3630 50  0001 C CNN
-F 3 "" H 4470 3630 50  0001 C CNN
-	1    4470 3630
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4470 3630 4560 3630
 Wire Wire Line
@@ -689,19 +474,6 @@ Wire Wire Line
 Connection ~ 3480 4830
 Wire Wire Line
 	3480 4830 5000 4830
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D01CFBE
-P 3530 3740
-AR Path="/5D01CFBE" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D01CFBE" Ref="#PWR046"  Part="1" 
-F 0 "#PWR046" H 3530 3590 50  0001 C CNN
-F 1 "+3V3" V 3545 3868 50  0000 L CNN
-F 2 "" H 3530 3740 50  0001 C CNN
-F 3 "" H 3530 3740 50  0001 C CNN
-	1    3530 3740
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C?
 U 1 1 5D0471A9
@@ -883,20 +655,6 @@ F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C104K4RACTU?qs=sGAEpiMZZMs0
 	1    2030 7060
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5D04723C
-P 1640 6850
-AR Path="/5D04723C" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5D04723C" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D04723C" Ref="#PWR055"  Part="1" 
-F 0 "#PWR055" H 1640 6700 50  0001 C CNN
-F 1 "+1V8" H 1540 7020 50  0000 L CNN
-F 2 "" H 1640 6850 50  0001 C CNN
-F 3 "" H 1640 6850 50  0001 C CNN
-	1    1640 6850
-	1    0    0    -1  
-$EndComp
 Connection ~ 1640 6910
 Connection ~ 1640 7210
 Wire Wire Line
@@ -963,19 +721,6 @@ Wire Wire Line
 	9890 3580 10100 3580
 Wire Wire Line
 	9890 3480 10000 3480
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D1CAEB7
-P 10200 2480
-AR Path="/5D1CAEB7" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D1CAEB7" Ref="#PWR040"  Part="1" 
-F 0 "#PWR040" H 10200 2330 50  0001 C CNN
-F 1 "+3V3" V 10215 2608 50  0000 L CNN
-F 2 "" H 10200 2480 50  0001 C CNN
-F 3 "" H 10200 2480 50  0001 C CNN
-	1    10200 2480
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10000 3000 10000 3480
 Connection ~ 10000 3480
@@ -1114,19 +859,6 @@ Wire Wire Line
 	9890 2890 9290 2890
 Wire Wire Line
 	9290 2890 9290 2980
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D1D069F
-P 9290 2770
-AR Path="/5D1D069F" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D1D069F" Ref="#PWR043"  Part="1" 
-F 0 "#PWR043" H 9290 2620 50  0001 C CNN
-F 1 "+3V3" V 9305 2898 50  0000 L CNN
-F 2 "" H 9290 2770 50  0001 C CNN
-F 3 "" H 9290 2770 50  0001 C CNN
-	1    9290 2770
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9290 2770 9290 2890
 $Comp
@@ -1159,20 +891,6 @@ Wire Wire Line
 	1610 5850 1390 5850
 Wire Wire Line
 	1390 5850 1390 5790
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D2E9020
-P 1390 5790
-AR Path="/5CFABACD/5D2E9020" Ref="#PWR?"  Part="1" 
-AR Path="/5D2E9020" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D2E9020" Ref="#PWR052"  Part="1" 
-F 0 "#PWR052" H 1390 5640 50  0001 C CNN
-F 1 "+3V3" H 1290 5950 50  0000 L CNN
-F 2 "" H 1390 5790 50  0001 C CNN
-F 3 "" H 1390 5790 50  0001 C CNN
-	1    1390 5790
-	1    0    0    -1  
-$EndComp
 Connection ~ 1400 6150
 Wire Wire Line
 	1400 6150 1610 6150
@@ -1239,48 +957,54 @@ F 3 "~" H 7970 4480 50  0001 C CNN
 	1    7970 4480
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5CFB52CD
-P 7970 4240
-AR Path="/5CFB52CD" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CFB52CD" Ref="#PWR049"  Part="1" 
-F 0 "#PWR049" H 7970 4090 50  0001 C CNN
-F 1 "+3V3" V 7985 4368 50  0000 L CNN
-F 2 "" H 7970 4240 50  0001 C CNN
-F 3 "" H 7970 4240 50  0001 C CNN
-	1    7970 4240
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7970 4240 7970 4330
 Wire Wire Line
 	7970 4630 7970 4900
 Wire Wire Line
+	1600 2930 2100 2930
+Text GLabel 2100 2930 2    50   Output ~ 0
+5V_U
+Text GLabel 6550 1750 1    50   Output ~ 0
+3V3
+Text GLabel 6100 1750 1    50   Output ~ 0
+1V8
+Text GLabel 3520 980  0    50   Output ~ 0
+3V3
+Text GLabel 3520 1200 0    50   Output ~ 0
+3V3
+Text GLabel 3530 3740 1    50   Output ~ 0
+3V3
+Text GLabel 10200 2480 1    50   Output ~ 0
+3V3
+Text GLabel 9290 2770 1    50   Output ~ 0
+3V3
+Text GLabel 7970 4240 1    50   Output ~ 0
+3V3
+Text GLabel 1390 5790 1    50   Output ~ 0
+3V3
+Text GLabel 1640 6850 1    50   Output ~ 0
+1V8
+Text GLabel 2940 4630 1    50   Output ~ 0
+3V3
+Text GLabel 4470 3630 0    50   Output ~ 0
+3V3
+Wire Wire Line
 	5700 1200 5700 1830
 $Comp
-L rc2014_max_v-rescue:MIC5356-SGYMME-Regulator_Linear U?
-U 1 1 5CFA10C3
-P 2920 2260
-AR Path="/5CFA10C3" Ref="U?"  Part="1" 
-AR Path="/5D0F9837/5CFA10C3" Ref="U8"  Part="1" 
-F 0 "U8" H 2920 2627 50  0000 C CNN
-F 1 "MIC5356-SGYMME" H 2920 2536 50  0000 C CNN
-F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP2.5x3mm_Mask1.73x2.36mm_ThermalVias" H 4320 2010 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic5355_6.pdf" H 1720 2550 50  0001 C CNN
-	1    2920 2260
-	1    0    0    -1  
+L power:PWR_FLAG #FLG?
+U 1 1 5D16F3A6
+P 5570 1200
+AR Path="/5D16F3A6" Ref="#FLG?"  Part="1" 
+AR Path="/5D0F9837/5D16F3A6" Ref="#FLG0102"  Part="1" 
+F 0 "#FLG0102" H 5570 1275 50  0001 C CNN
+F 1 "PWR_FLAG" V 5570 1327 50  0000 L CNN
+F 2 "" H 5570 1200 50  0001 C CNN
+F 3 "~" H 5570 1200 50  0001 C CNN
+	1    5570 1200
+	-1   0    0    -1  
 $EndComp
+Connection ~ 5570 1200
 Wire Wire Line
-	2520 2400 2460 2400
-Wire Wire Line
-	2460 2400 2460 2290
-Wire Wire Line
-	2460 2290 2520 2290
-Wire Wire Line
-	2460 2290 2460 2120
-Connection ~ 2460 2290
-Connection ~ 2460 2120
-Wire Wire Line
-	2460 2120 2520 2120
+	5570 1200 5700 1200
 $EndSCHEMATC
