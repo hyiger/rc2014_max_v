@@ -993,7 +993,7 @@ AR Path="/5D04249A" Ref="JP?"  Part="1"
 AR Path="/5CF9C1ED/5D04249A" Ref="JP1"  Part="1" 
 F 0 "JP1" H 6090 1904 50  0000 C CNN
 F 1 "Jumper_3_Bridged12" H 6090 1813 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 6090 1700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6090 1700 50  0001 C CNN
 F 3 "~" H 6090 1700 50  0001 C CNN
 	1    6090 1700
 	1    0    0    -1  

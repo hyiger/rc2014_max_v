@@ -441,10 +441,6 @@ Text GLabel 4390 3050 0    50   Output ~ 0
 OE_C
 Text GLabel 7040 4620 0    50   Output ~ 0
 OE_G
-Text GLabel 7040 3330 0    50   BiDi ~ 0
-SCL
-Text GLabel 7040 3430 0    50   BiDi ~ 0
-SDA
 Wire Wire Line
 	2430 950  2430 860 
 Wire Wire Line
@@ -493,4 +489,8 @@ NoConn ~ 7040 4520
 NoConn ~ 7040 3630
 NoConn ~ 7040 3530
 NoConn ~ 4380 950 
+Text GLabel 7040 3430 0    50   BiDi ~ 0
+SDA
+Text GLabel 7040 3330 0    50   BiDi ~ 0
+SCL
 $EndSCHEMATC
