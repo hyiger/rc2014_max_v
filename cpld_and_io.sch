@@ -24,6 +24,9 @@ F 0 "U13" H 2000 3500 50  0000 C CNN
 F 1 "IS61LV5128AL-10TLI" H 2510 2270 50  0000 C CNN
 F 2 "Package_SO:TSOP-II-44_10.16x18.41mm_P0.8mm" H 1930 3400 50  0001 C CNN
 F 3 "http://www.issi.com/WW/pdf/61-64C5128AL.pdf" H 2430 2250 50  0001 C CNN
+F 4 "ISSI" H 2430 2250 50  0001 C CNN "MFR"
+F 5 "IS61LV5128AL-10TLI" H 2430 2250 50  0001 C CNN "MPN"
+F 6 "Mouser" H 2430 2250 50  0001 C CNN "SPR"
 	1    2430 2250
 	1    0    0    -1  
 $EndComp
@@ -142,8 +145,10 @@ F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 9690 3620 50  0001 L CNN
 F 3 "https://mouser.componentsearchengine.com/Datasheets/1/5M1270ZT144C5N.pdf" H 9690 3520 50  0001 L CNN
 F 4 "CPLD - Complex Programmable Logic Devices CPLD - MAX V 980 Macro 114 IOs" H 9690 3420 50  0001 L CNN "Description"
 F 5 "1.55" H 9690 3320 50  0001 L CNN "Height"
-F 6 "Intel" H 9690 3020 50  0001 L CNN "Manufacturer_Name"
-F 7 "5M1270ZT144C5N" H 9690 2920 50  0001 L CNN "Manufacturer_Part_Number"
+F 6 "5M1270ZT144C5N" H 9690 2920 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "Intel" H 7850 720 50  0001 C CNN "MFR"
+F 8 "5M1270ZT144C5N" H 7850 720 50  0001 C CNN "MPN"
+F 9 "Mouser" H 7850 720 50  0001 C CNN "SPR"
 	1    7850 720 
 	1    0    0    -1  
 $EndComp
@@ -159,8 +164,10 @@ F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 7080 6790 50  0001 L CNN
 F 3 "https://mouser.componentsearchengine.com/Datasheets/1/5M1270ZT144C5N.pdf" H 7080 6690 50  0001 L CNN
 F 4 "CPLD - Complex Programmable Logic Devices CPLD - MAX V 980 Macro 114 IOs" H 7080 6590 50  0001 L CNN "Description"
 F 5 "1.55" H 7080 6490 50  0001 L CNN "Height"
-F 6 "Intel" H 7080 6190 50  0001 L CNN "Manufacturer_Name"
-F 7 "5M1270ZT144C5N" H 7080 6090 50  0001 L CNN "Manufacturer_Part_Number"
+F 6 "5M1270ZT144C5N" H 7080 6090 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "Intel" H 5240 3890 50  0001 C CNN "MFR"
+F 8 "5M1270ZT144C5N" H 5240 3890 50  0001 C CNN "MPN"
+F 9 "Mouser" H 5240 3890 50  0001 C CNN "SPR"
 	2    5240 3890
 	1    0    0    -1  
 $EndComp
@@ -176,8 +183,10 @@ F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 7050 3570 50  0001 L CNN
 F 3 "https://mouser.componentsearchengine.com/Datasheets/1/5M1270ZT144C5N.pdf" H 7050 3470 50  0001 L CNN
 F 4 "CPLD - Complex Programmable Logic Devices CPLD - MAX V 980 Macro 114 IOs" H 7050 3370 50  0001 L CNN "Description"
 F 5 "1.55" H 7050 3270 50  0001 L CNN "Height"
-F 6 "Intel" H 7050 2970 50  0001 L CNN "Manufacturer_Name"
-F 7 "5M1270ZT144C5N" H 7050 2870 50  0001 L CNN "Manufacturer_Part_Number"
+F 6 "5M1270ZT144C5N" H 7050 2870 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "Intel" H 5210 670 50  0001 C CNN "MFR"
+F 8 "5M1270ZT144C5N" H 5210 670 50  0001 C CNN "MPN"
+F 9 "Mouser" H 5210 670 50  0001 C CNN "SPR"
 	3    5210 670 
 	1    0    0    -1  
 $EndComp
@@ -193,8 +202,10 @@ F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 9720 6130 50  0001 L CNN
 F 3 "https://mouser.componentsearchengine.com/Datasheets/1/5M1270ZT144C5N.pdf" H 9720 6030 50  0001 L CNN
 F 4 "CPLD - Complex Programmable Logic Devices CPLD - MAX V 980 Macro 114 IOs" H 9720 5930 50  0001 L CNN "Description"
 F 5 "1.55" H 9720 5830 50  0001 L CNN "Height"
-F 6 "Intel" H 9720 5530 50  0001 L CNN "Manufacturer_Name"
-F 7 "5M1270ZT144C5N" H 9720 5430 50  0001 L CNN "Manufacturer_Part_Number"
+F 6 "5M1270ZT144C5N" H 9720 5430 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "Intel" H 7880 3230 50  0001 C CNN "MFR"
+F 8 "5M1270ZT144C5N" H 7880 3230 50  0001 C CNN "MPN"
+F 9 "Mouser" H 7880 3230 50  0001 C CNN "SPR"
 	4    7880 3230
 	1    0    0    -1  
 $EndComp
@@ -239,6 +250,9 @@ F 0 "RN5" H 980 2880 50  0000 C CNN
 F 1 "10K" H 984 2780 50  0000 C CNN
 F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 1585 2780 50  0001 C CNN
 F 3 "~" H 1310 2780 50  0001 C CNN
+F 4 "Panasonic" H 1310 2780 50  0001 C CNN "MFR"
+F 5 "EXB-38V103JV" H 1310 2780 50  0001 C CNN "MPN"
+F 6 "Mouser" H 1310 2780 50  0001 C CNN "SPR"
 	1    1310 2780
 	1    0    0    -1  
 $EndComp
