@@ -963,7 +963,7 @@ Text GLabel 870  5540 2    50   Output ~ 0
 TXA
 Text GLabel 870  5640 2    50   Input ~ 0
 RXA
-Text GLabel 5440 3680 0    50   Output ~ 0
+Text GLabel 5440 3580 0    50   Output ~ 0
 ~MREQ_F
 Text GLabel 5440 3480 0    50   Output ~ 0
 ~WR_F
@@ -1121,7 +1121,7 @@ Text GLabel 3890 7140 2    50   3State ~ 0
 D13
 Text GLabel 3890 7340 2    50   3State ~ 0
 D12
-Text GLabel 6240 3580 2    50   Output ~ 0
+Text GLabel 6240 3680 2    50   Output ~ 0
 ~HALT
 Text GLabel 6240 3380 2    50   Output ~ 0
 ~BUSRQ
@@ -1131,13 +1131,13 @@ Text GLabel 6240 2980 2    50   Output ~ 0
 ~NMI
 Text GLabel 6210 1230 2    50   Output ~ 0
 ~INT
-Text GLabel 6210 1630 2    50   Output ~ 0
+Text GLabel 6210 1530 2    50   Output ~ 0
 ~RESET
 Text GLabel 6210 1130 2    50   Input ~ 0
 ~BUSACK
-Text GLabel 6210 1530 2    50   Input ~ 0
+Text GLabel 6210 1630 2    50   Input ~ 0
 ~PAGE
-Text GLabel 6240 3680 2    50   Input ~ 0
+Text GLabel 6240 3580 2    50   Input ~ 0
 ~MREQ
 Text GLabel 6240 3480 2    50   Input ~ 0
 ~WR
@@ -1145,9 +1145,9 @@ Text GLabel 6240 3280 2    50   Input ~ 0
 ~RD
 Text GLabel 6240 3080 2    50   Input ~ 0
 ~IORQ
-Text GLabel 6210 1830 2    50   Input ~ 0
+Text GLabel 6210 1730 2    50   Input ~ 0
 ~M1
-Text GLabel 6210 1430 2    50   Input ~ 0
+Text GLabel 6210 1330 2    50   Input ~ 0
 CLK
 Text GLabel 5440 2980 0    50   Input ~ 0
 ~NMI_F
@@ -1155,7 +1155,7 @@ Text GLabel 5440 3180 0    50   Input ~ 0
 ~WAIT_F
 Text GLabel 5440 3380 0    50   Input ~ 0
 ~BUSRQ_F
-Text GLabel 5440 3580 0    50   Input ~ 0
+Text GLabel 5440 3680 0    50   Input ~ 0
 ~HALT_F
 Text GLabel 6250 4980 2    50   Input ~ 0
 RXB
@@ -1187,9 +1187,9 @@ Text GLabel 5440 2880 0    50   Input ~ 0
 OE_C
 Text GLabel 5290 800  1    50   Input ~ 0
 OE_C
-Text GLabel 6210 1730 2    50   Input ~ 0
+Text GLabel 6210 1830 2    50   Input ~ 0
 ~RFSH
-Text GLabel 6210 1330 2    50   Input ~ 0
+Text GLabel 6210 1430 2    50   Input ~ 0
 CLK2
 Text GLabel 7960 1790 3    50   Output ~ 0
 ~BUSRQ
@@ -1199,19 +1199,19 @@ Text GLabel 7860 1790 3    50   Output ~ 0
 ~WAIT
 Text GLabel 7760 1790 3    50   Output ~ 0
 ~NMI
-Text GLabel 5410 1330 0    50   Output ~ 0
+Text GLabel 5410 1430 0    50   Output ~ 0
 CLK2_F
-Text GLabel 5410 1730 0    50   Output ~ 0
+Text GLabel 5410 1830 0    50   Output ~ 0
 ~RFSH~_F
 Text GLabel 5410 1230 0    50   Input ~ 0
 ~INT_F
-Text GLabel 5410 1630 0    50   Input ~ 0
+Text GLabel 5410 1530 0    50   Input ~ 0
 ~RESET_F
-Text GLabel 5410 1430 0    50   Output ~ 0
+Text GLabel 5410 1330 0    50   Output ~ 0
 CLK_F
-Text GLabel 5410 1830 0    50   Output ~ 0
+Text GLabel 5410 1730 0    50   Output ~ 0
 ~M1_F
-Text GLabel 5410 1530 0    50   Output ~ 0
+Text GLabel 5410 1630 0    50   Output ~ 0
 ~PAGE_F
 Text GLabel 5410 1130 0    50   Output ~ 0
 ~BUSACK_F

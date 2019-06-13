@@ -371,6 +371,12 @@ F 0 "U10" H 2145 4675 50  0000 C CNN
 F 1 "ATtiny1614-SS" H 2150 4580 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2150 4660 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf" H 2150 4660 50  0001 C CNN
+F 4 "8-bit Microcontrollers - MCU 20MHZ SOIC 85C GRN" H 2150 4660 50  0001 C CNN "Description"
+F 5 "Microchip Technology" H 2150 4660 50  0001 C CNN "MFR"
+F 6 "ATTINY1614-SSNR" H 2150 4660 50  0001 C CNN "MPN"
+F 7 "556-ATTINY1614SSNR" H 2150 4660 50  0001 C CNN "SPN"
+F 8 "Mouser" H 2150 4660 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/556-ATTINY1614SSNR" H 2150 4660 50  0001 C CNN "SPURL"
 	1    2150 4660
 	1    0    0    -1  
 $EndComp
