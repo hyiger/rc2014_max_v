@@ -15,84 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L rc2014_max_v-rescue:CB3LV-3I-50M0000-Oscillator X?
-U 1 1 5D005597
-P 5530 2120
-AR Path="/5D005597" Ref="X?"  Part="1" 
-AR Path="/5D0F9837/5D005597" Ref="X?"  Part="1" 
-AR Path="/5CFABACD/5D005597" Ref="X?"  Part="1" 
-AR Path="/5CFABACD/5CFFC458/5D005597" Ref="X1"  Part="1" 
-F 0 "X1" H 5870 1960 50  0000 R CNN
-F 1 "CB3LV-3I-100M0000" H 6530 1860 50  0000 R CNN
-F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CA-4Pin_7.0x5.0mm_HandSoldering" H 5530 1770 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/96/008-0256-0-786323.pdf" H 5430 2120 50  0001 C CNN
-F 4 "Standard Clock Oscillators 100.0MHz 3.3V -40C +85C" H 5870 2060 50  0001 C CNN "Description"
-F 5 "CTI" H 5530 2120 50  0001 C CNN "MFR"
-F 6 "CB3LV-3I-100M0000" H 5530 2120 50  0001 C CNN "MPN"
-F 7 "774-CB3LV-3I-100M0" H 5870 2060 50  0001 C CNN "SPN"
-F 8 "Mouser" H 5530 2120 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/774-CB3LV-3I-100M0" H 5870 2060 50  0001 C CNN "SPURL"
-	1    5530 2120
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D0055A1
-P 5530 2500
-AR Path="/5D0055A1" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D0055A1" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5D0055A1" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5CFFC458/5D0055A1" Ref="#PWR065"  Part="1" 
-F 0 "#PWR065" H 5530 2250 50  0001 C CNN
-F 1 "GND" H 5535 2327 50  0000 C CNN
-F 2 "" H 5530 2500 50  0001 C CNN
-F 3 "" H 5530 2500 50  0001 C CNN
-	1    5530 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5D0055B0
-P 6050 2120
-AR Path="/5D0055B0" Ref="R?"  Part="1" 
-AR Path="/5D0F9837/5D0055B0" Ref="R?"  Part="1" 
-AR Path="/5CFABACD/5D0055B0" Ref="R?"  Part="1" 
-AR Path="/5CFABACD/5CFFC458/5D0055B0" Ref="R12"  Part="1" 
-F 0 "R12" V 6246 2120 50  0000 C CNN
-F 1 "22R5" V 6155 2120 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6050 2120 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 6050 2120 50  0001 C CNN
-F 4 "Thick Film Resistors - SMD 22 OHM 5%" H 6246 2220 50  0001 C CNN "Description"
-F 5 "Yageo" H 6050 2120 50  0001 C CNN "MFR"
-F 6 "RC0603JR-0722RL" H 6050 2120 50  0001 C CNN "MPN"
-F 7 "603-RC0603JR-0722RL" H 6246 2220 50  0001 C CNN "SPN"
-F 8 "Mouser" H 6050 2120 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-0722RL" H 6246 2220 50  0001 C CNN "SPURL"
-	1    6050 2120
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5D0055BE
-P 4990 2130
-AR Path="/5CFABACD/5D0055BE" Ref="C?"  Part="1" 
-AR Path="/5D0055BE" Ref="C?"  Part="1" 
-AR Path="/5D0F9837/5D0055BE" Ref="C?"  Part="1" 
-AR Path="/5CFABACD/5CFFC458/5D0055BE" Ref="C33"  Part="1" 
-F 0 "C33" H 5105 2176 50  0000 L CNN
-F 1 "100nF" H 5105 2085 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5028 1980 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 4990 2130 50  0001 C CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 5105 2276 50  0001 C CNN "Description"
-F 5 "Taiyo Yuden" H -310 -4570 50  0001 C CNN "MFR"
-F 6 "TMK107BJ104KA-T" H -310 -4570 50  0001 C CNN "MPN"
-F 7 "963-TMK107BJ104KA-T" H 5105 2276 50  0001 C CNN "SPN"
-F 8 "Mouser" H -310 -4570 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H -310 -4570 50  0001 C CNN "SPURL"
-	1    4990 2130
-	1    0    0    -1  
-$EndComp
-$Comp
 L rc2014_max_v-rescue:5M1270ZT144C5N-CPLD_Altera U?
 U 5 1 5D0055D3
 P 6060 3185
@@ -118,52 +40,52 @@ $EndComp
 $Comp
 L Oscillator:Si5351A-B-GT U?
 U 1 1 5D0055D9
-P 6085 5120
+P 5835 1845
 AR Path="/5CFABACD/5D0055D9" Ref="U?"  Part="1" 
 AR Path="/5CFABACD/5CFFC458/5D0055D9" Ref="U14"  Part="1" 
-F 0 "U14" H 6085 5140 50  0000 C CNN
-F 1 "Si5351A-B-GT" H 6565 5590 50  0000 C CNN
-F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 6085 4320 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/368/Si5351-B-1316636.pdf" H 5735 5020 50  0001 C CNN
-F 4 "Clock Generators & Support Products I2C program, any-frequency, any-output, Xtal reference, 3-output LVCMOS clock generator" H 6085 5240 50  0001 C CNN "Description"
-F 5 "Silicon Laboratories" H 6085 5120 50  0001 C CNN "MFR"
-F 6 "SI5351A-B-GT" H 6085 5120 50  0001 C CNN "MPN"
-F 7 "634-SI5351A-B-GT" H 6085 5240 50  0001 C CNN "SPN"
-F 8 "Mouser" H 6085 5120 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/634-SI5351A-B-GT" H 6085 5240 50  0001 C CNN "SPURL"
-	1    6085 5120
+F 0 "U14" H 5835 1865 50  0000 C CNN
+F 1 "Si5351A-B-GT" H 6315 2315 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 5835 1045 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/368/Si5351-B-1316636.pdf" H 5485 1745 50  0001 C CNN
+F 4 "Clock Generators & Support Products I2C program, any-frequency, any-output, Xtal reference, 3-output LVCMOS clock generator" H 5835 1965 50  0001 C CNN "Description"
+F 5 "Silicon Laboratories" H 5835 1845 50  0001 C CNN "MFR"
+F 6 "SI5351A-B-GT" H 5835 1845 50  0001 C CNN "MPN"
+F 7 "634-SI5351A-B-GT" H 5835 1965 50  0001 C CNN "SPN"
+F 8 "Mouser" H 5835 1845 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/634-SI5351A-B-GT" H 5835 1965 50  0001 C CNN "SPURL"
+	1    5835 1845
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Crystal_Small Y1
 U 1 1 5D00617A
-P 5055 4920
-F 0 "Y1" V 5009 5008 50  0000 L CNN
-F 1 "25MHZ 8PF" V 5100 5008 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_TXC_7A-2Pin_5x3.2mm" H 5055 4920 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/905/ndk_04232018_NX5032GA-LN-CD-1-1324922.pdf" H 5055 4920 50  0001 C CNN
-F 4 "Crystals CRYSTAL 25MHZ 8PF SMD" H 5009 5108 50  0001 C CNN "Description"
-F 5 "NDK" H 5055 4920 50  0001 C CNN "MFR"
-F 6 "NX5032GA-25.000M-LN-CD-1" H 5055 4920 50  0001 C CNN "MPN"
-F 7 "344-NX5032GA25MLNCD1" H 5009 5108 50  0001 C CNN "SPN"
-F 8 "Mouser" H 5055 4920 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/344-NX5032GA25MLNCD1" H 5009 5108 50  0001 C CNN "SPURL"
-	1    5055 4920
+P 4805 1645
+F 0 "Y1" V 4759 1733 50  0000 L CNN
+F 1 "25MHZ 8PF" V 4850 1733 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_TXC_7A-2Pin_5x3.2mm" H 4805 1645 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/905/ndk_04232018_NX5032GA-LN-CD-1-1324922.pdf" H 4805 1645 50  0001 C CNN
+F 4 "Crystals CRYSTAL 25MHZ 8PF SMD" H 4759 1833 50  0001 C CNN "Description"
+F 5 "NDK" H 4805 1645 50  0001 C CNN "MFR"
+F 6 "NX5032GA-25.000M-LN-CD-1" H 4805 1645 50  0001 C CNN "MPN"
+F 7 "344-NX5032GA25MLNCD1" H 4759 1833 50  0001 C CNN "SPN"
+F 8 "Mouser" H 4805 1645 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/344-NX5032GA25MLNCD1" H 4759 1833 50  0001 C CNN "SPURL"
+	1    4805 1645
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5D00A003
-P 6085 5620
+P 5835 2345
 AR Path="/5D00A003" Ref="#PWR?"  Part="1" 
 AR Path="/5D0F9837/5D00A003" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5D00A003" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5CFFC458/5D00A003" Ref="#PWR066"  Part="1" 
-F 0 "#PWR066" H 6085 5370 50  0001 C CNN
-F 1 "GND" H 6090 5447 50  0000 C CNN
-F 2 "" H 6085 5620 50  0001 C CNN
-F 3 "" H 6085 5620 50  0001 C CNN
-	1    6085 5620
+F 0 "#PWR066" H 5835 2095 50  0001 C CNN
+F 1 "GND" H 5840 2172 50  0000 C CNN
+F 2 "" H 5835 2345 50  0001 C CNN
+F 3 "" H 5835 2345 50  0001 C CNN
+	1    5835 2345
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -218,103 +140,71 @@ $EndComp
 $Comp
 L Device:R_Small R10
 U 1 1 5D0168D6
-P 4535 4940
-F 0 "R10" H 4594 4986 50  0000 L CNN
-F 1 "1K" H 4594 4895 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4535 4940 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 4535 4940 50  0001 C CNN
-F 4 "Thick Film Resistors - SMD 1K OHM 5%" H 4594 5086 50  0001 C CNN "Description"
-F 5 "Yageo" H 4535 4940 50  0001 C CNN "MFR"
-F 6 "RC0603JR-071KL" H 4535 4940 50  0001 C CNN "MPN"
-F 7 "603-RC0603JR-071KL" H 4594 5086 50  0001 C CNN "SPN"
-F 8 "Mouser" H 4535 4940 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 4594 5086 50  0001 C CNN "SPURL"
-	1    4535 4940
+P 4285 1665
+F 0 "R10" H 4344 1711 50  0000 L CNN
+F 1 "1K" H 4344 1620 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4285 1665 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 4285 1665 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 1K OHM 5%" H 4344 1811 50  0001 C CNN "Description"
+F 5 "Yageo" H 4285 1665 50  0001 C CNN "MFR"
+F 6 "RC0603JR-071KL" H 4285 1665 50  0001 C CNN "MPN"
+F 7 "603-RC0603JR-071KL" H 4344 1811 50  0001 C CNN "SPN"
+F 8 "Mouser" H 4285 1665 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 4344 1811 50  0001 C CNN "SPURL"
+	1    4285 1665
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R11
 U 1 1 5D017809
-P 4735 4940
-F 0 "R11" H 4794 4986 50  0000 L CNN
-F 1 "1K" H 4794 4895 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4735 4940 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 4735 4940 50  0001 C CNN
-F 4 "Thick Film Resistors - SMD 1K OHM 5%" H 4794 5086 50  0001 C CNN "Description"
-F 5 "Yageo" H 4735 4940 50  0001 C CNN "MFR"
-F 6 "RC0603JR-071KL" H 4735 4940 50  0001 C CNN "MPN"
-F 7 "603-RC0603JR-071KL" H 4794 5086 50  0001 C CNN "SPN"
-F 8 "Mouser" H 4735 4940 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 4794 5086 50  0001 C CNN "SPURL"
-	1    4735 4940
+P 4485 1665
+F 0 "R11" H 4544 1711 50  0000 L CNN
+F 1 "1K" H 4544 1620 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4485 1665 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 4485 1665 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 1K OHM 5%" H 4544 1811 50  0001 C CNN "Description"
+F 5 "Yageo" H 4485 1665 50  0001 C CNN "MFR"
+F 6 "RC0603JR-071KL" H 4485 1665 50  0001 C CNN "MPN"
+F 7 "603-RC0603JR-071KL" H 4544 1811 50  0001 C CNN "SPN"
+F 8 "Mouser" H 4485 1665 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 4544 1811 50  0001 C CNN "SPURL"
+	1    4485 1665
 	1    0    0    -1  
 $EndComp
 Text GLabel 5500 3495 0    50   Input ~ 0
 CLK_100Mhz
-Text GLabel 5500 3585 0    50   Input ~ 0
-CLK_F
-Text GLabel 6585 4920 2    50   Output ~ 0
-CLK_50Mhz
-Text GLabel 6585 5120 2    50   Output ~ 0
-CLK_12Mhz
-Text GLabel 6585 5320 2    50   Output ~ 0
-CLK_7_3728_Mhz
-Text GLabel 4425 5320 0    50   BiDi ~ 0
-SCL
-Text GLabel 4425 5410 0    50   BiDi ~ 0
-SDA
-Text GLabel 5500 3285 0    50   Input ~ 0
-CLK_7_3728_Mhz
 Text GLabel 5500 3385 0    50   Input ~ 0
-CLK_50Mhz
-Text GLabel 6240 2120 2    50   Output ~ 0
+CLK_F
+Text GLabel 6335 1645 2    50   Output ~ 0
 CLK_100Mhz
-Text Notes 4995 5300 0    50   ~ 0
+Text GLabel 6335 1845 2    50   Output ~ 0
+CLK_12Mhz
+Text GLabel 6335 2045 2    50   Output ~ 0
+CLK_7_3728_Mhz
+Text GLabel 4175 2045 0    50   BiDi ~ 0
+SCL
+Text GLabel 4175 2135 0    50   BiDi ~ 0
+SDA
+Text GLabel 5500 3585 0    50   Input ~ 0
+CLK_7_3728_Mhz
+Text Notes 4745 2025 0    50   ~ 0
 I2C
-Text GLabel 5530 1730 1    50   Output ~ 0
-3V3
-Text GLabel 6085 4520 1    50   Output ~ 0
+Text GLabel 5835 1245 1    50   Output ~ 0
 3V3
 Text GLabel 2010 910  1    50   Output ~ 0
 3V3
-Text GLabel 4635 4720 1    50   Output ~ 0
+Text GLabel 4385 1445 1    50   Output ~ 0
 3V3
 Wire Wire Line
-	5430 1820 5430 1770
+	5335 1545 4805 1545
 Wire Wire Line
-	5430 1770 5530 1770
+	5335 1745 4805 1745
 Wire Wire Line
-	5630 1770 5630 1820
+	5735 1345 5835 1345
 Wire Wire Line
-	5530 2420 5530 2460
+	5835 1345 5835 1245
 Wire Wire Line
-	5530 1730 5530 1770
-Wire Wire Line
-	5530 1770 5630 1770
-Wire Wire Line
-	5830 2120 5950 2120
-Wire Wire Line
-	6150 2120 6240 2120
-Wire Wire Line
-	4990 1770 5430 1770
-Wire Wire Line
-	4990 2280 4990 2460
-Wire Wire Line
-	4990 2460 5530 2460
-Wire Wire Line
-	5530 2460 5530 2500
-Wire Wire Line
-	4990 1770 4990 1980
-Wire Wire Line
-	5585 4820 5055 4820
-Wire Wire Line
-	5585 5020 5055 5020
-Wire Wire Line
-	5985 4620 6085 4620
-Wire Wire Line
-	6085 4620 6085 4520
-Wire Wire Line
-	6085 4620 6185 4620
+	5835 1345 5935 1345
 Wire Wire Line
 	1820 1210 2010 1210
 Wire Wire Line
@@ -330,39 +220,36 @@ Wire Wire Line
 Wire Wire Line
 	2010 1010 2200 1010
 Wire Wire Line
-	5585 5420 4735 5420
+	5335 2145 4485 2145
 Wire Wire Line
-	4425 5420 4425 5410
+	4175 2145 4175 2135
 Wire Wire Line
-	4535 5040 4535 5320
+	4285 1765 4285 2045
 Wire Wire Line
-	4425 5320 4535 5320
+	4175 2045 4285 2045
 Wire Wire Line
-	4535 5320 5585 5320
+	4285 2045 5335 2045
 Wire Wire Line
-	4735 5040 4735 5420
+	4485 1765 4485 2145
 Wire Wire Line
-	4735 5420 4425 5420
+	4485 2145 4175 2145
 Wire Wire Line
-	4535 4840 4535 4780
+	4285 1565 4285 1505
 Wire Wire Line
-	4535 4780 4635 4780
+	4285 1505 4385 1505
 Wire Wire Line
-	4735 4780 4735 4840
+	4485 1505 4485 1565
 Wire Wire Line
-	4635 4780 4635 4720
+	4385 1505 4385 1445
 Wire Wire Line
-	4635 4780 4735 4780
-Connection ~ 5530 1770
-Connection ~ 5430 1770
-Connection ~ 5530 2460
-Connection ~ 6085 4620
+	4385 1505 4485 1505
+Connection ~ 5835 1345
 Connection ~ 2200 1010
 Connection ~ 2010 1210
 Connection ~ 2010 1010
-Connection ~ 4535 5320
-Connection ~ 4735 5420
-Connection ~ 4635 4780
+Connection ~ 4285 2045
+Connection ~ 4485 2145
+Connection ~ 4385 1505
 $Comp
 L MCU_Microchip_ATtiny:ATtiny1614-SS U10
 U 1 1 5D018E69
@@ -414,7 +301,7 @@ AR Path="/5CF9C1ED/5D03DC78" Ref="J?"  Part="1"
 AR Path="/5CFABACD/5CFFC458/5D03DC78" Ref="J9"  Part="1" 
 F 0 "J9" H 1500 3665 50  0000 C CNN
 F 1 "UPDI TTL" H 1505 3535 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 1505 3260 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1505 3260 50  0001 C CNN
 F 3 "~" H 1505 3260 50  0001 C CNN
 	1    1505 3260
 	-1   0    0    -1  
@@ -464,4 +351,7 @@ NoConn ~ 2750 4860
 NoConn ~ 2750 4960
 NoConn ~ 1550 4560
 NoConn ~ 1550 4460
+NoConn ~ 3415 4055
+Text GLabel 5500 3285 0    50   Input ~ 0
+CLK2_F
 $EndSCHEMATC

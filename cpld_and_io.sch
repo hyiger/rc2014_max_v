@@ -391,20 +391,16 @@ Text GLabel 4420 6790 0    50   3State ~ 0
 D15_F
 Text GLabel 4420 4390 0    50   Input ~ 0
 ~BUSACK_F
-Text GLabel 4420 3990 0    50   Input ~ 0
+Text GLabel 4390 3050 0    50   Input ~ 0
 ~PAGE_F
 Text GLabel 4390 3150 0    50   Input ~ 0
 ~M1_F
-Text GLabel 4420 4090 0    50   Input ~ 0
-CLK_F
-Text GLabel 4390 3350 0    50   Output ~ 0
+Text GLabel 4420 4190 0    50   Output ~ 0
 ~RESET_F
 Text GLabel 4420 4290 0    50   Output ~ 0
 ~INT_F
 Text GLabel 4390 3250 0    50   Input ~ 0
 ~RFSH~_F
-Text GLabel 4420 4190 0    50   Input ~ 0
-CLK2_F
 Text GLabel 4420 4490 0    50   Input ~ 0
 ~MREQ_F
 Text GLabel 4420 4690 0    50   Input ~ 0
@@ -427,17 +423,13 @@ Text GLabel 4380 850  0    50   Input ~ 0
 SW_USER1
 Text GLabel 7020 1090 0    50   Input ~ 0
 RXA_F
-Text GLabel 7020 990  0    50   Output ~ 0
-TXA_F
-Text GLabel 7020 890  0    50   Input ~ 0
-RXB_F
 Text GLabel 7020 790  0    50   Output ~ 0
 TXB_F
 Text GLabel 7020 1190 0    50   Output ~ 0
 OE_S
 Text GLabel 4390 2950 0    50   Output ~ 0
 OE_A
-Text GLabel 4390 3050 0    50   Output ~ 0
+Text GLabel 4390 3350 0    50   Output ~ 0
 OE_C
 Text GLabel 7040 4620 0    50   Output ~ 0
 OE_G
@@ -493,4 +485,10 @@ Text GLabel 7040 3430 0    50   BiDi ~ 0
 SDA
 Text GLabel 7040 3330 0    50   BiDi ~ 0
 SCL
+Text GLabel 7020 890  0    50   Input ~ 0
+RXB_F
+Text GLabel 7020 990  0    50   Output ~ 0
+TXA_F
+NoConn ~ 4420 3990
+NoConn ~ 4420 4090
 $EndSCHEMATC
