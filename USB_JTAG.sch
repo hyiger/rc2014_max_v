@@ -920,33 +920,9 @@ Wire Wire Line
 Wire Wire Line
 	7930 2430 8060 2430
 Wire Wire Line
-	9890 3780 10300 3780
-Wire Wire Line
 	10450 3780 10450 3790
 Wire Wire Line
-	9890 3680 10200 3680
-Wire Wire Line
 	10450 3680 10450 3690
-Wire Wire Line
-	9890 3580 10100 3580
-Wire Wire Line
-	9890 3480 10000 3480
-Wire Wire Line
-	10000 3000 10000 3480
-Wire Wire Line
-	10000 3480 10450 3480
-Wire Wire Line
-	10100 3000 10100 3580
-Wire Wire Line
-	10100 3580 10450 3580
-Wire Wire Line
-	10200 3000 10200 3680
-Wire Wire Line
-	10200 3680 10450 3680
-Wire Wire Line
-	10300 3000 10300 3780
-Wire Wire Line
-	10300 3780 10450 3780
 Wire Wire Line
 	10300 2600 10300 2610
 Wire Wire Line
@@ -1063,10 +1039,6 @@ Connection ~ 1180 5850
 Connection ~ 1180 6150
 Connection ~ 1640 6910
 Connection ~ 1640 7210
-Connection ~ 10000 3480
-Connection ~ 10100 3580
-Connection ~ 10200 3680
-Connection ~ 10300 3780
 Connection ~ 6550 1830
 Connection ~ 3480 3830
 Connection ~ 3580 3830
@@ -1125,4 +1097,32 @@ NoConn ~ 7400 5130
 NoConn ~ 7400 5230
 NoConn ~ 7400 5330
 NoConn ~ 5000 5630
+Wire Wire Line
+	9890 3680 10100 3680
+Wire Wire Line
+	9890 3580 10200 3580
+Wire Wire Line
+	10200 3000 10200 3580
+Connection ~ 10200 3580
+Wire Wire Line
+	10200 3580 10450 3580
+Wire Wire Line
+	10100 3000 10100 3680
+Connection ~ 10100 3680
+Wire Wire Line
+	10100 3680 10450 3680
+Wire Wire Line
+	9890 3780 10300 3780
+Wire Wire Line
+	9890 3480 10000 3480
+Wire Wire Line
+	10000 3000 10000 3480
+Connection ~ 10000 3480
+Wire Wire Line
+	10000 3480 10450 3480
+Wire Wire Line
+	10300 3000 10300 3780
+Connection ~ 10300 3780
+Wire Wire Line
+	10300 3780 10450 3780
 $EndSCHEMATC

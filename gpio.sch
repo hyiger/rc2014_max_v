@@ -1259,14 +1259,6 @@ Text GLabel 9040 2860 2    50   3State ~ 0
 GPIO_2
 Text GLabel 9040 2760 2    50   3State ~ 0
 GPIO_1
-Text GLabel 9040 5640 2    50   3State ~ 0
-GPIO_16
-Text GLabel 9040 5540 2    50   3State ~ 0
-GPIO_15
-Text GLabel 9040 5440 2    50   3State ~ 0
-GPIO_14
-Text GLabel 9040 5340 2    50   3State ~ 0
-GPIO_13
 Text GLabel 9040 5240 2    50   3State ~ 0
 GPIO_12
 Text GLabel 9040 5140 2    50   3State ~ 0
@@ -1300,12 +1292,6 @@ GPIO_2_F
 Text GLabel 8240 2760 0    50   3State ~ 0
 GPIO_1_F
 Text GLabel 8240 5640 0    50   3State ~ 0
-GPIO_16_F
-Text GLabel 8240 5540 0    50   3State ~ 0
-GPIO_15_F
-Text GLabel 8240 5440 0    50   3State ~ 0
-GPIO_14_F
-Text GLabel 8240 5340 0    50   3State ~ 0
 GPIO_13_F
 Text GLabel 8240 5240 0    50   3State ~ 0
 GPIO_12_F
@@ -1639,4 +1625,18 @@ Connection ~ 3550 1530
 Connection ~ 3450 1530
 Connection ~ 3230 1530
 Connection ~ 6090 1950
+Text GLabel 9040 5640 2    50   3State ~ 0
+GPIO_13
+Text GLabel 9040 5540 2    50   3State ~ 0
+GPIO_14
+Text GLabel 9040 5440 2    50   3State ~ 0
+GPIO_15
+Text GLabel 9040 5340 2    50   3State ~ 0
+GPIO_16
+Text GLabel 8240 5540 0    50   3State ~ 0
+GPIO_14_F
+Text GLabel 8240 5440 0    50   3State ~ 0
+GPIO_15_F
+Text GLabel 8240 5340 0    50   3State ~ 0
+GPIO_16_F
 $EndSCHEMATC

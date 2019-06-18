@@ -40,19 +40,6 @@ F 9 "https://www.mouser.com/ProductDetail/870IS61LV5128AL10TLI" H 2000 3600 50  
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5D01DD05
-P 2430 860
-AR Path="/5D01DD05" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5D01DD05" Ref="#PWR057"  Part="1" 
-F 0 "#PWR057" H 2430 710 50  0001 C CNN
-F 1 "+3V3" H 2310 1020 50  0000 L CNN
-F 2 "" H 2430 860 50  0001 C CNN
-F 3 "" H 2430 860 50  0001 C CNN
-	1    2430 860 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D02CF1F
 P 2430 3630
@@ -147,20 +134,6 @@ F 9 "989-5M1270ZT144C5N" H 8648 1888 50  0001 C CNN "SPN"
 F 10 "Mouser" H 7880 3230 50  0001 C CNN "SPR"
 F 11 "https://www.mouser.com/ProductDetail/989-5M1270ZT144C5N" H 8648 1888 50  0001 C CNN "SPURL"
 	4    7880 3230
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D3E9CD7
-P 1260 2490
-AR Path="/5D3E9CD7" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D3E9CD7" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5D3E9CD7" Ref="#PWR058"  Part="1" 
-F 0 "#PWR058" H 1260 2340 50  0001 C CNN
-F 1 "+3V3" V 1275 2618 50  0000 L CNN
-F 2 "" H 1260 2490 50  0001 C CNN
-F 3 "" H 1260 2490 50  0001 C CNN
-	1    1260 2490
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -434,8 +407,6 @@ OE_C
 Text GLabel 7040 4620 0    50   Output ~ 0
 OE_G
 Wire Wire Line
-	2430 950  2430 860 
-Wire Wire Line
 	2430 3550 2430 3630
 Wire Wire Line
 	1830 3150 1110 3150
@@ -491,4 +462,8 @@ Text GLabel 7020 990  0    50   Output ~ 0
 TXA_F
 NoConn ~ 4420 3990
 NoConn ~ 4420 4090
+Text GLabel 2430 950  1    50   Output ~ 0
+3V3
+Text GLabel 1260 2490 1    50   Output ~ 0
+3V3
 $EndSCHEMATC

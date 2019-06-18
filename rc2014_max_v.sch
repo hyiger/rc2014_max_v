@@ -855,20 +855,6 @@ F 3 "" H 1910 6600 50  0001 C CNN
 	1    1910 6600
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D01DBE0
-P 1910 6900
-AR Path="/5CFABACD/5D01DBE0" Ref="#PWR?"  Part="1" 
-AR Path="/5D01DBE0" Ref="#PWR0104"  Part="1" 
-AR Path="/5CF9C1ED/5D01DBE0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0104" H 1910 6750 50  0001 C CNN
-F 1 "+3V3" H 1810 7070 50  0000 L CNN
-F 2 "" H 1910 6900 50  0001 C CNN
-F 3 "" H 1910 6900 50  0001 C CNN
-	1    1910 6900
-	-1   0    0    1   
-$EndComp
 Text GLabel 1430 3740 2    50   Output ~ 0
 GND
 Text GLabel 1430 3840 2    50   Output ~ 0
@@ -1254,8 +1240,6 @@ Wire Wire Line
 Wire Wire Line
 	1520 6600 1530 6600
 Wire Wire Line
-	1770 6900 1910 6900
-Wire Wire Line
 	1530 6900 1770 6900
 Wire Wire Line
 	1530 6600 1770 6600
@@ -1369,8 +1353,6 @@ Wire Wire Line
 	1770 6600 1910 6600
 Wire Wire Line
 	1910 6600 1970 6600
-Wire Wire Line
-	1910 6900 1970 6900
 Connection ~ 1770 6600
 Connection ~ 1770 6900
 Connection ~ 1530 6900
@@ -1403,7 +1385,6 @@ Connection ~ 8840 6110
 Connection ~ 8790 4870
 Connection ~ 8790 5170
 Connection ~ 1910 6600
-Connection ~ 1910 6900
 NoConn ~ 870  5740
 NoConn ~ 870  5840
 NoConn ~ 870  5940
@@ -1420,4 +1401,25 @@ NoConn ~ 5450 5480
 NoConn ~ 5450 5380
 NoConn ~ 5450 5280
 NoConn ~ 5450 5180
+Wire Wire Line
+	1770 6900 1905 6900
+$Comp
+L power:GND #PWR0104
+U 1 1 5D17FD05
+P 1905 6900
+AR Path="/5D17FD05" Ref="#PWR0104"  Part="1" 
+AR Path="/5CB63856/5D17FD05" Ref="#PWR?"  Part="1" 
+AR Path="/5CB5AB00/5CB63856/5D17FD05" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D17FD05" Ref="#PWR?"  Part="1" 
+AR Path="/5CF9C1ED/5D17FD05" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0104" H 1905 6650 50  0001 C CNN
+F 1 "GND" H 1910 6727 50  0000 C CNN
+F 2 "" H 1905 6900 50  0001 C CNN
+F 3 "" H 1905 6900 50  0001 C CNN
+	1    1905 6900
+	1    0    0    -1  
+$EndComp
+Connection ~ 1905 6900
+Wire Wire Line
+	1905 6900 1970 6900
 $EndSCHEMATC
