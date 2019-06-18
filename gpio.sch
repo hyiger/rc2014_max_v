@@ -62,21 +62,6 @@ F 3 "" H 4130 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5CFD733D
-P 3810 6360
-AR Path="/5CFD733D" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CFD733D" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5CFD733D" Ref="#PWR?"  Part="1" 
-AR Path="/5CF9C1ED/5CFD733D" Ref="#PWR092"  Part="1" 
-F 0 "#PWR092" H 3810 6210 50  0001 C CNN
-F 1 "+3V3" V 3825 6488 50  0000 L CNN
-F 2 "" H 3810 6360 50  0001 C CNN
-F 3 "" H 3810 6360 50  0001 C CNN
-	1    3810 6360
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R_Pack04 RN?
 U 1 1 5CFD7343
 P 1960 5960
@@ -95,21 +80,6 @@ F 7 "667-EXB-38V221JV" H 1543 6060 50  0001 C CNN "SPN"
 F 8 "Mouser" H 1960 5960 50  0001 C CNN "SPR"
 F 9 "https://www.mouser.com/ProductDetail/667-EXB-38V221JV" H 1543 6060 50  0001 C CNN "SPURL"
 	1    1960 5960
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5CFD734B
-P 2920 6360
-AR Path="/5CFD734B" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CFD734B" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5CFD734B" Ref="#PWR?"  Part="1" 
-AR Path="/5CF9C1ED/5CFD734B" Ref="#PWR091"  Part="1" 
-F 0 "#PWR091" H 2920 6210 50  0001 C CNN
-F 1 "+3V3" V 2935 6488 50  0000 L CNN
-F 2 "" H 2920 6360 50  0001 C CNN
-F 3 "" H 2920 6360 50  0001 C CNN
-	1    2920 6360
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -199,7 +169,7 @@ AR Path="/5CFD7379" Ref="J?"  Part="1"
 AR Path="/5CFABACD/5CFD7379" Ref="J?"  Part="1" 
 AR Path="/5CF9C1ED/5CFD7379" Ref="J8"  Part="1" 
 F 0 "J8" H 3330 6020 50  0000 L CNN
-F 1 "PMOD" H 3250 6380 50  0000 L CNN
+F 1 "PMOD2" H 3250 6380 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal" H 3310 6060 50  0001 C CNN
 F 3 "~" H 3310 6060 50  0001 C CNN
 	1    3310 6060
@@ -257,21 +227,6 @@ F 3 "" H 4090 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5CFD73A3
-P 3750 4560
-AR Path="/5CFD73A3" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CFD73A3" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5CFD73A3" Ref="#PWR?"  Part="1" 
-AR Path="/5CF9C1ED/5CFD73A3" Ref="#PWR082"  Part="1" 
-F 0 "#PWR082" H 3750 4410 50  0001 C CNN
-F 1 "+3V3" V 3765 4688 50  0000 L CNN
-F 2 "" H 3750 4560 50  0001 C CNN
-F 3 "" H 3750 4560 50  0001 C CNN
-	1    3750 4560
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R_Pack04 RN?
 U 1 1 5CFD73A9
 P 1950 4260
@@ -291,21 +246,6 @@ F 8 "Mouser" H 1950 4260 50  0001 C CNN "SPR"
 F 9 "https://www.mouser.com/ProductDetail/667-EXB-38V221JV" H 1533 4360 50  0001 C CNN "SPURL"
 	1    1950 4260
 	0    -1   1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5CFD73B1
-P 2960 4560
-AR Path="/5CFD73B1" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5CFD73B1" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5CFD73B1" Ref="#PWR?"  Part="1" 
-AR Path="/5CF9C1ED/5CFD73B1" Ref="#PWR081"  Part="1" 
-F 0 "#PWR081" H 2960 4410 50  0001 C CNN
-F 1 "+3V3" V 2975 4688 50  0000 L CNN
-F 2 "" H 2960 4560 50  0001 C CNN
-F 3 "" H 2960 4560 50  0001 C CNN
-	1    2960 4560
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Power_Protection:SP0504BAHT D?
@@ -471,124 +411,6 @@ F 7 "963-TMK107BJ104KA-T" H 10095 1646 50  0001 C CNN "SPN"
 F 8 "Mouser" H 4680 -5200 50  0001 C CNN "SPR"
 F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H 4680 -5200 50  0001 C CNN "SPURL"
 	1    9980 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5D1B162E
-P 3650 2250
-AR Path="/5CFABACD/5D1B162E" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B162E" Ref="D9"  Part="1" 
-F 0 "D9" V 3710 2360 50  0000 R CNN
-F 1 "Red" V 3605 2182 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3650 2250 50  0001 C CNN
-F 3 "~" V 3650 2250 50  0001 C CNN
-F 4 "Standard LEDs - SMD Red Clear 621nm" H 3710 2460 50  0001 C CNN "Description"
-F 5 "Lite-On" H 3650 2250 50  0001 C CNN "MFR"
-F 6 "LTST-C190EKT" H 3650 2250 50  0001 C CNN "MPN"
-F 7 "859-LTST-C190EKT" H 3710 2460 50  0001 C CNN "SPN"
-F 8 "Mouser" H 3650 2250 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/859-LTST-C190EKT" H 3710 2460 50  0001 C CNN "SPURL"
-	1    3650 2250
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5D1B1634
-P 3550 2250
-AR Path="/5CFABACD/5D1B1634" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B1634" Ref="D8"  Part="1" 
-F 0 "D8" V 3610 2360 50  0000 R CNN
-F 1 "Red" V 3505 2182 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3550 2250 50  0001 C CNN
-F 3 "~" V 3550 2250 50  0001 C CNN
-F 4 "Standard LEDs - SMD Red Clear 621nm" H 3610 2460 50  0001 C CNN "Description"
-F 5 "Lite-On" H 3550 2250 50  0001 C CNN "MFR"
-F 6 "LTST-C190EKT" H 3550 2250 50  0001 C CNN "MPN"
-F 7 "859-LTST-C190EKT" H 3610 2460 50  0001 C CNN "SPN"
-F 8 "Mouser" H 3550 2250 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/859-LTST-C190EKT" H 3610 2460 50  0001 C CNN "SPURL"
-	1    3550 2250
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5D1B163A
-P 3450 2250
-AR Path="/5CFABACD/5D1B163A" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B163A" Ref="D7"  Part="1" 
-F 0 "D7" V 3510 2360 50  0000 R CNN
-F 1 "Red" V 3405 2182 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3450 2250 50  0001 C CNN
-F 3 "~" V 3450 2250 50  0001 C CNN
-F 4 "Standard LEDs - SMD Red Clear 621nm" H 3510 2460 50  0001 C CNN "Description"
-F 5 "Lite-On" H 3450 2250 50  0001 C CNN "MFR"
-F 6 "LTST-C190EKT" H 3450 2250 50  0001 C CNN "MPN"
-F 7 "859-LTST-C190EKT" H 3510 2460 50  0001 C CNN "SPN"
-F 8 "Mouser" H 3450 2250 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/859-LTST-C190EKT" H 3510 2460 50  0001 C CNN "SPURL"
-	1    3450 2250
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5D1B1640
-P 3350 2250
-AR Path="/5CFABACD/5D1B1640" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B1640" Ref="D6"  Part="1" 
-F 0 "D6" V 3410 2360 50  0000 R CNN
-F 1 "Red" V 3305 2182 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3350 2250 50  0001 C CNN
-F 3 "~" V 3350 2250 50  0001 C CNN
-F 4 "Standard LEDs - SMD Red Clear 621nm" H 3410 2460 50  0001 C CNN "Description"
-F 5 "Lite-On" H 3350 2250 50  0001 C CNN "MFR"
-F 6 "LTST-C190EKT" H 3350 2250 50  0001 C CNN "MPN"
-F 7 "859-LTST-C190EKT" H 3410 2460 50  0001 C CNN "SPN"
-F 8 "Mouser" H 3350 2250 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/859-LTST-C190EKT" H 3410 2460 50  0001 C CNN "SPURL"
-	1    3350 2250
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:R_Pack04 RN?
-U 1 1 5D1B1664
-P 3550 1810
-AR Path="/5D0F9837/5D1B1664" Ref="RN?"  Part="1" 
-AR Path="/5D1B1664" Ref="RN?"  Part="1" 
-AR Path="/5CFABACD/5D1B1664" Ref="RN?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B1664" Ref="RN7"  Part="1" 
-F 0 "RN7" V 3760 1810 50  0000 C CNN
-F 1 "270R" V 3840 1810 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 3825 1810 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/315/AOC0000C14-1108062.pdf" H 3550 1810 50  0001 C CNN
-F 4 "Resistor Networks & Arrays Resistor Array Chip 4 elements" H 3760 1910 50  0001 C CNN "Description"
-F 5 "Panasonic" H 3550 1810 50  0001 C CNN "MFR"
-F 6 "EXB-38V271JV" H 3550 1810 50  0001 C CNN "MPN"
-F 7 "667-EXB-38V271JV" H 3760 1910 50  0001 C CNN "SPN"
-F 8 "Mouser" H 3550 1810 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/667-EXB-38V271JV" H 3760 1910 50  0001 C CNN "SPURL"
-	1    3550 1810
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Pack04 RN?
-U 1 1 5D1B166A
-P 3010 1810
-AR Path="/5D0F9837/5D1B166A" Ref="RN?"  Part="1" 
-AR Path="/5D1B166A" Ref="RN?"  Part="1" 
-AR Path="/5CFABACD/5D1B166A" Ref="RN?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B166A" Ref="RN6"  Part="1" 
-F 0 "RN6" V 2593 1810 50  0000 C CNN
-F 1 "270R" V 2684 1810 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 3285 1810 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/315/AOC0000C14-1108062.pdf" H 3010 1810 50  0001 C CNN
-F 4 "Resistor Networks & Arrays Resistor Array Chip 4 elements" H 2593 1910 50  0001 C CNN "Description"
-F 5 "Panasonic" H 3010 1810 50  0001 C CNN "MFR"
-F 6 "EXB-38V271JV" H 3010 1810 50  0001 C CNN "MPN"
-F 7 "667-EXB-38V271JV" H 2593 1910 50  0001 C CNN "SPN"
-F 8 "Mouser" H 3010 1810 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/667-EXB-38V271JV" H 2593 1910 50  0001 C CNN "SPURL"
-	1    3010 1810
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -772,67 +594,10 @@ $EndComp
 $Comp
 L Device:LED_Small D?
 U 1 1 5D1B16E7
-P 2810 2250
-AR Path="/5CFABACD/5D1B16E7" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B16E7" Ref="D2"  Part="1" 
-F 0 "D2" V 2870 2360 50  0000 R CNN
-F 1 "Red" V 2765 2182 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2810 2250 50  0001 C CNN
-F 3 "~" V 2810 2250 50  0001 C CNN
-F 4 "Standard LEDs - SMD Red Clear 621nm" H 2870 2460 50  0001 C CNN "Description"
-F 5 "Lite-On" H 2810 2250 50  0001 C CNN "MFR"
-F 6 "LTST-C190EKT" H 2810 2250 50  0001 C CNN "MPN"
-F 7 "859-LTST-C190EKT" H 2870 2460 50  0001 C CNN "SPN"
-F 8 "Mouser" H 2810 2250 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/859-LTST-C190EKT" H 2870 2460 50  0001 C CNN "SPURL"
-	1    2810 2250
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5D1B16ED
-P 2910 2250
-AR Path="/5CFABACD/5D1B16ED" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B16ED" Ref="D3"  Part="1" 
-F 0 "D3" V 2970 2360 50  0000 R CNN
-F 1 "Red" V 2865 2182 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2910 2250 50  0001 C CNN
-F 3 "~" V 2910 2250 50  0001 C CNN
-F 4 "Standard LEDs - SMD Red Clear 621nm" H 2970 2460 50  0001 C CNN "Description"
-F 5 "Lite-On" H 2910 2250 50  0001 C CNN "MFR"
-F 6 "LTST-C190EKT" H 2910 2250 50  0001 C CNN "MPN"
-F 7 "859-LTST-C190EKT" H 2970 2460 50  0001 C CNN "SPN"
-F 8 "Mouser" H 2910 2250 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/859-LTST-C190EKT" H 2970 2460 50  0001 C CNN "SPURL"
-	1    2910 2250
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5D1B16F3
-P 3010 2250
-AR Path="/5CFABACD/5D1B16F3" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B16F3" Ref="D4"  Part="1" 
-F 0 "D4" V 3070 2360 50  0000 R CNN
-F 1 "Red" V 2965 2182 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3010 2250 50  0001 C CNN
-F 3 "~" V 3010 2250 50  0001 C CNN
-F 4 "Standard LEDs - SMD Red Clear 621nm" H 3070 2460 50  0001 C CNN "Description"
-F 5 "Lite-On" H 3010 2250 50  0001 C CNN "MFR"
-F 6 "LTST-C190EKT" H 3010 2250 50  0001 C CNN "MPN"
-F 7 "859-LTST-C190EKT" H 3070 2460 50  0001 C CNN "SPN"
-F 8 "Mouser" H 3010 2250 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/859-LTST-C190EKT" H 3070 2460 50  0001 C CNN "SPURL"
-	1    3010 2250
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5D1B16F9
 P 3110 2250
-AR Path="/5CFABACD/5D1B16F9" Ref="D?"  Part="1" 
-AR Path="/5CF9C1ED/5D1B16F9" Ref="D5"  Part="1" 
-F 0 "D5" V 3170 2360 50  0000 R CNN
+AR Path="/5CFABACD/5D1B16E7" Ref="D?"  Part="1" 
+AR Path="/5CF9C1ED/5D1B16E7" Ref="LED1"  Part="1" 
+F 0 "LED1" V 3170 2360 50  0000 R CNN
 F 1 "Red" V 3065 2182 50  0001 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3110 2250 50  0001 C CNN
 F 3 "~" V 3110 2250 50  0001 C CNN
@@ -843,7 +608,64 @@ F 7 "859-LTST-C190EKT" H 3170 2460 50  0001 C CNN "SPN"
 F 8 "Mouser" H 3110 2250 50  0001 C CNN "SPR"
 F 9 "https://www.mouser.com/ProductDetail/859-LTST-C190EKT" H 3170 2460 50  0001 C CNN "SPURL"
 	1    3110 2250
-	0    1    -1   0   
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5D1B16ED
+P 3010 2250
+AR Path="/5CFABACD/5D1B16ED" Ref="D?"  Part="1" 
+AR Path="/5CF9C1ED/5D1B16ED" Ref="LED2"  Part="1" 
+F 0 "LED2" V 3070 2360 50  0000 R CNN
+F 1 "Red" V 2965 2182 50  0001 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3010 2250 50  0001 C CNN
+F 3 "~" V 3010 2250 50  0001 C CNN
+F 4 "Standard LEDs - SMD Red Clear 621nm" H 3070 2460 50  0001 C CNN "Description"
+F 5 "Lite-On" H 3010 2250 50  0001 C CNN "MFR"
+F 6 "LTST-C190EKT" H 3010 2250 50  0001 C CNN "MPN"
+F 7 "859-LTST-C190EKT" H 3070 2460 50  0001 C CNN "SPN"
+F 8 "Mouser" H 3010 2250 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/859-LTST-C190EKT" H 3070 2460 50  0001 C CNN "SPURL"
+	1    3010 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5D1B16F3
+P 2910 2250
+AR Path="/5CFABACD/5D1B16F3" Ref="D?"  Part="1" 
+AR Path="/5CF9C1ED/5D1B16F3" Ref="LED3"  Part="1" 
+F 0 "LED3" V 2970 2360 50  0000 R CNN
+F 1 "Red" V 2865 2182 50  0001 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2910 2250 50  0001 C CNN
+F 3 "~" V 2910 2250 50  0001 C CNN
+F 4 "Standard LEDs - SMD Red Clear 621nm" H 2970 2460 50  0001 C CNN "Description"
+F 5 "Lite-On" H 2910 2250 50  0001 C CNN "MFR"
+F 6 "LTST-C190EKT" H 2910 2250 50  0001 C CNN "MPN"
+F 7 "859-LTST-C190EKT" H 2970 2460 50  0001 C CNN "SPN"
+F 8 "Mouser" H 2910 2250 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/859-LTST-C190EKT" H 2970 2460 50  0001 C CNN "SPURL"
+	1    2910 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5D1B16F9
+P 2810 2250
+AR Path="/5CFABACD/5D1B16F9" Ref="D?"  Part="1" 
+AR Path="/5CF9C1ED/5D1B16F9" Ref="LED4"  Part="1" 
+F 0 "LED4" V 2870 2360 50  0000 R CNN
+F 1 "Red" V 2765 2182 50  0001 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2810 2250 50  0001 C CNN
+F 3 "~" V 2810 2250 50  0001 C CNN
+F 4 "Standard LEDs - SMD Red Clear 621nm" H 2870 2460 50  0001 C CNN "Description"
+F 5 "Lite-On" H 2810 2250 50  0001 C CNN "MFR"
+F 6 "LTST-C190EKT" H 2810 2250 50  0001 C CNN "MPN"
+F 7 "859-LTST-C190EKT" H 2870 2460 50  0001 C CNN "SPN"
+F 8 "Mouser" H 2810 2250 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/859-LTST-C190EKT" H 2870 2460 50  0001 C CNN "SPURL"
+	1    2810 2250
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -1221,14 +1043,6 @@ Text GLabel 10200 1290 1    50   Input ~ 0
 VCC_GPIO
 Text GLabel 2810 2440 3    50   Output ~ 0
 LED4
-Text GLabel 3650 2440 3    50   Output ~ 0
-LED5
-Text GLabel 3550 2440 3    50   Output ~ 0
-LED6
-Text GLabel 3450 2440 3    50   Output ~ 0
-LED7
-Text GLabel 3350 2440 3    50   Output ~ 0
-LED8
 Text GLabel 1710 2750 2    50   Output ~ 0
 SW_USER2
 Text GLabel 1610 1350 2    50   Output ~ 0
@@ -1291,7 +1105,7 @@ Text GLabel 8240 2860 0    50   3State ~ 0
 GPIO_2_F
 Text GLabel 8240 2760 0    50   3State ~ 0
 GPIO_1_F
-Text GLabel 8240 5640 0    50   3State ~ 0
+Text GLabel 8240 5340 0    50   3State ~ 0
 GPIO_13_F
 Text GLabel 8240 5240 0    50   3State ~ 0
 GPIO_12_F
@@ -1305,7 +1119,7 @@ Text GLabel 6090 2070 3    50   Output ~ 0
 VCC_GPIO
 Text GLabel 1480 980  1    50   Output ~ 0
 3V3
-Text GLabel 3230 1440 1    50   Output ~ 0
+Text GLabel 2960 1640 1    50   Output ~ 0
 3V3
 Text GLabel 1580 2380 1    50   Output ~ 0
 3V3
@@ -1442,37 +1256,13 @@ Wire Wire Line
 Wire Wire Line
 	9980 1650 10200 1650
 Wire Wire Line
-	3230 1530 3230 1440
+	2960 1730 2960 1640
 Wire Wire Line
 	3110 2150 3110 2010
 Wire Wire Line
-	3350 2150 3350 2010
+	3110 2350 3110 2440
 Wire Wire Line
-	3450 2150 3450 2010
-Wire Wire Line
-	3550 2150 3550 2010
-Wire Wire Line
-	3650 2150 3650 2010
-Wire Wire Line
-	2810 2350 2810 2440
-Wire Wire Line
-	3650 2350 3650 2440
-Wire Wire Line
-	3550 2350 3550 2440
-Wire Wire Line
-	3450 2350 3450 2440
-Wire Wire Line
-	3350 2350 3350 2440
-Wire Wire Line
-	3650 1530 3650 1610
-Wire Wire Line
-	3550 1610 3550 1530
-Wire Wire Line
-	3450 1610 3450 1530
-Wire Wire Line
-	3350 1610 3350 1530
-Wire Wire Line
-	3110 1610 3110 1530
+	3110 1810 3110 1730
 Wire Wire Line
 	1580 3130 1580 3240
 Wire Wire Line
@@ -1506,23 +1296,23 @@ Wire Wire Line
 Wire Wire Line
 	900  1480 900  1350
 Wire Wire Line
-	2910 1610 2910 1530
+	2910 1810 2910 1730
 Wire Wire Line
-	2910 1530 3010 1530
+	2910 1730 2960 1730
 Wire Wire Line
-	3010 1530 3110 1530
+	3010 1730 3110 1730
 Wire Wire Line
-	3010 1610 3010 1530
+	3010 1810 3010 1730
 Wire Wire Line
-	2810 1530 2910 1530
+	2810 1730 2910 1730
 Wire Wire Line
-	2810 1610 2810 1530
-Wire Wire Line
-	2910 2350 2910 2440
+	2810 1810 2810 1730
 Wire Wire Line
 	3010 2350 3010 2440
 Wire Wire Line
-	3110 2350 3110 2440
+	2910 2350 2910 2440
+Wire Wire Line
+	2810 2350 2810 2440
 Wire Wire Line
 	2910 2150 2910 2010
 Wire Wire Line
@@ -1576,16 +1366,6 @@ Wire Wire Line
 Wire Wire Line
 	3020 6360 2920 6360
 Wire Wire Line
-	3350 1530 3450 1530
-Wire Wire Line
-	3650 1530 3550 1530
-Wire Wire Line
-	3550 1530 3450 1530
-Wire Wire Line
-	3230 1530 3350 1530
-Wire Wire Line
-	3110 1530 3230 1530
-Wire Wire Line
 	6090 1950 6090 2070
 Wire Wire Line
 	8540 2360 8540 2270
@@ -1609,34 +1389,116 @@ Connection ~ 4360 4260
 Connection ~ 4460 4360
 Connection ~ 10200 1350
 Connection ~ 10200 1650
-Connection ~ 3110 1530
 Connection ~ 1580 2750
 Connection ~ 1480 1350
-Connection ~ 3010 1530
-Connection ~ 2910 1530
+Connection ~ 3010 1730
+Connection ~ 2910 1730
 Connection ~ 8130 4840
 Connection ~ 8120 2660
 Connection ~ 3030 4560
 Connection ~ 3670 4560
 Connection ~ 3670 6360
 Connection ~ 3020 6360
-Connection ~ 3350 1530
-Connection ~ 3550 1530
-Connection ~ 3450 1530
-Connection ~ 3230 1530
 Connection ~ 6090 1950
-Text GLabel 9040 5640 2    50   3State ~ 0
-GPIO_13
-Text GLabel 9040 5540 2    50   3State ~ 0
-GPIO_14
-Text GLabel 9040 5440 2    50   3State ~ 0
-GPIO_15
 Text GLabel 9040 5340 2    50   3State ~ 0
+GPIO_13
+Text GLabel 9040 5440 2    50   3State ~ 0
+GPIO_14
+Text GLabel 9040 5540 2    50   3State ~ 0
+GPIO_15
+Text GLabel 9040 5640 2    50   3State ~ 0
 GPIO_16
-Text GLabel 8240 5540 0    50   3State ~ 0
-GPIO_14_F
 Text GLabel 8240 5440 0    50   3State ~ 0
+GPIO_14_F
+Text GLabel 8240 5540 0    50   3State ~ 0
 GPIO_15_F
-Text GLabel 8240 5340 0    50   3State ~ 0
+Text GLabel 8240 5640 0    50   3State ~ 0
 GPIO_16_F
+Text GLabel 3810 6360 2    50   Output ~ 0
+3V3
+Text GLabel 3750 4560 2    50   Output ~ 0
+3V3
+Text GLabel 2920 6360 0    50   Output ~ 0
+3V3
+Text GLabel 2960 4560 0    50   Output ~ 0
+3V3
+Connection ~ 2960 1730
+Wire Wire Line
+	2960 1730 3010 1730
+$Comp
+L Device:R_Small R?
+U 1 1 5D3CAE96
+P 2810 1910
+AR Path="/5CFABACD/5D3CAE96" Ref="R?"  Part="1" 
+AR Path="/5CF9C1ED/5D3CAE96" Ref="R18"  Part="1" 
+F 0 "R18" H 2869 1956 50  0000 L CNN
+F 1 "270R" H 2869 1865 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2810 1910 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 2810 1910 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 10K OHM 5%" H 2869 2056 50  0001 C CNN "Description"
+F 5 "Yageo" H 2810 1910 50  0001 C CNN "MFR"
+F 6 "RC0603JR-0710KL" H 2810 1910 50  0001 C CNN "MPN"
+F 7 "603-RC0603JR-0710KL" H 2869 2056 50  0001 C CNN "SPN"
+F 8 "Mouser" H 2810 1910 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-0710KL" H 2869 2056 50  0001 C CNN "SPURL"
+	1    2810 1910
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D3CF209
+P 2910 1910
+AR Path="/5CFABACD/5D3CF209" Ref="R?"  Part="1" 
+AR Path="/5CF9C1ED/5D3CF209" Ref="R19"  Part="1" 
+F 0 "R19" H 2969 1956 50  0000 L CNN
+F 1 "270R" H 2969 1865 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2910 1910 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 2910 1910 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 10K OHM 5%" H 2969 2056 50  0001 C CNN "Description"
+F 5 "Yageo" H 2910 1910 50  0001 C CNN "MFR"
+F 6 "RC0603JR-0710KL" H 2910 1910 50  0001 C CNN "MPN"
+F 7 "603-RC0603JR-0710KL" H 2969 2056 50  0001 C CNN "SPN"
+F 8 "Mouser" H 2910 1910 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-0710KL" H 2969 2056 50  0001 C CNN "SPURL"
+	1    2910 1910
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D3D32A3
+P 3010 1910
+AR Path="/5CFABACD/5D3D32A3" Ref="R?"  Part="1" 
+AR Path="/5CF9C1ED/5D3D32A3" Ref="R20"  Part="1" 
+F 0 "R20" H 3069 1956 50  0000 L CNN
+F 1 "270R" H 3069 1865 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3010 1910 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 3010 1910 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 10K OHM 5%" H 3069 2056 50  0001 C CNN "Description"
+F 5 "Yageo" H 3010 1910 50  0001 C CNN "MFR"
+F 6 "RC0603JR-0710KL" H 3010 1910 50  0001 C CNN "MPN"
+F 7 "603-RC0603JR-0710KL" H 3069 2056 50  0001 C CNN "SPN"
+F 8 "Mouser" H 3010 1910 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-0710KL" H 3069 2056 50  0001 C CNN "SPURL"
+	1    3010 1910
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D3DB534
+P 3110 1910
+AR Path="/5CFABACD/5D3DB534" Ref="R?"  Part="1" 
+AR Path="/5CF9C1ED/5D3DB534" Ref="R21"  Part="1" 
+F 0 "R21" H 3169 1956 50  0000 L CNN
+F 1 "270R" H 3169 1865 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3110 1910 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 3110 1910 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 10K OHM 5%" H 3169 2056 50  0001 C CNN "Description"
+F 5 "Yageo" H 3110 1910 50  0001 C CNN "MFR"
+F 6 "RC0603JR-0710KL" H 3110 1910 50  0001 C CNN "MPN"
+F 7 "603-RC0603JR-0710KL" H 3169 2056 50  0001 C CNN "SPN"
+F 8 "Mouser" H 3110 1910 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-0710KL" H 3169 2056 50  0001 C CNN "SPURL"
+	1    3110 1910
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

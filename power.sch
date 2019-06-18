@@ -404,7 +404,7 @@ AR Path="/5CF9C1ED/5D02332B" Ref="JP?"  Part="1"
 AR Path="/5D2A5E4A/5D02332B" Ref="JP2"  Part="1" 
 F 0 "JP2" H 2140 1494 50  0000 C CNN
 F 1 "Jumper_3_Bridged12" H 2140 1403 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 2140 1290 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2140 1290 50  0001 C CNN
 F 3 "~" H 2140 1290 50  0001 C CNN
 	1    2140 1290
 	1    0    0    -1  

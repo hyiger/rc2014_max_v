@@ -178,8 +178,6 @@ CLK_F
 Text GLabel 6335 1645 2    50   Output ~ 0
 CLK_100Mhz
 Text GLabel 6335 1845 2    50   Output ~ 0
-CLK_12Mhz
-Text GLabel 6335 2045 2    50   Output ~ 0
 CLK_7_3728_Mhz
 Text GLabel 4175 2045 0    50   BiDi ~ 0
 SCL
@@ -352,6 +350,8 @@ NoConn ~ 2750 4960
 NoConn ~ 1550 4560
 NoConn ~ 1550 4460
 NoConn ~ 3415 4055
+Text GLabel 6335 2045 2    50   Output ~ 0
+CLK_1Mhz
 Text GLabel 5500 3285 0    50   Input ~ 0
-CLK2_F
+CLK_1Mhz
 $EndSCHEMATC

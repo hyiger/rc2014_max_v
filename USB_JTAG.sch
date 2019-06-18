@@ -549,39 +549,19 @@ F 9 "https://www.mouser.com/ProductDetail/667-EXB-38V103JV" H 3250 4230 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Pack04 RN3
-U 1 1 5CF8ACD2
-P 10200 2800
-AR Path="/5D0F9837/5CF8ACD2" Ref="RN3"  Part="1" 
-AR Path="/5CF8ACD2" Ref="RN?"  Part="1" 
-AR Path="/5CFABACD/5CF8ACD2" Ref="RN?"  Part="1" 
-F 0 "RN3" H 9870 2900 50  0000 C CNN
-F 1 "10K" H 9874 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 10475 2800 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/315/AOC0000C14-1108062.pdf" H 10200 2800 50  0001 C CNN
-F 4 "Resistor Networks & Arrays 10K OHM 5%" H 9870 3000 50  0001 C CNN "Description"
-F 5 "Panasonic" H 10200 2800 50  0001 C CNN "MFR"
-F 6 "EXB-38V103JV" H 10200 2800 50  0001 C CNN "MPN"
-F 7 "667-EXB-38V103JV" H 9870 3000 50  0001 C CNN "SPN"
-F 8 "Mouser" H 10200 2800 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/667-EXB-38V103JV" H 9870 3000 50  0001 C CNN "SPURL"
-	1    10200 2800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D1A4182
-P 9720 2600
+P 9760 2605
 AR Path="/5D1A4182" Ref="#PWR?"  Part="1" 
 AR Path="/5CB63856/5D1A4182" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5D1A4182" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5D1A4182" Ref="#PWR?"  Part="1" 
 AR Path="/5D0F9837/5D1A4182" Ref="#PWR041"  Part="1" 
-F 0 "#PWR041" H 9720 2350 50  0001 C CNN
-F 1 "GND" H 9725 2427 50  0000 C CNN
-F 2 "" H 9720 2600 50  0001 C CNN
-F 3 "" H 9720 2600 50  0001 C CNN
-	1    9720 2600
+F 0 "#PWR041" H 9760 2355 50  0001 C CNN
+F 1 "GND" H 9765 2432 50  0000 C CNN
+F 2 "" H 9760 2605 50  0001 C CNN
+F 3 "" H 9760 2605 50  0001 C CNN
+	1    9760 2605
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -709,13 +689,13 @@ Text GLabel 8040 2330 2    50   Input ~ 0
 JTAG_TDO
 Text GLabel 8060 2430 2    50   Output ~ 0
 JTAG_TMS
-Text GLabel 10450 3790 2    50   Output ~ 0
+Text GLabel 10525 3780 2    50   Output ~ 0
 JTAG_TDI
-Text GLabel 10450 3690 2    50   Input ~ 0
+Text GLabel 10520 3680 2    50   Input ~ 0
 JTAG_TDO
-Text GLabel 10450 3580 2    50   Output ~ 0
+Text GLabel 10520 3580 2    50   Output ~ 0
 JTAG_TMS
-Text GLabel 10450 3480 2    50   Output ~ 0
+Text GLabel 10520 3480 2    50   Output ~ 0
 JTAG_TCK
 Text GLabel 8880 4730 0    50   Input ~ 0
 JTAG_TDI
@@ -725,8 +705,6 @@ Text GLabel 8880 4630 0    50   Input ~ 0
 JTAG_TMS
 Text GLabel 8880 4830 0    50   Input ~ 0
 JTAG_TCK
-Text GLabel 4840 5230 0    50   Input ~ 0
-CLK_12Mhz
 Text GLabel 2100 2930 2    50   Output ~ 0
 5V_U
 Text GLabel 6550 1750 1    50   Output ~ 0
@@ -739,7 +717,7 @@ Text GLabel 3520 1200 0    50   Output ~ 0
 3V3
 Text GLabel 3530 3740 1    50   Output ~ 0
 3V3
-Text GLabel 10200 2480 1    50   Output ~ 0
+Text GLabel 10335 2480 1    50   Output ~ 0
 3V3
 Text GLabel 9290 2770 1    50   Output ~ 0
 3V3
@@ -920,13 +898,9 @@ Wire Wire Line
 Wire Wire Line
 	7930 2430 8060 2430
 Wire Wire Line
-	10450 3780 10450 3790
+	10435 2600 10435 2610
 Wire Wire Line
-	10450 3680 10450 3690
-Wire Wire Line
-	10300 2600 10300 2610
-Wire Wire Line
-	10200 2480 10200 2600
+	10335 2480 10335 2600
 Wire Wire Line
 	3380 3830 3480 3830
 Wire Wire Line
@@ -938,15 +912,13 @@ Wire Wire Line
 Wire Wire Line
 	3530 3830 3580 3830
 Wire Wire Line
-	10200 2600 10300 2600
+	10335 2600 10435 2600
 Wire Wire Line
-	10100 2600 10200 2600
+	10235 2600 10335 2600
 Wire Wire Line
-	10000 2600 10000 2540
+	10040 2545 9760 2545
 Wire Wire Line
-	10000 2540 9720 2540
-Wire Wire Line
-	9720 2540 9720 2600
+	9760 2545 9760 2605
 Wire Wire Line
 	9890 3280 9890 2890
 Wire Wire Line
@@ -967,8 +939,6 @@ Wire Wire Line
 	1640 6910 2030 6910
 Wire Wire Line
 	1640 7210 2030 7210
-Wire Wire Line
-	4840 5230 5000 5230
 Wire Wire Line
 	7400 5730 7970 5730
 Wire Wire Line
@@ -1043,8 +1013,7 @@ Connection ~ 6550 1830
 Connection ~ 3480 3830
 Connection ~ 3580 3830
 Connection ~ 3530 3830
-Connection ~ 10200 2600
-Connection ~ 10300 2600
+Connection ~ 10335 2600
 Connection ~ 9290 2890
 Connection ~ 1400 6150
 Connection ~ 1390 5850
@@ -1097,32 +1066,106 @@ NoConn ~ 7400 5130
 NoConn ~ 7400 5230
 NoConn ~ 7400 5330
 NoConn ~ 5000 5630
+$Comp
+L Oscillator:KC5032K12.0000C10E00 X1
+U 1 1 5D18454F
+P 4290 5655
+F 0 "X1" H 4634 5701 50  0000 L CNN
+F 1 "KC5032K12.0000C10E00" H 3155 5535 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_Fordahl_DFAS15-4Pin_5.0x3.2mm_HandSoldering" H 4990 5305 50  0001 C CNN
+F 3 "http://www.abracon.com/Oscillators/ASV.pdf" H 4190 5655 50  0001 C CNN
+	1    4290 5655
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	9890 3680 10100 3680
+	4590 5655 4590 5230
 Wire Wire Line
-	9890 3580 10200 3580
+	4590 5230 5000 5230
 Wire Wire Line
-	10200 3000 10200 3580
-Connection ~ 10200 3580
+	3990 5655 3990 5355
 Wire Wire Line
-	10200 3580 10450 3580
+	3990 5355 4290 5355
+Text GLabel 4290 5265 1    50   Output ~ 0
+3V3
 Wire Wire Line
-	10100 3000 10100 3680
-Connection ~ 10100 3680
+	4290 5265 4290 5355
+Connection ~ 4290 5355
+$Comp
+L power:GND #PWR02
+U 1 1 5D1A3145
+P 4290 6025
+F 0 "#PWR02" H 4290 5775 50  0001 C CNN
+F 1 "GND" H 4295 5852 50  0000 C CNN
+F 2 "" H 4290 6025 50  0001 C CNN
+F 3 "" H 4290 6025 50  0001 C CNN
+	1    4290 6025
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	10100 3680 10450 3680
+	4290 5955 4290 6025
+NoConn ~ 2640 3765
+Connection ~ 10435 2600
 Wire Wire Line
-	9890 3780 10300 3780
+	10435 3000 10435 3780
+$Comp
+L Device:R_Pack04 RN3
+U 1 1 5CF8ACD2
+P 10435 2800
+AR Path="/5D0F9837/5CF8ACD2" Ref="RN3"  Part="1" 
+AR Path="/5CF8ACD2" Ref="RN?"  Part="1" 
+AR Path="/5CFABACD/5CF8ACD2" Ref="RN?"  Part="1" 
+F 0 "RN3" H 10705 2840 50  0000 C CNN
+F 1 "10K" H 10700 2755 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 10710 2800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOC0000C14-1108062.pdf" H 10435 2800 50  0001 C CNN
+F 4 "Resistor Networks & Arrays 10K OHM 5%" H 10105 3000 50  0001 C CNN "Description"
+F 5 "Panasonic" H 10435 2800 50  0001 C CNN "MFR"
+F 6 "EXB-38V103JV" H 10435 2800 50  0001 C CNN "MPN"
+F 7 "667-EXB-38V103JV" H 10105 3000 50  0001 C CNN "SPN"
+F 8 "Mouser" H 10435 2800 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/667-EXB-38V103JV" H 10105 3000 50  0001 C CNN "SPURL"
+	1    10435 2800
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	9890 3480 10000 3480
+	9890 3780 10435 3780
+Connection ~ 10435 3780
 Wire Wire Line
-	10000 3000 10000 3480
-Connection ~ 10000 3480
+	10435 3780 10525 3780
 Wire Wire Line
-	10000 3480 10450 3480
+	9890 3480 10040 3480
+Connection ~ 10040 3480
 Wire Wire Line
-	10300 3000 10300 3780
-Connection ~ 10300 3780
+	10040 3480 10520 3480
+$Comp
+L Device:R_Small R12
+U 1 1 5D2F206D
+P 10040 2800
+F 0 "R12" H 9905 2835 50  0000 L CNN
+F 1 "1K" H 9900 2760 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10040 2800 50  0001 C CNN
+F 3 "~" H 10040 2800 50  0001 C CNN
+	1    10040 2800
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	10300 3780 10450 3780
+	10040 2545 10040 2700
+Wire Wire Line
+	10040 2900 10040 3480
+NoConn ~ 10535 3000
+NoConn ~ 10535 2600
+Wire Wire Line
+	10235 3000 10235 3680
+Wire Wire Line
+	9890 3680 10235 3680
+Connection ~ 10235 3680
+Wire Wire Line
+	10235 3680 10520 3680
+Wire Wire Line
+	10335 3000 10335 3580
+Wire Wire Line
+	9890 3580 10335 3580
+Connection ~ 10335 3580
+Wire Wire Line
+	10335 3580 10520 3580
 $EndSCHEMATC
