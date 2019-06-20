@@ -15,15 +15,9 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 9630 4330 1140 800 
-U 5D0F9837
-F0 "USB JTAG Interface" 50
-F1 "USB_JTAG.sch" 50
-$EndSheet
-$Sheet
 S 9600 3170 1250 770 
 U 5CFABACD
-F0 "Max V CPLD and user I/O" 50
+F0 "Max V CPLD" 50
 F1 "cpld_and_io.sch" 50
 $EndSheet
 $Sheet
@@ -31,12 +25,6 @@ S 9590 1840 1180 810
 U 5CF9C1ED
 F0 "General Purpose I/O" 50
 F1 "gpio.sch" 50
-$EndSheet
-$Sheet
-S 9580 610  1190 930 
-U 5D2A5E4A
-F0 "Power" 50
-F1 "power.sch" 50
 $EndSheet
 $Comp
 L power:PWR_FLAG #FLG02
@@ -116,209 +104,209 @@ $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 5D00EC18
-P 3430 2100
+P 3260 2165
 AR Path="/5D00EC18" Ref="#PWR09"  Part="1" 
 AR Path="/5CB63856/5D00EC18" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5D00EC18" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5D00EC18" Ref="#PWR?"  Part="1" 
 AR Path="/5CF9C1ED/5D00EC18" Ref="#PWR?"  Part="1" 
-F 0 "#PWR09" H 3430 1850 50  0001 C CNN
-F 1 "GND" H 3435 1927 50  0000 C CNN
-F 2 "" H 3430 2100 50  0001 C CNN
-F 3 "" H 3430 2100 50  0001 C CNN
-	1    3430 2100
-	1    0    0    -1  
+F 0 "#PWR09" H 3260 1915 50  0001 C CNN
+F 1 "GND" H 3265 1992 50  0000 C CNN
+F 2 "" H 3260 2165 50  0001 C CNN
+F 3 "" H 3260 2165 50  0001 C CNN
+	1    3260 2165
+	-1   0    0    -1  
 $EndComp
 $Comp
 L rc2014_max_v-rescue:TXB0108PWR-Logic_LevelTranslator U1
 U 1 1 5D00EC26
-P 3430 1400
+P 3260 1465
 AR Path="/5D00EC26" Ref="U1"  Part="1" 
 AR Path="/5CF9C1ED/5D00EC26" Ref="U?"  Part="1" 
-F 0 "U1" H 3440 1400 50  0000 C CNN
-F 1 "TXB0108PWR" H 3730 730 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3430 650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3430 1300 50  0001 C CNN
-F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 3440 1500 50  0001 C CNN "Description"
-F 5 "Texas Instruments" H 3430 1400 50  0001 C CNN "MFR"
-F 6 "TXB0108PWR" H 3430 1400 50  0001 C CNN "MPN"
-F 7 "595-TXB0108PWR" H 3440 1500 50  0001 C CNN "SPN"
-F 8 "Mouser" H 3430 1400 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 3440 1500 50  0001 C CNN "SPURL"
-	1    3430 1400
-	1    0    0    -1  
+F 0 "U1" H 3270 1465 50  0000 C CNN
+F 1 "TXB0108PWR" H 3560 795 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3260 715 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3260 1365 50  0001 C CNN
+F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 3270 1565 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 3260 1465 50  0001 C CNN "MFR"
+F 6 "TXB0108PWR" H 3260 1465 50  0001 C CNN "MPN"
+F 7 "595-TXB0108PWR" H 3270 1565 50  0001 C CNN "SPN"
+F 8 "Mouser" H 3260 1465 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 3270 1565 50  0001 C CNN "SPURL"
+	1    3260 1465
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR015
 U 1 1 5D0527B4
-P 3460 3950
+P 3230 4015
 AR Path="/5D0527B4" Ref="#PWR015"  Part="1" 
 AR Path="/5CB63856/5D0527B4" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5D0527B4" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5D0527B4" Ref="#PWR?"  Part="1" 
 AR Path="/5CF9C1ED/5D0527B4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR015" H 3460 3700 50  0001 C CNN
-F 1 "GND" H 3465 3777 50  0000 C CNN
-F 2 "" H 3460 3950 50  0001 C CNN
-F 3 "" H 3460 3950 50  0001 C CNN
-	1    3460 3950
-	1    0    0    -1  
+F 0 "#PWR015" H 3230 3765 50  0001 C CNN
+F 1 "GND" H 3235 3842 50  0000 C CNN
+F 2 "" H 3230 4015 50  0001 C CNN
+F 3 "" H 3230 4015 50  0001 C CNN
+	1    3230 4015
+	-1   0    0    -1  
 $EndComp
 $Comp
 L rc2014_max_v-rescue:TXB0108PWR-Logic_LevelTranslator U3
 U 1 1 5D0527BA
-P 3460 3250
+P 3230 3315
 AR Path="/5D0527BA" Ref="U3"  Part="1" 
 AR Path="/5CF9C1ED/5D0527BA" Ref="U?"  Part="1" 
-F 0 "U3" H 3470 3250 50  0000 C CNN
-F 1 "TXB0108PWR" H 3760 2580 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3460 2500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3460 3150 50  0001 C CNN
-F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 3470 3350 50  0001 C CNN "Description"
-F 5 "Texas Instruments" H 3460 3250 50  0001 C CNN "MFR"
-F 6 "TXB0108PWR" H 3460 3250 50  0001 C CNN "MPN"
-F 7 "595-TXB0108PWR" H 3470 3350 50  0001 C CNN "SPN"
-F 8 "Mouser" H 3460 3250 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 3470 3350 50  0001 C CNN "SPURL"
-	1    3460 3250
-	1    0    0    -1  
+F 0 "U3" H 3240 3315 50  0000 C CNN
+F 1 "TXB0108PWR" H 3530 2645 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3230 2565 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3230 3215 50  0001 C CNN
+F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 3240 3415 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 3230 3315 50  0001 C CNN "MFR"
+F 6 "TXB0108PWR" H 3230 3315 50  0001 C CNN "MPN"
+F 7 "595-TXB0108PWR" H 3240 3415 50  0001 C CNN "SPN"
+F 8 "Mouser" H 3230 3315 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 3240 3415 50  0001 C CNN "SPURL"
+	1    3230 3315
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR027
 U 1 1 5D0AFE9E
-P 3460 5790
+P 3230 5855
 AR Path="/5D0AFE9E" Ref="#PWR027"  Part="1" 
 AR Path="/5CB63856/5D0AFE9E" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5D0AFE9E" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5D0AFE9E" Ref="#PWR?"  Part="1" 
 AR Path="/5CF9C1ED/5D0AFE9E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR027" H 3460 5540 50  0001 C CNN
-F 1 "GND" H 3465 5617 50  0000 C CNN
-F 2 "" H 3460 5790 50  0001 C CNN
-F 3 "" H 3460 5790 50  0001 C CNN
-	1    3460 5790
-	1    0    0    -1  
+F 0 "#PWR027" H 3230 5605 50  0001 C CNN
+F 1 "GND" H 3235 5682 50  0000 C CNN
+F 2 "" H 3230 5855 50  0001 C CNN
+F 3 "" H 3230 5855 50  0001 C CNN
+	1    3230 5855
+	-1   0    0    -1  
 $EndComp
 $Comp
 L rc2014_max_v-rescue:TXB0108PWR-Logic_LevelTranslator U6
 U 1 1 5D0AFEA4
-P 3460 5090
+P 3230 5155
 AR Path="/5D0AFEA4" Ref="U6"  Part="1" 
 AR Path="/5CF9C1ED/5D0AFEA4" Ref="U?"  Part="1" 
-F 0 "U6" H 3470 5090 50  0000 C CNN
-F 1 "TXB0108PWR" H 3760 4420 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3460 4340 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3460 4990 50  0001 C CNN
-F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 3470 5190 50  0001 C CNN "Description"
-F 5 "Texas Instruments" H 3460 5090 50  0001 C CNN "MFR"
-F 6 "TXB0108PWR" H 3460 5090 50  0001 C CNN "MPN"
-F 7 "595-TXB0108PWR" H 3470 5190 50  0001 C CNN "SPN"
-F 8 "Mouser" H 3460 5090 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 3470 5190 50  0001 C CNN "SPURL"
-	1    3460 5090
-	1    0    0    -1  
+F 0 "U6" H 3240 5155 50  0000 C CNN
+F 1 "TXB0108PWR" H 3530 4485 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3230 4405 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3230 5055 50  0001 C CNN
+F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 3240 5255 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 3230 5155 50  0001 C CNN "MFR"
+F 6 "TXB0108PWR" H 3230 5155 50  0001 C CNN "MPN"
+F 7 "595-TXB0108PWR" H 3240 5255 50  0001 C CNN "SPN"
+F 8 "Mouser" H 3230 5155 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 3240 5255 50  0001 C CNN "SPURL"
+	1    3230 5155
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR032
 U 1 1 5D0AFED9
-P 3490 7640
+P 3200 7705
 AR Path="/5D0AFED9" Ref="#PWR032"  Part="1" 
 AR Path="/5CB63856/5D0AFED9" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5D0AFED9" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5D0AFED9" Ref="#PWR?"  Part="1" 
 AR Path="/5CF9C1ED/5D0AFED9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR032" H 3490 7390 50  0001 C CNN
-F 1 "GND" H 3495 7467 50  0000 C CNN
-F 2 "" H 3490 7640 50  0001 C CNN
-F 3 "" H 3490 7640 50  0001 C CNN
-	1    3490 7640
-	1    0    0    -1  
+F 0 "#PWR032" H 3200 7455 50  0001 C CNN
+F 1 "GND" H 3205 7532 50  0000 C CNN
+F 2 "" H 3200 7705 50  0001 C CNN
+F 3 "" H 3200 7705 50  0001 C CNN
+	1    3200 7705
+	-1   0    0    -1  
 $EndComp
 $Comp
 L rc2014_max_v-rescue:TXB0108PWR-Logic_LevelTranslator U7
 U 1 1 5D0AFEDF
-P 3490 6940
+P 3200 7005
 AR Path="/5D0AFEDF" Ref="U7"  Part="1" 
 AR Path="/5CF9C1ED/5D0AFEDF" Ref="U?"  Part="1" 
-F 0 "U7" H 3500 6940 50  0000 C CNN
-F 1 "TXB0108PWR" H 3790 6270 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3490 6190 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3490 6840 50  0001 C CNN
-F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 3500 7040 50  0001 C CNN "Description"
-F 5 "Texas Instruments" H 3490 6940 50  0001 C CNN "MFR"
-F 6 "TXB0108PWR" H 3490 6940 50  0001 C CNN "MPN"
-F 7 "595-TXB0108PWR" H 3500 7040 50  0001 C CNN "SPN"
-F 8 "Mouser" H 3490 6940 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 3500 7040 50  0001 C CNN "SPURL"
-	1    3490 6940
-	1    0    0    -1  
+F 0 "U7" H 3210 7005 50  0000 C CNN
+F 1 "TXB0108PWR" H 3500 6335 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3200 6255 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 3200 6905 50  0001 C CNN
+F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 3210 7105 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 3200 7005 50  0001 C CNN "MFR"
+F 6 "TXB0108PWR" H 3200 7005 50  0001 C CNN "MPN"
+F 7 "595-TXB0108PWR" H 3210 7105 50  0001 C CNN "SPN"
+F 8 "Mouser" H 3200 7005 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 3210 7105 50  0001 C CNN "SPURL"
+	1    3200 7005
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR010
 U 1 1 5D0FF9C1
-P 5810 2130
+P 5440 2175
 AR Path="/5D0FF9C1" Ref="#PWR010"  Part="1" 
 AR Path="/5CB63856/5D0FF9C1" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5D0FF9C1" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5D0FF9C1" Ref="#PWR?"  Part="1" 
 AR Path="/5CF9C1ED/5D0FF9C1" Ref="#PWR?"  Part="1" 
-F 0 "#PWR010" H 5810 1880 50  0001 C CNN
-F 1 "GND" H 5815 1957 50  0000 C CNN
-F 2 "" H 5810 2130 50  0001 C CNN
-F 3 "" H 5810 2130 50  0001 C CNN
-	1    5810 2130
-	1    0    0    -1  
+F 0 "#PWR010" H 5440 1925 50  0001 C CNN
+F 1 "GND" H 5445 2002 50  0000 C CNN
+F 2 "" H 5440 2175 50  0001 C CNN
+F 3 "" H 5440 2175 50  0001 C CNN
+	1    5440 2175
+	-1   0    0    -1  
 $EndComp
 $Comp
 L rc2014_max_v-rescue:TXB0108PWR-Logic_LevelTranslator U2
 U 1 1 5D0FF9C7
-P 5810 1430
+P 5440 1475
 AR Path="/5D0FF9C7" Ref="U2"  Part="1" 
 AR Path="/5CF9C1ED/5D0FF9C7" Ref="U?"  Part="1" 
-F 0 "U2" H 5820 1430 50  0000 C CNN
-F 1 "TXB0108PWR" H 6110 760 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5810 680 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 5810 1330 50  0001 C CNN
-F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 5820 1530 50  0001 C CNN "Description"
-F 5 "Texas Instruments" H 5810 1430 50  0001 C CNN "MFR"
-F 6 "TXB0108PWR" H 5810 1430 50  0001 C CNN "MPN"
-F 7 "595-TXB0108PWR" H 5820 1530 50  0001 C CNN "SPN"
-F 8 "Mouser" H 5810 1430 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 5820 1530 50  0001 C CNN "SPURL"
-	1    5810 1430
-	1    0    0    -1  
+F 0 "U2" H 5450 1475 50  0000 C CNN
+F 1 "TXB0108PWR" H 5740 805 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5440 725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 5440 1375 50  0001 C CNN
+F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 5450 1575 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 5440 1475 50  0001 C CNN "MFR"
+F 6 "TXB0108PWR" H 5440 1475 50  0001 C CNN "MPN"
+F 7 "595-TXB0108PWR" H 5450 1575 50  0001 C CNN "SPN"
+F 8 "Mouser" H 5440 1475 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 5450 1575 50  0001 C CNN "SPURL"
+	1    5440 1475
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR016
 U 1 1 5D0FF9EC
-P 5840 3980
+P 5410 4025
 AR Path="/5D0FF9EC" Ref="#PWR016"  Part="1" 
 AR Path="/5CB63856/5D0FF9EC" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5D0FF9EC" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5D0FF9EC" Ref="#PWR?"  Part="1" 
 AR Path="/5CF9C1ED/5D0FF9EC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR016" H 5840 3730 50  0001 C CNN
-F 1 "GND" H 5845 3807 50  0000 C CNN
-F 2 "" H 5840 3980 50  0001 C CNN
-F 3 "" H 5840 3980 50  0001 C CNN
-	1    5840 3980
-	1    0    0    -1  
+F 0 "#PWR016" H 5410 3775 50  0001 C CNN
+F 1 "GND" H 5415 3852 50  0000 C CNN
+F 2 "" H 5410 4025 50  0001 C CNN
+F 3 "" H 5410 4025 50  0001 C CNN
+	1    5410 4025
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR026
 U 1 1 5D1452B0
-P 5850 5870
+P 5400 5915
 AR Path="/5D1452B0" Ref="#PWR026"  Part="1" 
 AR Path="/5CB63856/5D1452B0" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5D1452B0" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5D1452B0" Ref="#PWR?"  Part="1" 
 AR Path="/5CF9C1ED/5D1452B0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR026" H 5850 5620 50  0001 C CNN
-F 1 "GND" H 5855 5697 50  0000 C CNN
-F 2 "" H 5850 5870 50  0001 C CNN
-F 3 "" H 5850 5870 50  0001 C CNN
-	1    5850 5870
-	1    0    0    -1  
+F 0 "#PWR026" H 5400 5665 50  0001 C CNN
+F 1 "GND" H 5405 5742 50  0000 C CNN
+F 2 "" H 5400 5915 50  0001 C CNN
+F 3 "" H 5400 5915 50  0001 C CNN
+	1    5400 5915
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Pack04 RN?
@@ -616,123 +604,123 @@ $EndComp
 $Comp
 L power:GND #PWR021
 U 1 1 5D1452C5
-P 4830 4730
+P 6420 4775
 AR Path="/5D1452C5" Ref="#PWR021"  Part="1" 
 AR Path="/5CB63856/5D1452C5" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5D1452C5" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5D1452C5" Ref="#PWR?"  Part="1" 
 AR Path="/5CF9C1ED/5D1452C5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR021" H 4830 4480 50  0001 C CNN
-F 1 "GND" H 4835 4557 50  0000 C CNN
-F 2 "" H 4830 4730 50  0001 C CNN
-F 3 "" H 4830 4730 50  0001 C CNN
-	1    4830 4730
-	1    0    0    -1  
+F 0 "#PWR021" H 6420 4525 50  0001 C CNN
+F 1 "GND" H 6425 4602 50  0000 C CNN
+F 2 "" H 6420 4775 50  0001 C CNN
+F 3 "" H 6420 4775 50  0001 C CNN
+	1    6420 4775
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R3
 U 1 1 5D1452BC
-P 5110 4680
+P 6140 4725
 AR Path="/5D1452BC" Ref="R3"  Part="1" 
 AR Path="/5CF9C1ED/5D1452BC" Ref="R?"  Part="1" 
-F 0 "R3" V 4914 4680 50  0000 C CNN
-F 1 "1K" V 5005 4680 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5110 4680 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 5110 4680 50  0001 C CNN
-F 4 "Thick Film Resistors - SMD 1K OHM 5%" H 4914 4780 50  0001 C CNN "Description"
-F 5 "Yageo" H 5110 4680 50  0001 C CNN "MFR"
-F 6 "RC0603JR-071KL" H 5110 4680 50  0001 C CNN "MPN"
-F 7 "603-RC0603JR-071KL" H 4914 4780 50  0001 C CNN "SPN"
-F 8 "Mouser" H 5110 4680 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 4914 4780 50  0001 C CNN "SPURL"
-	1    5110 4680
-	0    1    1    0   
+F 0 "R3" V 5944 4725 50  0000 C CNN
+F 1 "1K" V 6035 4725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6140 4725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 6140 4725 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 1K OHM 5%" H 5944 4825 50  0001 C CNN "Description"
+F 5 "Yageo" H 6140 4725 50  0001 C CNN "MFR"
+F 6 "RC0603JR-071KL" H 6140 4725 50  0001 C CNN "MPN"
+F 7 "603-RC0603JR-071KL" H 5944 4825 50  0001 C CNN "SPN"
+F 8 "Mouser" H 6140 4725 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 5944 4825 50  0001 C CNN "SPURL"
+	1    6140 4725
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:GND #PWR022
 U 1 1 5D0AFEB3
-P 2440 4740
+P 4250 4805
 AR Path="/5D0AFEB3" Ref="#PWR022"  Part="1" 
 AR Path="/5CB63856/5D0AFEB3" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5D0AFEB3" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5D0AFEB3" Ref="#PWR?"  Part="1" 
 AR Path="/5CF9C1ED/5D0AFEB3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR022" H 2440 4490 50  0001 C CNN
-F 1 "GND" H 2445 4567 50  0000 C CNN
-F 2 "" H 2440 4740 50  0001 C CNN
-F 3 "" H 2440 4740 50  0001 C CNN
-	1    2440 4740
-	1    0    0    -1  
+F 0 "#PWR022" H 4250 4555 50  0001 C CNN
+F 1 "GND" H 4255 4632 50  0000 C CNN
+F 2 "" H 4250 4805 50  0001 C CNN
+F 3 "" H 4250 4805 50  0001 C CNN
+	1    4250 4805
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R4
 U 1 1 5D0AFEAA
-P 2720 4690
+P 3970 4755
 AR Path="/5D0AFEAA" Ref="R4"  Part="1" 
 AR Path="/5CF9C1ED/5D0AFEAA" Ref="R?"  Part="1" 
-F 0 "R4" V 2524 4690 50  0000 C CNN
-F 1 "1K" V 2615 4690 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2720 4690 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 2720 4690 50  0001 C CNN
-F 4 "Thick Film Resistors - SMD 1K OHM 5%" H 2524 4790 50  0001 C CNN "Description"
-F 5 "Yageo" H 2720 4690 50  0001 C CNN "MFR"
-F 6 "RC0603JR-071KL" H 2720 4690 50  0001 C CNN "MPN"
-F 7 "603-RC0603JR-071KL" H 2524 4790 50  0001 C CNN "SPN"
-F 8 "Mouser" H 2720 4690 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 2524 4790 50  0001 C CNN "SPURL"
-	1    2720 4690
-	0    1    1    0   
+F 0 "R4" V 3774 4755 50  0000 C CNN
+F 1 "1K" V 3865 4755 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3970 4755 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 3970 4755 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 1K OHM 5%" H 3774 4855 50  0001 C CNN "Description"
+F 5 "Yageo" H 3970 4755 50  0001 C CNN "MFR"
+F 6 "RC0603JR-071KL" H 3970 4755 50  0001 C CNN "MPN"
+F 7 "603-RC0603JR-071KL" H 3774 4855 50  0001 C CNN "SPN"
+F 8 "Mouser" H 3970 4755 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 3774 4855 50  0001 C CNN "SPURL"
+	1    3970 4755
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:GND #PWR05
 U 1 1 5D00EC35
-P 2410 1050
+P 4280 1115
 AR Path="/5D00EC35" Ref="#PWR05"  Part="1" 
 AR Path="/5CB63856/5D00EC35" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5D00EC35" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5D00EC35" Ref="#PWR?"  Part="1" 
 AR Path="/5CF9C1ED/5D00EC35" Ref="#PWR?"  Part="1" 
-F 0 "#PWR05" H 2410 800 50  0001 C CNN
-F 1 "GND" H 2415 877 50  0000 C CNN
-F 2 "" H 2410 1050 50  0001 C CNN
-F 3 "" H 2410 1050 50  0001 C CNN
-	1    2410 1050
-	1    0    0    -1  
+F 0 "#PWR05" H 4280 865 50  0001 C CNN
+F 1 "GND" H 4285 942 50  0000 C CNN
+F 2 "" H 4280 1115 50  0001 C CNN
+F 3 "" H 4280 1115 50  0001 C CNN
+	1    4280 1115
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 5D00EC2C
-P 2690 1000
+P 4000 1065
 AR Path="/5D00EC2C" Ref="R1"  Part="1" 
 AR Path="/5CF9C1ED/5D00EC2C" Ref="R?"  Part="1" 
-F 0 "R1" V 2494 1000 50  0000 C CNN
-F 1 "1K" V 2585 1000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2690 1000 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 2690 1000 50  0001 C CNN
-F 4 "Thick Film Resistors - SMD 1K OHM 5%" H 2494 1100 50  0001 C CNN "Description"
-F 5 "Yageo" H 2690 1000 50  0001 C CNN "MFR"
-F 6 "RC0603JR-071KL" H 2690 1000 50  0001 C CNN "MPN"
-F 7 "603-RC0603JR-071KL" H 2494 1100 50  0001 C CNN "SPN"
-F 8 "Mouser" H 2690 1000 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 2494 1100 50  0001 C CNN "SPURL"
-	1    2690 1000
-	0    1    1    0   
+F 0 "R1" V 3804 1065 50  0000 C CNN
+F 1 "1K" V 3895 1065 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4000 1065 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 4000 1065 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 1K OHM 5%" H 3804 1165 50  0001 C CNN "Description"
+F 5 "Yageo" H 4000 1065 50  0001 C CNN "MFR"
+F 6 "RC0603JR-071KL" H 4000 1065 50  0001 C CNN "MPN"
+F 7 "603-RC0603JR-071KL" H 3804 1165 50  0001 C CNN "SPN"
+F 8 "Mouser" H 4000 1065 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 3804 1165 50  0001 C CNN "SPURL"
+	1    4000 1065
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 5D0FF9D6
-P 4790 1080
+P 6460 1125
 AR Path="/5D0FF9D6" Ref="#PWR06"  Part="1" 
 AR Path="/5CB63856/5D0FF9D6" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5D0FF9D6" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5D0FF9D6" Ref="#PWR?"  Part="1" 
 AR Path="/5CF9C1ED/5D0FF9D6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR06" H 4790 830 50  0001 C CNN
-F 1 "GND" H 4795 907 50  0000 C CNN
-F 2 "" H 4790 1080 50  0001 C CNN
-F 3 "" H 4790 1080 50  0001 C CNN
-	1    4790 1080
-	1    0    0    -1  
+F 0 "#PWR06" H 6460 875 50  0001 C CNN
+F 1 "GND" H 6465 952 50  0000 C CNN
+F 2 "" H 6460 1125 50  0001 C CNN
+F 3 "" H 6460 1125 50  0001 C CNN
+	1    6460 1125
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
@@ -777,40 +765,40 @@ $EndComp
 $Comp
 L Device:R_Small R2
 U 1 1 5D0FF9CD
-P 5070 1030
+P 6180 1075
 AR Path="/5D0FF9CD" Ref="R2"  Part="1" 
 AR Path="/5CF9C1ED/5D0FF9CD" Ref="R?"  Part="1" 
-F 0 "R2" V 4874 1030 50  0000 C CNN
-F 1 "1K" V 4965 1030 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5070 1030 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 5070 1030 50  0001 C CNN
-F 4 "Thick Film Resistors - SMD 1K OHM 5%" H 4874 1130 50  0001 C CNN "Description"
-F 5 "Yageo" H 5070 1030 50  0001 C CNN "MFR"
-F 6 "RC0603JR-071KL" H 5070 1030 50  0001 C CNN "MPN"
-F 7 "603-RC0603JR-071KL" H 4874 1130 50  0001 C CNN "SPN"
-F 8 "Mouser" H 5070 1030 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 4874 1130 50  0001 C CNN "SPURL"
-	1    5070 1030
-	0    1    1    0   
+F 0 "R2" V 5984 1075 50  0000 C CNN
+F 1 "1K" V 6075 1075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6180 1075 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RC_Group_51_RoHS_L_10-1527934.pdf" H 6180 1075 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 1K OHM 5%" H 5984 1175 50  0001 C CNN "Description"
+F 5 "Yageo" H 6180 1075 50  0001 C CNN "MFR"
+F 6 "RC0603JR-071KL" H 6180 1075 50  0001 C CNN "MPN"
+F 7 "603-RC0603JR-071KL" H 5984 1175 50  0001 C CNN "SPN"
+F 8 "Mouser" H 6180 1075 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 5984 1175 50  0001 C CNN "SPURL"
+	1    6180 1075
+	0    -1   1    0   
 $EndComp
 $Comp
 L rc2014_max_v-rescue:TXB0108PWR-Logic_LevelTranslator U4
 U 1 1 5D0FF9F2
-P 5840 3280
+P 5410 3325
 AR Path="/5D0FF9F2" Ref="U4"  Part="1" 
 AR Path="/5CF9C1ED/5D0FF9F2" Ref="U?"  Part="1" 
-F 0 "U4" H 5850 3280 50  0000 C CNN
-F 1 "TXB0108PWR" H 6140 2610 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5840 2530 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 5840 3180 50  0001 C CNN
-F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 5850 3380 50  0001 C CNN "Description"
-F 5 "Texas Instruments" H 5840 3280 50  0001 C CNN "MFR"
-F 6 "TXB0108PWR" H 5840 3280 50  0001 C CNN "MPN"
-F 7 "595-TXB0108PWR" H 5850 3380 50  0001 C CNN "SPN"
-F 8 "Mouser" H 5840 3280 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 5850 3380 50  0001 C CNN "SPURL"
-	1    5840 3280
-	1    0    0    -1  
+F 0 "U4" H 5420 3325 50  0000 C CNN
+F 1 "TXB0108PWR" H 5710 2655 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5410 2575 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 5410 3225 50  0001 C CNN
+F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 5420 3425 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 5410 3325 50  0001 C CNN "MFR"
+F 6 "TXB0108PWR" H 5410 3325 50  0001 C CNN "MPN"
+F 7 "595-TXB0108PWR" H 5420 3425 50  0001 C CNN "SPN"
+F 8 "Mouser" H 5410 3325 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 5420 3425 50  0001 C CNN "SPURL"
+	1    5410 3325
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
@@ -919,21 +907,21 @@ Text GLabel 870  5540 2    50   Output ~ 0
 TXA
 Text GLabel 870  5640 2    50   Input ~ 0
 RXA
-Text GLabel 5440 3580 0    50   Output ~ 0
+Text GLabel 5810 3625 2    50   Output ~ 0
 ~MREQ_F
-Text GLabel 5440 3380 0    50   Output ~ 0
+Text GLabel 5810 3425 2    50   Output ~ 0
 ~WR_F
-Text GLabel 5440 3180 0    50   Output ~ 0
+Text GLabel 5810 3225 2    50   Output ~ 0
 ~RD_F
-Text GLabel 5440 3080 0    50   Output ~ 0
+Text GLabel 5810 3125 2    50   Output ~ 0
 ~IORQ_F
-Text GLabel 3090 7240 0    50   3State ~ 0
+Text GLabel 3600 7305 2    50   3State ~ 0
 D4_F
-Text GLabel 3090 7040 0    50   3State ~ 0
+Text GLabel 3600 7105 2    50   3State ~ 0
 D5_F
-Text GLabel 3090 6840 0    50   3State ~ 0
+Text GLabel 3600 6905 2    50   3State ~ 0
 D6_F
-Text GLabel 3090 6640 0    50   3State ~ 0
+Text GLabel 3600 6705 2    50   3State ~ 0
 D7_F
 Text GLabel 1430 5440 2    50   3State ~ 0
 D15
@@ -957,193 +945,193 @@ Text GLabel 1430 5640 2    50   Input ~ 0
 RXB
 Text GLabel 1430 3940 2    50   Output ~ 0
 ~RFSH
-Text GLabel 3090 7340 0    50   3State ~ 0
+Text GLabel 3600 7405 2    50   3State ~ 0
 D12_F
-Text GLabel 3090 7140 0    50   3State ~ 0
+Text GLabel 3600 7205 2    50   3State ~ 0
 D13_F
-Text GLabel 3090 6940 0    50   3State ~ 0
+Text GLabel 3600 7005 2    50   3State ~ 0
 D14_F
-Text GLabel 3090 6740 0    50   3State ~ 0
+Text GLabel 3600 6805 2    50   3State ~ 0
 D15_F
-Text GLabel 3830 1300 2    50   Input ~ 0
+Text GLabel 2860 1365 0    50   Input ~ 0
 A10
-Text GLabel 3830 1400 2    50   Input ~ 0
+Text GLabel 2860 1465 0    50   Input ~ 0
 A11
-Text GLabel 3830 1800 2    50   Input ~ 0
+Text GLabel 2860 1865 0    50   Input ~ 0
 A15
-Text GLabel 3830 1700 2    50   Input ~ 0
+Text GLabel 2860 1765 0    50   Input ~ 0
 A14
-Text GLabel 3830 1600 2    50   Input ~ 0
+Text GLabel 2860 1665 0    50   Input ~ 0
 A13
-Text GLabel 3830 1500 2    50   Input ~ 0
+Text GLabel 2860 1565 0    50   Input ~ 0
 A12
-Text GLabel 3830 1100 2    50   Input ~ 0
+Text GLabel 2860 1165 0    50   Input ~ 0
 A8
-Text GLabel 3830 1200 2    50   Input ~ 0
+Text GLabel 2860 1265 0    50   Input ~ 0
 A9
-Text GLabel 3030 1200 0    50   Output ~ 0
+Text GLabel 3660 1265 2    50   Output ~ 0
 A9_F
-Text GLabel 3030 1100 0    50   Output ~ 0
+Text GLabel 3660 1165 2    50   Output ~ 0
 A8_F
-Text GLabel 3030 1500 0    50   Output ~ 0
+Text GLabel 3660 1565 2    50   Output ~ 0
 A12_F
-Text GLabel 3030 1600 0    50   Output ~ 0
+Text GLabel 3660 1665 2    50   Output ~ 0
 A13_F
-Text GLabel 3030 1700 0    50   Output ~ 0
+Text GLabel 3660 1765 2    50   Output ~ 0
 A14_F
-Text GLabel 3030 1800 0    50   Output ~ 0
+Text GLabel 3660 1865 2    50   Output ~ 0
 A15_F
-Text GLabel 3030 1400 0    50   Output ~ 0
+Text GLabel 3660 1465 2    50   Output ~ 0
 A11_F
-Text GLabel 3030 1300 0    50   Output ~ 0
+Text GLabel 3660 1365 2    50   Output ~ 0
 A10_F
-Text GLabel 3860 2950 2    50   Input ~ 0
+Text GLabel 2830 3015 0    50   Input ~ 0
 A0
-Text GLabel 3860 3050 2    50   Input ~ 0
+Text GLabel 2830 3115 0    50   Input ~ 0
 A1
-Text GLabel 3860 3150 2    50   Input ~ 0
+Text GLabel 2830 3215 0    50   Input ~ 0
 A2
-Text GLabel 3860 3250 2    50   Input ~ 0
+Text GLabel 2830 3315 0    50   Input ~ 0
 A3
-Text GLabel 3860 3350 2    50   Input ~ 0
+Text GLabel 2830 3415 0    50   Input ~ 0
 A4
-Text GLabel 3860 3450 2    50   Input ~ 0
+Text GLabel 2830 3515 0    50   Input ~ 0
 A5
-Text GLabel 3860 3550 2    50   Input ~ 0
+Text GLabel 2830 3615 0    50   Input ~ 0
 A6
-Text GLabel 3860 3650 2    50   Input ~ 0
+Text GLabel 2830 3715 0    50   Input ~ 0
 A7
-Text GLabel 3060 3650 0    50   Output ~ 0
+Text GLabel 3630 3715 2    50   Output ~ 0
 A7_F
-Text GLabel 3060 3550 0    50   Output ~ 0
+Text GLabel 3630 3615 2    50   Output ~ 0
 A6_F
-Text GLabel 3060 3450 0    50   Output ~ 0
+Text GLabel 3630 3515 2    50   Output ~ 0
 A5_F
-Text GLabel 3060 3350 0    50   Output ~ 0
+Text GLabel 3630 3415 2    50   Output ~ 0
 A4_F
-Text GLabel 3060 3250 0    50   Output ~ 0
+Text GLabel 3630 3315 2    50   Output ~ 0
 A3_F
-Text GLabel 3060 3150 0    50   Output ~ 0
+Text GLabel 3630 3215 2    50   Output ~ 0
 A2_F
-Text GLabel 3060 3050 0    50   Output ~ 0
+Text GLabel 3630 3115 2    50   Output ~ 0
 A1_F
-Text GLabel 3060 2950 0    50   Output ~ 0
+Text GLabel 3630 3015 2    50   Output ~ 0
 A0_F
-Text GLabel 3860 5390 2    50   3State ~ 0
+Text GLabel 2830 5455 0    50   3State ~ 0
 D0
-Text GLabel 3860 5190 2    50   3State ~ 0
+Text GLabel 2830 5255 0    50   3State ~ 0
 D1
-Text GLabel 3860 4990 2    50   3State ~ 0
+Text GLabel 2830 5055 0    50   3State ~ 0
 D2
-Text GLabel 3860 4790 2    50   3State ~ 0
+Text GLabel 2830 4855 0    50   3State ~ 0
 D3
-Text GLabel 3860 4890 2    50   3State ~ 0
+Text GLabel 2830 4955 0    50   3State ~ 0
 D11
-Text GLabel 3860 5090 2    50   3State ~ 0
+Text GLabel 2830 5155 0    50   3State ~ 0
 D10
-Text GLabel 3860 5290 2    50   3State ~ 0
+Text GLabel 2830 5355 0    50   3State ~ 0
 D9
-Text GLabel 3860 5490 2    50   3State ~ 0
+Text GLabel 2830 5555 0    50   3State ~ 0
 D8
-Text GLabel 3060 5390 0    50   3State ~ 0
+Text GLabel 3630 5455 2    50   3State ~ 0
 D0_F
-Text GLabel 3060 5190 0    50   3State ~ 0
+Text GLabel 3630 5255 2    50   3State ~ 0
 D1_F
-Text GLabel 3060 4990 0    50   3State ~ 0
+Text GLabel 3630 5055 2    50   3State ~ 0
 D2_F
-Text GLabel 3060 4790 0    50   3State ~ 0
+Text GLabel 3630 4855 2    50   3State ~ 0
 D3_F
-Text GLabel 3060 5090 0    50   3State ~ 0
+Text GLabel 3630 5155 2    50   3State ~ 0
 D10_F
-Text GLabel 3060 4890 0    50   3State ~ 0
+Text GLabel 3630 4955 2    50   3State ~ 0
 D11_F
-Text GLabel 3060 5490 0    50   3State ~ 0
+Text GLabel 3630 5555 2    50   3State ~ 0
 D8_F
-Text GLabel 3060 5290 0    50   3State ~ 0
+Text GLabel 3630 5355 2    50   3State ~ 0
 D9_F
-Text GLabel 3890 7240 2    50   3State ~ 0
+Text GLabel 2800 7305 0    50   3State ~ 0
 D4
-Text GLabel 3890 7040 2    50   3State ~ 0
+Text GLabel 2800 7105 0    50   3State ~ 0
 D5
-Text GLabel 3890 6840 2    50   3State ~ 0
+Text GLabel 2800 6905 0    50   3State ~ 0
 D6
-Text GLabel 3890 6640 2    50   3State ~ 0
+Text GLabel 2800 6705 0    50   3State ~ 0
 D7
-Text GLabel 3890 6740 2    50   3State ~ 0
+Text GLabel 2800 6805 0    50   3State ~ 0
 D15
-Text GLabel 3890 6940 2    50   3State ~ 0
+Text GLabel 2800 7005 0    50   3State ~ 0
 D14
-Text GLabel 3890 7140 2    50   3State ~ 0
+Text GLabel 2800 7205 0    50   3State ~ 0
 D13
-Text GLabel 3890 7340 2    50   3State ~ 0
+Text GLabel 2800 7405 0    50   3State ~ 0
 D12
-Text GLabel 6240 3680 2    50   Output ~ 0
+Text GLabel 5010 3725 0    50   Output ~ 0
 ~HALT
-Text GLabel 6240 3480 2    50   Output ~ 0
+Text GLabel 5010 3525 0    50   Output ~ 0
 ~BUSRQ
-Text GLabel 6240 3280 2    50   Output ~ 0
+Text GLabel 5010 3325 0    50   Output ~ 0
 ~WAIT
-Text GLabel 6240 2980 2    50   Output ~ 0
+Text GLabel 5010 3025 0    50   Output ~ 0
 ~NMI
-Text GLabel 6210 1230 2    50   Output ~ 0
+Text GLabel 5040 1275 0    50   Output ~ 0
 ~INT
-Text GLabel 6210 1530 2    50   Output ~ 0
+Text GLabel 5040 1575 0    50   Output ~ 0
 ~RESET
-Text GLabel 6210 1130 2    50   Input ~ 0
+Text GLabel 5040 1175 0    50   Input ~ 0
 ~BUSACK
-Text GLabel 6210 1630 2    50   Input ~ 0
+Text GLabel 5040 1675 0    50   Input ~ 0
 ~PAGE
-Text GLabel 6240 3580 2    50   Input ~ 0
+Text GLabel 5010 3625 0    50   Input ~ 0
 ~MREQ
-Text GLabel 6240 3380 2    50   Input ~ 0
+Text GLabel 5010 3425 0    50   Input ~ 0
 ~WR
-Text GLabel 6240 3180 2    50   Input ~ 0
+Text GLabel 5010 3225 0    50   Input ~ 0
 ~RD
-Text GLabel 6240 3080 2    50   Input ~ 0
+Text GLabel 5010 3125 0    50   Input ~ 0
 ~IORQ
-Text GLabel 6210 1730 2    50   Input ~ 0
+Text GLabel 5040 1775 0    50   Input ~ 0
 ~M1
-Text GLabel 6210 1330 2    50   Input ~ 0
+Text GLabel 5040 1375 0    50   Input ~ 0
 CLK
-Text GLabel 5440 2980 0    50   Input ~ 0
+Text GLabel 5810 3025 2    50   Input ~ 0
 ~NMI_F
-Text GLabel 5440 3280 0    50   Input ~ 0
+Text GLabel 5810 3325 2    50   Input ~ 0
 ~WAIT_F
-Text GLabel 5440 3480 0    50   Input ~ 0
+Text GLabel 5810 3525 2    50   Input ~ 0
 ~BUSRQ_F
-Text GLabel 5440 3680 0    50   Input ~ 0
+Text GLabel 5810 3725 2    50   Input ~ 0
 ~HALT_F
-Text GLabel 6250 4880 2    50   Input ~ 0
+Text GLabel 5000 4925 0    50   Input ~ 0
 RXB
-Text GLabel 6250 5080 2    50   Output ~ 0
+Text GLabel 5000 5125 0    50   Output ~ 0
 TXB
-Text GLabel 6250 4780 2    50   Input ~ 0
+Text GLabel 5000 4825 0    50   Input ~ 0
 RXA
-Text GLabel 6250 4980 2    50   Output ~ 0
+Text GLabel 5000 5025 0    50   Output ~ 0
 TXA
-Text GLabel 5450 4780 0    50   Output ~ 0
+Text GLabel 5800 4825 2    50   Output ~ 0
 RXA_F
-Text GLabel 5450 4980 0    50   Input ~ 0
+Text GLabel 5800 5025 2    50   Input ~ 0
 TXA_F
-Text GLabel 5450 4880 0    50   Output ~ 0
+Text GLabel 5800 4925 2    50   Output ~ 0
 RXB_F
-Text GLabel 5450 5080 0    50   Input ~ 0
+Text GLabel 5800 5125 2    50   Input ~ 0
 TXB_F
-Text GLabel 3090 6540 0    50   Input ~ 0
+Text GLabel 3600 6605 2    50   Input ~ 0
 OE_D
-Text GLabel 5330 4450 1    50   Input ~ 0
+Text GLabel 5920 4495 1    50   Input ~ 0
 OE_S
-Text GLabel 2940 4460 1    50   Input ~ 0
+Text GLabel 3750 4525 1    50   Input ~ 0
 OE_D
-Text GLabel 2910 770  1    50   Input ~ 0
+Text GLabel 3780 835  1    50   Input ~ 0
 OE_A
-Text GLabel 3060 2850 0    50   Input ~ 0
+Text GLabel 3630 2915 2    50   Input ~ 0
 OE_A
-Text GLabel 5440 2880 0    50   Input ~ 0
+Text GLabel 5810 2925 2    50   Input ~ 0
 OE_C
-Text GLabel 5290 800  1    50   Input ~ 0
+Text GLabel 5960 845  1    50   Input ~ 0
 OE_C
-Text GLabel 6210 1830 2    50   Input ~ 0
+Text GLabel 5040 1875 0    50   Input ~ 0
 ~RFSH
 Text GLabel 7960 1790 3    50   Output ~ 0
 ~BUSRQ
@@ -1153,47 +1141,47 @@ Text GLabel 7860 1790 3    50   Output ~ 0
 ~WAIT
 Text GLabel 7760 1790 3    50   Output ~ 0
 ~NMI
-Text GLabel 5410 1830 0    50   Output ~ 0
+Text GLabel 5840 1875 2    50   Output ~ 0
 ~RFSH~_F
-Text GLabel 5410 1230 0    50   Input ~ 0
+Text GLabel 5840 1275 2    50   Input ~ 0
 ~INT_F
-Text GLabel 5410 1530 0    50   Input ~ 0
+Text GLabel 5840 1575 2    50   Input ~ 0
 ~RESET_F
-Text GLabel 5410 1330 0    50   Output ~ 0
+Text GLabel 5840 1375 2    50   Output ~ 0
 CLK_F
-Text GLabel 5410 1730 0    50   Output ~ 0
+Text GLabel 5840 1775 2    50   Output ~ 0
 ~M1_F
-Text GLabel 5410 1630 0    50   Output ~ 0
+Text GLabel 5840 1675 2    50   Output ~ 0
 ~PAGE_F
-Text GLabel 5410 1130 0    50   Output ~ 0
+Text GLabel 5840 1175 2    50   Output ~ 0
 ~BUSACK_F
-Text GLabel 3390 6240 1    50   Output ~ 0
+Text GLabel 3300 6305 1    50   Output ~ 0
 3V3
-Text GLabel 3590 6240 1    50   Output ~ 0
+Text GLabel 3100 6305 1    50   Output ~ 0
 5V
-Text GLabel 3360 4390 1    50   Output ~ 0
+Text GLabel 3330 4455 1    50   Output ~ 0
 3V3
-Text GLabel 3560 4390 1    50   Output ~ 0
+Text GLabel 3130 4455 1    50   Output ~ 0
 5V
-Text GLabel 5750 4380 1    50   Output ~ 0
+Text GLabel 5500 4425 1    50   Output ~ 0
 3V3
-Text GLabel 5950 4380 1    50   Output ~ 0
+Text GLabel 5300 4425 1    50   Output ~ 0
 5V
-Text GLabel 5740 2580 1    50   Output ~ 0
+Text GLabel 5510 2625 1    50   Output ~ 0
 3V3
-Text GLabel 5940 2580 1    50   Output ~ 0
+Text GLabel 5310 2625 1    50   Output ~ 0
 5V
-Text GLabel 3360 2550 1    50   Output ~ 0
+Text GLabel 3330 2615 1    50   Output ~ 0
 3V3
-Text GLabel 3560 2550 1    50   Output ~ 0
+Text GLabel 3130 2615 1    50   Output ~ 0
 5V
-Text GLabel 3330 700  1    50   Output ~ 0
+Text GLabel 3360 765  1    50   Output ~ 0
 3V3
-Text GLabel 3530 700  1    50   Output ~ 0
+Text GLabel 3160 765  1    50   Output ~ 0
 5V
-Text GLabel 5710 730  1    50   Output ~ 0
+Text GLabel 5540 775  1    50   Output ~ 0
 3V3
-Text GLabel 5910 730  1    50   Output ~ 0
+Text GLabel 5340 775  1    50   Output ~ 0
 5V
 Text GLabel 7810 1250 1    50   Output ~ 0
 3V3
@@ -1246,45 +1234,45 @@ Wire Wire Line
 Wire Wire Line
 	8050 5170 8430 5170
 Wire Wire Line
-	5330 4680 5210 4680
+	5920 4725 6040 4725
 Wire Wire Line
-	5330 4450 5330 4680
+	5920 4495 5920 4725
 Wire Wire Line
-	5450 4680 5330 4680
+	5800 4725 5920 4725
 Wire Wire Line
-	4830 4680 4830 4730
+	6420 4725 6420 4775
 Wire Wire Line
-	5010 4680 4830 4680
+	6240 4725 6420 4725
 Wire Wire Line
-	2940 4690 2820 4690
+	3750 4755 3870 4755
 Wire Wire Line
-	2940 4460 2940 4690
+	3750 4525 3750 4755
 Wire Wire Line
-	3060 4690 2940 4690
+	3630 4755 3750 4755
 Wire Wire Line
-	2440 4690 2440 4740
+	4250 4755 4250 4805
 Wire Wire Line
-	2620 4690 2440 4690
+	4070 4755 4250 4755
 Wire Wire Line
-	2910 1000 2790 1000
+	3780 1065 3900 1065
 Wire Wire Line
-	2910 770  2910 1000
+	3780 835  3780 1065
 Wire Wire Line
-	3030 1000 2910 1000
+	3660 1065 3780 1065
 Wire Wire Line
-	2410 1000 2410 1050
+	4280 1065 4280 1115
 Wire Wire Line
-	2590 1000 2410 1000
+	4100 1065 4280 1065
 Wire Wire Line
-	5290 1030 5170 1030
+	5960 1075 6080 1075
 Wire Wire Line
-	5290 800  5290 1030
+	5960 845  5960 1075
 Wire Wire Line
-	5410 1030 5290 1030
+	5840 1075 5960 1075
 Wire Wire Line
-	4790 1030 4790 1080
+	6460 1075 6460 1125
 Wire Wire Line
-	4970 1030 4790 1030
+	6280 1075 6460 1075
 Wire Wire Line
 	7660 1390 7760 1390
 Wire Wire Line
@@ -1331,10 +1319,10 @@ Connection ~ 7630 4870
 Connection ~ 7630 5170
 Connection ~ 8430 4870
 Connection ~ 8430 5170
-Connection ~ 5330 4680
-Connection ~ 2940 4690
-Connection ~ 2910 1000
-Connection ~ 5290 1030
+Connection ~ 5920 4725
+Connection ~ 3750 4755
+Connection ~ 3780 1065
+Connection ~ 5960 1075
 Connection ~ 7760 1390
 Connection ~ 7860 1390
 Connection ~ 7810 1390
@@ -1373,60 +1361,60 @@ Wire Wire Line
 $Comp
 L rc2014_max_v-rescue:TXB0108PWR-Logic_LevelTranslator U5
 U 1 1 5D1452B6
-P 5850 5080
+P 5400 5125
 AR Path="/5D1452B6" Ref="U5"  Part="1" 
 AR Path="/5CF9C1ED/5D1452B6" Ref="U?"  Part="1" 
-F 0 "U5" H 5860 5080 50  0000 C CNN
-F 1 "TXB0108PWR" H 6275 5735 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5850 4330 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 5850 4980 50  0001 C CNN
-F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 5860 5180 50  0001 C CNN "Description"
-F 5 "Texas Instruments" H 5850 5080 50  0001 C CNN "MFR"
-F 6 "TXB0108PWR" H 5850 5080 50  0001 C CNN "MPN"
-F 7 "595-TXB0108PWR" H 5860 5180 50  0001 C CNN "SPN"
-F 8 "Mouser" H 5850 5080 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 5860 5180 50  0001 C CNN "SPURL"
-	1    5850 5080
-	1    0    0    -1  
+F 0 "U5" H 5410 5125 50  0000 C CNN
+F 1 "TXB0108PWR" H 5825 5780 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5400 4375 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 5400 5025 50  0001 C CNN
+F 4 "Translation - Voltage Levels 8-Bit Bi-directional V-Level Translator" H 5410 5225 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 5400 5125 50  0001 C CNN "MFR"
+F 6 "TXB0108PWR" H 5400 5125 50  0001 C CNN "MPN"
+F 7 "595-TXB0108PWR" H 5410 5225 50  0001 C CNN "SPN"
+F 8 "Mouser" H 5400 5125 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/595-TXB0108PWR" H 5410 5225 50  0001 C CNN "SPURL"
+	1    5400 5125
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 5780 5850 5825
+	5400 5825 5400 5870
 Wire Wire Line
-	5450 5180 5450 5280
+	5800 5225 5800 5325
 Wire Wire Line
-	5450 5825 5850 5825
-Connection ~ 5450 5280
+	5800 5870 5400 5870
+Connection ~ 5800 5325
 Wire Wire Line
-	5450 5280 5450 5380
-Connection ~ 5450 5380
+	5800 5325 5800 5425
+Connection ~ 5800 5425
 Wire Wire Line
-	5450 5380 5450 5480
-Connection ~ 5450 5480
+	5800 5425 5800 5525
+Connection ~ 5800 5525
 Wire Wire Line
-	5450 5480 5450 5825
-Connection ~ 5850 5825
+	5800 5525 5800 5870
+Connection ~ 5400 5870
 Wire Wire Line
-	5850 5825 5850 5870
-Text GLabel 6210 1430 2    50   Input ~ 0
+	5400 5870 5400 5915
+Text GLabel 5040 1475 0    50   Input ~ 0
 CLK2
 Wire Wire Line
-	6250 5825 5850 5825
+	5000 5870 5400 5870
 Wire Wire Line
-	6250 5180 6250 5280
-Connection ~ 6250 5280
+	5000 5225 5000 5325
+Connection ~ 5000 5325
 Wire Wire Line
-	6250 5280 6250 5380
-Connection ~ 6250 5380
+	5000 5325 5000 5425
+Connection ~ 5000 5425
 Wire Wire Line
-	6250 5380 6250 5480
+	5000 5425 5000 5525
 Wire Wire Line
-	6250 5480 6250 5825
-Connection ~ 6250 5480
-Text GLabel 5410 1430 0    50   Output ~ 0
+	5000 5525 5000 5870
+Connection ~ 5000 5525
+Text GLabel 5840 1475 2    50   Output ~ 0
 CLK2_F
-Text GLabel 4735 1430 0    50   Output ~ 0
+Text GLabel 6515 1475 2    50   Output ~ 0
 CLK2_F
-NoConn ~ 4735 1430
+NoConn ~ 6515 1475
 Wire Wire Line
 	1530 6900 1685 6900
 $Comp
@@ -1451,111 +1439,123 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 5D401D3B
-P 7400 3595
+P 7170 3295
 AR Path="/5CFABACD/5D401D3B" Ref="C?"  Part="1" 
 AR Path="/5D401D3B" Ref="C20"  Part="1" 
 AR Path="/5D2A5E4A/5D401D3B" Ref="C?"  Part="1" 
-F 0 "C20" H 7515 3641 50  0000 L CNN
-F 1 "100nF" H 7515 3550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7438 3445 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 7400 3595 50  0001 C CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 7515 3741 50  0001 C CNN "Description"
-F 5 "Taiyo Yuden" H 2100 -3105 50  0001 C CNN "MFR"
-F 6 "TMK107BJ104KA-T" H 2100 -3105 50  0001 C CNN "MPN"
-F 7 "963-TMK107BJ104KA-T" H 7515 3741 50  0001 C CNN "SPN"
-F 8 "Mouser" H 2100 -3105 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H 2100 -3105 50  0001 C CNN "SPURL"
-	1    7400 3595
+F 0 "C20" H 7285 3341 50  0000 L CNN
+F 1 "100nF" H 7285 3250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7208 3145 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 7170 3295 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 7285 3441 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" H 1870 -3405 50  0001 C CNN "MFR"
+F 6 "TMK107BJ104KA-T" H 1870 -3405 50  0001 C CNN "MPN"
+F 7 "963-TMK107BJ104KA-T" H 7285 3441 50  0001 C CNN "SPN"
+F 8 "Mouser" H 1870 -3405 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H 1870 -3405 50  0001 C CNN "SPURL"
+	1    7170 3295
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5D401D47
-P 7770 3595
+P 7540 3295
 AR Path="/5CFABACD/5D401D47" Ref="C?"  Part="1" 
 AR Path="/5D401D47" Ref="C21"  Part="1" 
 AR Path="/5D2A5E4A/5D401D47" Ref="C?"  Part="1" 
-F 0 "C21" H 7885 3641 50  0000 L CNN
-F 1 "100nF" H 7885 3550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7808 3445 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 7770 3595 50  0001 C CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 7885 3741 50  0001 C CNN "Description"
-F 5 "Taiyo Yuden" H 2470 -3105 50  0001 C CNN "MFR"
-F 6 "TMK107BJ104KA-T" H 2470 -3105 50  0001 C CNN "MPN"
-F 7 "963-TMK107BJ104KA-T" H 7885 3741 50  0001 C CNN "SPN"
-F 8 "Mouser" H 2470 -3105 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H 2470 -3105 50  0001 C CNN "SPURL"
-	1    7770 3595
+F 0 "C21" H 7655 3341 50  0000 L CNN
+F 1 "100nF" H 7655 3250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7578 3145 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 7540 3295 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 7655 3441 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" H 2240 -3405 50  0001 C CNN "MFR"
+F 6 "TMK107BJ104KA-T" H 2240 -3405 50  0001 C CNN "MPN"
+F 7 "963-TMK107BJ104KA-T" H 7655 3441 50  0001 C CNN "SPN"
+F 8 "Mouser" H 2240 -3405 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H 2240 -3405 50  0001 C CNN "SPURL"
+	1    7540 3295
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5D401D53
-P 8620 3595
+P 8390 3295
 AR Path="/5CFABACD/5D401D53" Ref="C?"  Part="1" 
 AR Path="/5D401D53" Ref="C33"  Part="1" 
 AR Path="/5D2A5E4A/5D401D53" Ref="C?"  Part="1" 
-F 0 "C33" H 8735 3641 50  0000 L CNN
-F 1 "100nF" H 8735 3550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8658 3445 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 8620 3595 50  0001 C CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 8735 3741 50  0001 C CNN "Description"
-F 5 "Taiyo Yuden" H 3320 -3105 50  0001 C CNN "MFR"
-F 6 "TMK107BJ104KA-T" H 3320 -3105 50  0001 C CNN "MPN"
-F 7 "963-TMK107BJ104KA-T" H 8735 3741 50  0001 C CNN "SPN"
-F 8 "Mouser" H 3320 -3105 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H 3320 -3105 50  0001 C CNN "SPURL"
-	1    8620 3595
+F 0 "C33" H 8505 3341 50  0000 L CNN
+F 1 "100nF" H 8505 3250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8428 3145 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 8390 3295 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 8505 3441 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" H 3090 -3405 50  0001 C CNN "MFR"
+F 6 "TMK107BJ104KA-T" H 3090 -3405 50  0001 C CNN "MPN"
+F 7 "963-TMK107BJ104KA-T" H 8505 3441 50  0001 C CNN "SPN"
+F 8 "Mouser" H 3090 -3405 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H 3090 -3405 50  0001 C CNN "SPURL"
+	1    8390 3295
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5D401D5F
-P 8200 3595
+P 7970 3295
 AR Path="/5CFABACD/5D401D5F" Ref="C?"  Part="1" 
 AR Path="/5D401D5F" Ref="C22"  Part="1" 
 AR Path="/5D2A5E4A/5D401D5F" Ref="C?"  Part="1" 
-F 0 "C22" H 8315 3641 50  0000 L CNN
-F 1 "100nF" H 8315 3550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8238 3445 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 8200 3595 50  0001 C CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 8315 3741 50  0001 C CNN "Description"
-F 5 "Taiyo Yuden" H 2900 -3105 50  0001 C CNN "MFR"
-F 6 "TMK107BJ104KA-T" H 2900 -3105 50  0001 C CNN "MPN"
-F 7 "963-TMK107BJ104KA-T" H 8315 3741 50  0001 C CNN "SPN"
-F 8 "Mouser" H 2900 -3105 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H 2900 -3105 50  0001 C CNN "SPURL"
-	1    8200 3595
+F 0 "C22" H 8085 3341 50  0000 L CNN
+F 1 "100nF" H 8085 3250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8008 3145 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 7970 3295 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 8085 3441 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" H 2670 -3405 50  0001 C CNN "MFR"
+F 6 "TMK107BJ104KA-T" H 2670 -3405 50  0001 C CNN "MPN"
+F 7 "963-TMK107BJ104KA-T" H 8085 3441 50  0001 C CNN "SPN"
+F 8 "Mouser" H 2670 -3405 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H 2670 -3405 50  0001 C CNN "SPURL"
+	1    7970 3295
 	1    0    0    -1  
 $EndComp
-Text GLabel 8005 3385 1    50   Output ~ 0
+Text GLabel 7775 3085 1    50   Output ~ 0
 3V3
 Wire Wire Line
-	8200 3445 8005 3445
+	7970 3145 7775 3145
 Wire Wire Line
-	7400 3445 7770 3445
+	7170 3145 7540 3145
 Wire Wire Line
-	7770 3745 8005 3745
+	7540 3445 7775 3445
 Wire Wire Line
-	7400 3745 7770 3745
+	7170 3445 7540 3445
 Wire Wire Line
-	8005 3745 8005 3825
+	7775 3445 7775 3525
 Wire Wire Line
-	8005 3445 8005 3385
+	7775 3145 7775 3085
 Wire Wire Line
-	8200 3445 8620 3445
+	7970 3145 8390 3145
 Wire Wire Line
-	8200 3745 8620 3745
-Connection ~ 7770 3445
-Connection ~ 7770 3745
-Connection ~ 8200 3445
-Connection ~ 8200 3745
-Text GLabel 8005 3825 3    50   Output ~ 0
+	7970 3445 8390 3445
+Connection ~ 7540 3145
+Connection ~ 7540 3445
+Connection ~ 7970 3145
+Connection ~ 7970 3445
+Text GLabel 7775 3525 3    50   Output ~ 0
 5V
-Connection ~ 8005 3445
+Connection ~ 7775 3145
 Wire Wire Line
-	8005 3445 7770 3445
-Connection ~ 8005 3745
+	7775 3145 7540 3145
+Connection ~ 7775 3445
 Wire Wire Line
-	8005 3745 8200 3745
+	7775 3445 7970 3445
+Wire Notes Line
+	6855 3905 8870 3905
+Wire Notes Line
+	8870 3905 8870 2610
+Wire Notes Line
+	8870 2610 6855 2610
+Wire Notes Line
+	6855 2925 6850 2925
+Wire Notes Line
+	6855 2610 6855 3905
+Text Notes 6885 2720 0    50   ~ 0
+Powerplane Stitching
 $EndSCHEMATC

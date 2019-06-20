@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -15,10 +15,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 990  5010 1360 1000
+S 610  5220 785  575 
 U 5CFFC458
 F0 "Clocks" 50
 F1 "clocks.sch" 50
+F2 "CLK_100Mhz" O R 1395 5395 50 
+F3 "CLK_7_3728_Mhz" O R 1395 5495 50 
+F4 "CLK_1Mhz" O R 1395 5605 50 
 $EndSheet
 $Comp
 L rc2014_max_v-rescue:IS61LV5128AL-10TLI-Memory_RAM U?
@@ -462,4 +465,82 @@ NoConn ~ 4390 4645
 NoConn ~ 4365 3000
 NoConn ~ 4390 5645
 NoConn ~ 4390 5245
+$Sheet
+S 580  6330 590  480 
+U 5D0BF766
+F0 "JTAG" 50
+F1 "USB_JTAG.sch" 50
+F2 "TCK" O R 1170 6635 50 
+F3 "TDI" O R 1170 6535 50 
+F4 "TDO" I R 1170 6735 50 
+F5 "TMS" O R 1170 6435 50 
+$EndSheet
+$Comp
+L rc2014_max_v-rescue:5M1270ZT144C5N-CPLD_Altera U?
+U 6 1 5D1673E5
+P 2085 6355
+AR Path="/5D1673E5" Ref="U?"  Part="6" 
+AR Path="/5D0F9837/5D1673E5" Ref="U?"  Part="6" 
+AR Path="/5CFABACD/5D0BF766/5D1673E5" Ref="U?"  Part="6" 
+AR Path="/5CFABACD/5D1673E5" Ref="U11"  Part="6" 
+F 0 "U11" H 2403 6218 50  0000 L CNN
+F 1 "5M1270ZT144C5N" H 2403 6127 50  0000 L CNN
+F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 3925 9255 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/612/max5_handbook-1098935.pdf" H 3925 9155 50  0001 L CNN
+F 4 "CPLD - Complex Programmable Logic Devices CPLD - MAX V 980 Macro 114 IOs" H 3925 9055 50  0001 L CNN "Description"
+F 5 "1.55" H 3925 8955 50  0001 L CNN "Height"
+F 6 "Intel" H 2085 6355 50  0001 C CNN "MFR"
+F 7 "5M1270ZT144C5N" H 2085 6355 50  0001 C CNN "MPN"
+F 8 "5M1270ZT144C5N" H 3925 8555 50  0001 L CNN "Manufacturer_Part_Number"
+F 9 "989-5M1270ZT144C5N" H 2403 6318 50  0001 C CNN "SPN"
+F 10 "Mouser" H 2085 6355 50  0001 C CNN "SPR"
+F 11 "https://www.mouser.com/ProductDetail/989-5M1270ZT144C5N" H 2403 6318 50  0001 C CNN "SPURL"
+	6    2085 6355
+	1    0    0    -1  
+$EndComp
+$Comp
+L rc2014_max_v-rescue:5M1270ZT144C5N-CPLD_Altera U?
+U 5 1 5D1C4FEB
+P 2425 5295
+AR Path="/5D0F9837/5D1C4FEB" Ref="U?"  Part="5" 
+AR Path="/5CFABACD/5D1C4FEB" Ref="U11"  Part="5" 
+AR Path="/5CFABACD/5CFFC458/5D1C4FEB" Ref="U?"  Part="5" 
+AR Path="/5D1C4FEB" Ref="U?"  Part="5" 
+F 0 "U11" H 2783 5133 50  0000 L CNN
+F 1 "5M1270ZT144C5N" H 2783 5042 50  0000 L CNN
+F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 4265 8195 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/612/max5_handbook-1098935.pdf" H 4265 8095 50  0001 L CNN
+F 4 "CPLD - Complex Programmable Logic Devices CPLD - MAX V 980 Macro 114 IOs" H 4265 7995 50  0001 L CNN "Description"
+F 5 "1.55" H 4265 7895 50  0001 L CNN "Height"
+F 6 "Intel" H 2425 5295 50  0001 C CNN "MFR"
+F 7 "5M1270ZT144C5N" H 2425 5295 50  0001 C CNN "MPN"
+F 8 "5M1270ZT144C5N" H 4265 7495 50  0001 L CNN "Manufacturer_Part_Number"
+F 9 "989-5M1270ZT144C5N" H 2783 5233 50  0001 C CNN "SPN"
+F 10 "Mouser" H 2425 5295 50  0001 C CNN "SPR"
+F 11 "https://www.mouser.com/ProductDetail/989-5M1270ZT144C5N" H 2783 5233 50  0001 C CNN "SPURL"
+	5    2425 5295
+	1    0    0    -1  
+$EndComp
+Text GLabel 1865 5695 0    50   Input ~ 0
+CLK_F
+$Sheet
+S 9350 2925 1190 930 
+U 5D2103A8
+F0 "Power" 50
+F1 "power.sch" 50
+$EndSheet
+Wire Wire Line
+	1395 5605 1865 5605
+Wire Wire Line
+	1395 5495 1865 5495
+Wire Wire Line
+	1395 5395 1865 5395
+Wire Wire Line
+	1170 6435 1575 6435
+Wire Wire Line
+	1170 6535 1575 6535
+Wire Wire Line
+	1170 6635 1575 6635
+Wire Wire Line
+	1170 6735 1575 6735
 $EndSCHEMATC
