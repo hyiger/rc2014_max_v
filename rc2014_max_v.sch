@@ -871,8 +871,6 @@ Text GLabel 5540 775  1    50   Output ~ 0
 3V3
 Text GLabel 5340 775  1    50   Output ~ 0
 5V
-Text GLabel 7810 1250 1    50   Output ~ 0
-3V3
 Wire Wire Line
 	730  7060 740  7060
 Wire Wire Line
@@ -1044,4 +1042,6 @@ F 3 "~" H 895 7060 50  0001 C CNN
 	1    895  7060
 	1    0    0    1   
 $EndComp
+Text GLabel 7810 1250 1    50   Output ~ 0
+5V
 $EndSCHEMATC

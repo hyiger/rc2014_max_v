@@ -375,22 +375,22 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5D3E1517
-P 3270 5130
+P 3260 5130
 AR Path="/5CFABACD/5D3E1517" Ref="C?"  Part="1" 
 AR Path="/5D3E1517" Ref="C?"  Part="1" 
 AR Path="/5D2A5E4A/5D3E1517" Ref="C51"  Part="1" 
 AR Path="/5CFABACD/5D2103A8/5D3E1517" Ref="C51"  Part="1" 
-F 0 "C51" H 3385 5176 50  0000 L CNN
-F 1 "100nF" H 3385 5085 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3308 4980 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 3270 5130 50  0001 C CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 3385 5276 50  0001 C CNN "Description"
-F 5 "Taiyo Yuden" H -2030 -1570 50  0001 C CNN "MFR"
-F 6 "TMK107BJ104KA-T" H -2030 -1570 50  0001 C CNN "MPN"
-F 7 "963-TMK107BJ104KA-T" H 3385 5276 50  0001 C CNN "SPN"
-F 8 "Mouser" H -2030 -1570 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H -2030 -1570 50  0001 C CNN "SPURL"
-	1    3270 5130
+F 0 "C51" H 3375 5176 50  0000 L CNN
+F 1 "100nF" H 3375 5085 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3298 4980 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 3260 5130 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 3375 5276 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" H -2040 -1570 50  0001 C CNN "MFR"
+F 6 "TMK107BJ104KA-T" H -2040 -1570 50  0001 C CNN "MPN"
+F 7 "963-TMK107BJ104KA-T" H 3375 5276 50  0001 C CNN "SPN"
+F 8 "Mouser" H -2040 -1570 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H -2040 -1570 50  0001 C CNN "SPURL"
+	1    3260 5130
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -550,10 +550,6 @@ Wire Wire Line
 	1350 6040 1700 6040
 Wire Wire Line
 	1350 6340 1700 6340
-Wire Wire Line
-	3270 5280 2890 5280
-Wire Wire Line
-	3270 4980 2890 4980
 Wire Wire Line
 	1670 5280 2090 5280
 Wire Wire Line
@@ -1202,4 +1198,35 @@ Wire Notes Line
 	8290 1260 8290 2555
 Text Notes 8320 1370 0    50   ~ 0
 Powerplane Stitching
+$Comp
+L Device:C C?
+U 1 1 5D1048B7
+P 3630 5130
+AR Path="/5CFABACD/5D1048B7" Ref="C?"  Part="1" 
+AR Path="/5D1048B7" Ref="C?"  Part="1" 
+AR Path="/5D2A5E4A/5D1048B7" Ref="C?"  Part="1" 
+AR Path="/5CFABACD/5D2103A8/5D1048B7" Ref="C56"  Part="1" 
+F 0 "C56" H 3745 5176 50  0000 L CNN
+F 1 "100nF" H 3745 5085 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3668 4980 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 3630 5130 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 3745 5276 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" H -1670 -1570 50  0001 C CNN "MFR"
+F 6 "TMK107BJ104KA-T" H -1670 -1570 50  0001 C CNN "MPN"
+F 7 "963-TMK107BJ104KA-T" H 3745 5276 50  0001 C CNN "SPN"
+F 8 "Mouser" H -1670 -1570 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H -1670 -1570 50  0001 C CNN "SPURL"
+	1    3630 5130
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2890 5280 3260 5280
+Wire Wire Line
+	2890 4980 3260 4980
+Connection ~ 3260 4980
+Wire Wire Line
+	3260 4980 3630 4980
+Connection ~ 3260 5280
+Wire Wire Line
+	3260 5280 3630 5280
 $EndSCHEMATC
