@@ -712,8 +712,6 @@ F 3 "~" H 5540 1200 50  0001 C CNN
 	1    5540 1200
 	1    0    0    1   
 $EndComp
-Text GLabel 8905 2050 2    50   Output ~ 0
-JTAG_TMS
 Text GLabel 2100 2930 2    50   Output ~ 0
 5V_U
 Text GLabel 6550 1750 1    50   Output ~ 0
@@ -1076,11 +1074,12 @@ NoConn ~ 7400 5230
 NoConn ~ 7400 5330
 NoConn ~ 5000 5630
 $Comp
-L Oscillator:KC5032K12.0000C10E00 X1
+L rc2014_max_v-rescue:KC5032K12.0000C10E00-Oscillator X1
 U 1 1 5D18454F
 P 4290 5655
 AR Path="/5D0F9837/5D18454F" Ref="X1"  Part="1" 
 AR Path="/5CFABACD/5D0BF766/5D18454F" Ref="X1"  Part="1" 
+AR Path="/5D18454F" Ref="X1"  Part="1" 
 F 0 "X1" H 4634 5701 50  0000 L CNN
 F 1 "KC5032K12.0000C10E00" H 3155 5535 50  0000 L CNN
 F 2 "Oscillator:Oscillator_SMD_Fordahl_DFAS15-4Pin_5.0x3.2mm_HandSoldering" H 4990 5305 50  0001 C CNN

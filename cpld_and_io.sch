@@ -441,10 +441,6 @@ NoConn ~ 1830 2750
 NoConn ~ 1830 2850
 NoConn ~ 1830 2950
 NoConn ~ 1410 2980
-Text GLabel 4365 900  0    50   BiDi ~ 0
-SDA
-Text GLabel 4365 800  0    50   BiDi ~ 0
-SCL
 Text GLabel 6865 1070 0    50   Input ~ 0
 RXB_F
 Text GLabel 6865 1170 0    50   Output ~ 0
@@ -543,4 +539,6 @@ Wire Wire Line
 	1170 6635 1575 6635
 Wire Wire Line
 	1170 6735 1575 6735
+NoConn ~ 4365 800 
+NoConn ~ 4365 900 
 $EndSCHEMATC
