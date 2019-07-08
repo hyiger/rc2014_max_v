@@ -1,5 +1,7 @@
 EESchema Schematic File Version 4
 LIBS:rc2014_max_v-cache
+LIBS:sbc_z80-cache
+LIBS:power_share-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -101,12 +103,12 @@ F 9 "https://www.mouser.com/ProductDetail/963-JMK107B7474KA-T" H 3557 3416 50  0
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 5D00E3D9
+U 1 1 5D255C0F
 P 3275 3410
-AR Path="/5D00E3D9" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D00E3D9" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5D00E3D9" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5CFFC458/5D00E3D9" Ref="#PWR061"  Part="1" 
+AR Path="/5D255C0F" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5D255C0F" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D255C0F" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5CFFC458/5D255C0F" Ref="#PWR061"  Part="1" 
 F 0 "#PWR061" H 3275 3160 50  0001 C CNN
 F 1 "GND" H 3280 3237 50  0000 C CNN
 F 2 "" H 3275 3410 50  0001 C CNN
@@ -116,7 +118,7 @@ F 3 "" H 3275 3410 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_Small R10
-U 1 1 5D0168D6
+U 1 1 5D255C10
 P 5380 2100
 F 0 "R10" H 5439 2146 50  0000 L CNN
 F 1 "1K" H 5439 2055 50  0000 L CNN
@@ -133,7 +135,7 @@ F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 5439 2246 50  00
 $EndComp
 $Comp
 L Device:R_Small R11
-U 1 1 5D017809
+U 1 1 5D255C11
 P 5580 2100
 F 0 "R11" H 5639 2146 50  0000 L CNN
 F 1 "1K" H 5639 2055 50  0000 L CNN
@@ -150,12 +152,6 @@ F 9 "https://www.mouser.com/ProductDetail/603-RC0603JR-071KL" H 5639 2246 50  00
 $EndComp
 Text Notes 5840 2460 0    50   ~ 0
 I2C
-Text GLabel 6930 1680 1    50   Output ~ 0
-3V3
-Text GLabel 3275 3070 1    50   Output ~ 0
-3V3
-Text GLabel 5480 1880 1    50   Output ~ 0
-3V3
 Wire Wire Line
 	6430 1980 5900 1980
 Wire Wire Line
@@ -211,7 +207,7 @@ Connection ~ 5580 2580
 Connection ~ 5480 1940
 $Comp
 L MCU_Microchip_ATtiny:ATtiny1614-SS U10
-U 1 1 5D018E69
+U 1 1 5D255C12
 P 4670 2880
 F 0 "U10" H 4665 2895 50  0000 C CNN
 F 1 "ATtiny1614-SS" H 4670 2800 50  0000 C CNN
@@ -226,18 +222,16 @@ F 9 "https://www.mouser.com/ProductDetail/556-ATTINY1614SSNR" H 4670 2880 50  00
 	1    4670 2880
 	-1   0    0    -1  
 $EndComp
-Text GLabel 4670 2080 1    50   Output ~ 0
-3V3
 Wire Wire Line
 	4670 2180 4670 2080
 $Comp
 L power:GND #PWR?
-U 1 1 5D01D4B0
+U 1 1 5D255C13
 P 4670 3580
-AR Path="/5D01D4B0" Ref="#PWR?"  Part="1" 
-AR Path="/5D0F9837/5D01D4B0" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5D01D4B0" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5CFFC458/5D01D4B0" Ref="#PWR01"  Part="1" 
+AR Path="/5D255C13" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5D255C13" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D255C13" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5CFFC458/5D255C13" Ref="#PWR01"  Part="1" 
 F 0 "#PWR01" H 4670 3330 50  0001 C CNN
 F 1 "GND" H 4675 3407 50  0000 C CNN
 F 2 "" H 4670 3580 50  0001 C CNN
@@ -247,27 +241,25 @@ F 3 "" H 4670 3580 50  0001 C CNN
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J?
-U 1 1 5D03DC78
+U 1 1 5D255C14
 P 2765 2480
-AR Path="/5D03DC78" Ref="J?"  Part="1" 
-AR Path="/5CF9C1ED/5D03DC78" Ref="J?"  Part="1" 
-AR Path="/5CFABACD/5CFFC458/5D03DC78" Ref="J9"  Part="1" 
+AR Path="/5D255C14" Ref="J?"  Part="1" 
+AR Path="/5CF9C1ED/5D255C14" Ref="J?"  Part="1" 
+AR Path="/5CFABACD/5CFFC458/5D255C14" Ref="J9"  Part="1" 
 F 0 "J9" H 2760 2885 50  0000 C CNN
 F 1 "UPDI TTL" H 2765 2755 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2765 2480 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 2765 2480 50  0001 C CNN
 F 3 "~" H 2765 2480 50  0001 C CNN
 	1    2765 2480
 	-1   0    0    -1  
 $EndComp
-Text GLabel 2965 2380 2    50   Input ~ 0
-GND
 Wire Wire Line
 	2965 2480 3530 2480
 Text Label 3305 2480 0    50   ~ 0
 TX
 $Comp
 L Device:R_Small R17
-U 1 1 5D041A40
+U 1 1 5D255C15
 P 3630 2480
 F 0 "R17" H 3689 2526 50  0000 L CNN
 F 1 "4K7" H 3689 2435 50  0000 L CNN
@@ -308,4 +300,77 @@ Text HLabel 7430 2280 2    50   Output ~ 0
 CLK_7_3728_Mhz
 Text HLabel 7430 2480 2    50   Output ~ 0
 CLK_1Mhz
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DA0DB4B
+P 4670 2080
+AR Path="/5DA0DB4B" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5CFFC458/5DA0DB4B" Ref="#PWR051"  Part="1" 
+F 0 "#PWR051" H 4670 1930 50  0001 C CNN
+F 1 "+3V3" H 4685 2253 50  0000 C CNN
+F 2 "" H 4670 2080 50  0001 C CNN
+F 3 "" H 4670 2080 50  0001 C CNN
+	1    4670 2080
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DA10138
+P 5480 1880
+AR Path="/5DA10138" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5CFFC458/5DA10138" Ref="#PWR050"  Part="1" 
+F 0 "#PWR050" H 5480 1730 50  0001 C CNN
+F 1 "+3V3" H 5495 2053 50  0000 C CNN
+F 2 "" H 5480 1880 50  0001 C CNN
+F 3 "" H 5480 1880 50  0001 C CNN
+	1    5480 1880
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DA11419
+P 6930 1680
+AR Path="/5DA11419" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5CFFC458/5DA11419" Ref="#PWR049"  Part="1" 
+F 0 "#PWR049" H 6930 1530 50  0001 C CNN
+F 1 "+3V3" H 6945 1853 50  0000 C CNN
+F 2 "" H 6930 1680 50  0001 C CNN
+F 3 "" H 6930 1680 50  0001 C CNN
+	1    6930 1680
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DA128F4
+P 3275 3070
+AR Path="/5DA128F4" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5CFFC458/5DA128F4" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 3275 2920 50  0001 C CNN
+F 1 "+3V3" H 3290 3243 50  0000 C CNN
+F 2 "" H 3275 3070 50  0001 C CNN
+F 3 "" H 3275 3070 50  0001 C CNN
+	1    3275 3070
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA13F32
+P 3115 2260
+AR Path="/5DA13F32" Ref="#PWR?"  Part="1" 
+AR Path="/5D0F9837/5DA13F32" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5DA13F32" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5CFFC458/5DA13F32" Ref="#PWR052"  Part="1" 
+F 0 "#PWR052" H 3115 2010 50  0001 C CNN
+F 1 "GND" H 3120 2087 50  0000 C CNN
+F 2 "" H 3115 2260 50  0001 C CNN
+F 3 "" H 3115 2260 50  0001 C CNN
+	1    3115 2260
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2965 2380 2985 2380
+Wire Wire Line
+	2985 2380 2985 2260
+Wire Wire Line
+	2985 2260 3115 2260
 $EndSCHEMATC

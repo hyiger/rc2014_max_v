@@ -1,5 +1,7 @@
 EESchema Schematic File Version 4
 LIBS:rc2014_max_v-cache
+LIBS:sbc_z80-cache
+LIBS:power_share-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -23,38 +25,6 @@ F2 "CLK_100Mhz" O R 1600 6120 50
 F3 "CLK_7_3728_Mhz" O R 1600 6220 50 
 F4 "CLK_1Mhz" O R 1600 6330 50 
 $EndSheet
-$Comp
-L rc2014_max_v-rescue:IS61LV5128AL-10TLI-Memory_RAM U?
-U 1 1 5CFF9C14
-P 2430 2250
-AR Path="/5CFF9C14" Ref="U?"  Part="1" 
-AR Path="/5CFABACD/5CFF9C14" Ref="U13"  Part="1" 
-F 0 "U13" H 2000 3500 50  0000 C CNN
-F 1 "IS61LV5128AL-10TLI" H 2510 2270 50  0000 C CNN
-F 2 "Package_SO:TSOP-II-44_10.16x18.41mm_P0.8mm" H 1930 3400 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/198/61LV5128AL-258297.pdf" H 2430 2250 50  0001 C CNN
-F 4 "SRAM 4Mb 512Kx8 10ns Async SRAM 3.3v" H 2000 3600 50  0001 C CNN "Description"
-F 5 "ISSI" H 2430 2250 50  0001 C CNN "MFR"
-F 6 "IS61LV5128AL-10TLI" H 2430 2250 50  0001 C CNN "MPN"
-F 7 "870IS61LV5128AL10TLI" H 2000 3600 50  0001 C CNN "SPN"
-F 8 "Mouser" H 2430 2250 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/870IS61LV5128AL10TLI" H 2000 3600 50  0001 C CNN "SPURL"
-	1    2430 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D02CF1F
-P 2430 3630
-AR Path="/5D02CF1F" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5D02CF1F" Ref="#PWR059"  Part="1" 
-F 0 "#PWR059" H 2430 3380 50  0001 C CNN
-F 1 "GND" H 2435 3457 50  0000 C CNN
-F 2 "" H 2430 3630 50  0001 C CNN
-F 3 "" H 2430 3630 50  0001 C CNN
-	1    2430 3630
-	1    0    0    -1  
-$EndComp
 $Comp
 L rc2014_max_v-rescue:5M1270ZT144C5N-CPLD_Altera U?
 U 1 1 5D138C9B
@@ -139,74 +109,6 @@ F 11 "https://www.mouser.com/ProductDetail/989-5M1270ZT144C5N" H 8488 2108 50  0
 	4    7720 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Pack04 RN?
-U 1 1 5D3E9CDD
-P 1310 2780
-AR Path="/5D0F9837/5D3E9CDD" Ref="RN?"  Part="1" 
-AR Path="/5D3E9CDD" Ref="RN?"  Part="1" 
-AR Path="/5CFABACD/5D3E9CDD" Ref="RN5"  Part="1" 
-F 0 "RN5" H 980 2880 50  0000 C CNN
-F 1 "10K" H 984 2780 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 1585 2780 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/315/AOC0000C14-1108062.pdf" H 1310 2780 50  0001 C CNN
-F 4 "Resistor Networks & Arrays 10K OHM 5%" H 980 2980 50  0001 C CNN "Description"
-F 5 "Panasonic" H 1310 2780 50  0001 C CNN "MFR"
-F 6 "EXB-38V103JV" H 1310 2780 50  0001 C CNN "MPN"
-F 7 "667-EXB-38V103JV" H 980 2980 50  0001 C CNN "SPN"
-F 8 "Mouser" H 1310 2780 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/667-EXB-38V103JV" H 980 2980 50  0001 C CNN "SPURL"
-	1    1310 2780
-	1    0    0    -1  
-$EndComp
-Text GLabel 3030 1850 2    50   3State ~ 0
-D7_F
-Text GLabel 3030 1750 2    50   3State ~ 0
-D6_F
-Text GLabel 3030 1650 2    50   3State ~ 0
-D5_F
-Text GLabel 3030 1550 2    50   3State ~ 0
-D4_F
-Text GLabel 3030 1450 2    50   3State ~ 0
-D3_F
-Text GLabel 3030 1350 2    50   3State ~ 0
-D2_F
-Text GLabel 3030 1250 2    50   3State ~ 0
-D1_F
-Text GLabel 3030 1150 2    50   3State ~ 0
-D0_F
-Text GLabel 1830 2050 0    50   Input ~ 0
-A9_F
-Text GLabel 1830 1950 0    50   Input ~ 0
-A8_F
-Text GLabel 1830 2350 0    50   Input ~ 0
-A12_F
-Text GLabel 1830 2450 0    50   Input ~ 0
-A13_F
-Text GLabel 1830 2550 0    50   Input ~ 0
-A14_F
-Text GLabel 1830 2650 0    50   Input ~ 0
-A15_F
-Text GLabel 1830 2250 0    50   Input ~ 0
-A11_F
-Text GLabel 1830 2150 0    50   Input ~ 0
-A10_F
-Text GLabel 1830 1850 0    50   Input ~ 0
-A7_F
-Text GLabel 1830 1750 0    50   Input ~ 0
-A6_F
-Text GLabel 1830 1650 0    50   Input ~ 0
-A5_F
-Text GLabel 1830 1550 0    50   Input ~ 0
-A4_F
-Text GLabel 1830 1450 0    50   Input ~ 0
-A3_F
-Text GLabel 1830 1350 0    50   Input ~ 0
-A2_F
-Text GLabel 1830 1250 0    50   Input ~ 0
-A1_F
-Text GLabel 1830 1150 0    50   Input ~ 0
-A0_F
 Text GLabel 4365 1900 0    50   Input ~ 0
 A9_F
 Text GLabel 4365 2000 0    50   Input ~ 0
@@ -233,12 +135,6 @@ Text GLabel 4390 4235 0    50   3State ~ 0
 GPIO_10_F
 Text GLabel 4390 4335 0    50   3State ~ 0
 GPIO_9_F
-Text GLabel 1000 3250 0    50   Input ~ 0
-~WE~_RAM
-Text GLabel 1000 3350 0    50   Input ~ 0
-~OE~_RAM
-Text GLabel 1000 3150 0    50   Input ~ 0
-~CE~_RAM
 Text GLabel 6865 1880 0    50   3State ~ 0
 PMOD1_1
 Text GLabel 6865 1980 0    50   3State ~ 0
@@ -271,27 +167,27 @@ Text GLabel 6865 2380 0    50   3State ~ 0
 PMOD2_6
 Text GLabel 6865 2280 0    50   3State ~ 0
 PMOD2_5
-Text GLabel 4390 4845 0    50   Input ~ 0
+Text GLabel 4390 4445 0    50   Input ~ 0
 LED4
-Text GLabel 4390 4945 0    50   Input ~ 0
+Text GLabel 4390 4545 0    50   Input ~ 0
 LED3
-Text GLabel 4390 5045 0    50   Input ~ 0
+Text GLabel 4390 4645 0    50   Input ~ 0
 LED2
-Text GLabel 4390 5145 0    50   Input ~ 0
+Text GLabel 4390 4745 0    50   Input ~ 0
 LED1
-Text GLabel 4390 6335 0    50   3State ~ 0
+Text GLabel 4390 5445 0    50   3State ~ 0
 GPIO_2_F
-Text GLabel 4390 6235 0    50   3State ~ 0
+Text GLabel 4390 5345 0    50   3State ~ 0
 GPIO_3_F
-Text GLabel 4390 6135 0    50   3State ~ 0
+Text GLabel 4390 5245 0    50   3State ~ 0
 GPIO_4_F
-Text GLabel 4390 6035 0    50   3State ~ 0
+Text GLabel 4390 5145 0    50   3State ~ 0
 GPIO_5_F
-Text GLabel 4390 5935 0    50   3State ~ 0
+Text GLabel 4390 5045 0    50   3State ~ 0
 GPIO_6_F
-Text GLabel 4390 5835 0    50   3State ~ 0
+Text GLabel 4390 4945 0    50   3State ~ 0
 GPIO_7_F
-Text GLabel 4390 5745 0    50   3State ~ 0
+Text GLabel 4390 4845 0    50   3State ~ 0
 GPIO_8_F
 Text GLabel 4390 4135 0    50   3State ~ 0
 GPIO_11_F
@@ -317,7 +213,7 @@ Text GLabel 4365 1500 0    50   Input ~ 0
 A13_F
 Text GLabel 4365 1600 0    50   Input ~ 0
 A12_F
-Text GLabel 4390 6435 0    50   3State ~ 0
+Text GLabel 4390 5545 0    50   3State ~ 0
 GPIO_1_F
 Text GLabel 4365 1000 0    50   Output ~ 0
 ~OE~_RAM
@@ -399,68 +295,15 @@ Text GLabel 4365 2900 0    50   Output ~ 0
 OE_A
 Text GLabel 6880 3550 0    50   Output ~ 0
 OE_C
-Text GLabel 4390 6535 0    50   Output ~ 0
+Text GLabel 4390 5645 0    50   Output ~ 0
 OE_G
-Wire Wire Line
-	2430 3550 2430 3630
-Wire Wire Line
-	1830 3150 1110 3150
-Wire Wire Line
-	1830 3250 1210 3250
-Wire Wire Line
-	1830 3350 1310 3350
-Wire Wire Line
-	1110 2580 1210 2580
-Wire Wire Line
-	1210 2580 1260 2580
-Wire Wire Line
-	1310 2580 1410 2580
-Wire Wire Line
-	1260 2490 1260 2580
-Wire Wire Line
-	1260 2580 1310 2580
-Wire Wire Line
-	1110 2980 1110 3150
-Wire Wire Line
-	1110 3150 1000 3150
-Wire Wire Line
-	1210 2980 1210 3250
-Wire Wire Line
-	1210 3250 1000 3250
-Wire Wire Line
-	1310 2980 1310 3350
-Wire Wire Line
-	1310 3350 1000 3350
-Connection ~ 1210 2580
-Connection ~ 1310 2580
-Connection ~ 1260 2580
-Connection ~ 1110 3150
-Connection ~ 1210 3250
-Connection ~ 1310 3350
-NoConn ~ 1830 2750
-NoConn ~ 1830 2850
-NoConn ~ 1830 2950
-NoConn ~ 1410 2980
 Text GLabel 6865 1070 0    50   Input ~ 0
 RXB_F
 Text GLabel 6865 1170 0    50   Output ~ 0
 TXA_F
-Text GLabel 2430 950  1    50   Output ~ 0
-3V3
-Text GLabel 1260 2490 1    50   Output ~ 0
-3V3
 NoConn ~ 6875 3070
 NoConn ~ 6880 6430
-NoConn ~ 4390 5345
-NoConn ~ 4390 5445
-NoConn ~ 4390 5545
-NoConn ~ 4390 4745
-NoConn ~ 4390 4445
-NoConn ~ 4390 4545
-NoConn ~ 4390 4645
 NoConn ~ 4365 3000
-NoConn ~ 4390 5645
-NoConn ~ 4390 5245
 $Sheet
 S 785  7055 590  480 
 U 5D0BF766
@@ -539,81 +382,20 @@ Wire Wire Line
 	1375 7360 1780 7360
 Wire Wire Line
 	1375 7460 1780 7460
-NoConn ~ 4365 800 
-NoConn ~ 4365 900 
-$Comp
-L power:GND #PWR?
-U 1 1 5D12D18F
-P 2445 4690
-AR Path="/5D12D18F" Ref="#PWR?"  Part="1" 
-AR Path="/5CB63856/5D12D18F" Ref="#PWR?"  Part="1" 
-AR Path="/5CB5AB00/5CB63856/5D12D18F" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5D12D18F" Ref="#PWR029"  Part="1" 
-AR Path="/5D2A5E4A/5D12D18F" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5D2103A8/5D12D18F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR029" H 2445 4440 50  0001 C CNN
-F 1 "GND" H 2450 4517 50  0000 C CNN
-F 2 "" H 2445 4690 50  0001 C CNN
-F 3 "" H 2445 4690 50  0001 C CNN
-	1    2445 4690
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C58
-U 1 1 5D12D19B
-P 2640 4460
-AR Path="/5CFABACD/5D12D19B" Ref="C58"  Part="1" 
-AR Path="/5D12D19B" Ref="C?"  Part="1" 
-AR Path="/5D2A5E4A/5D12D19B" Ref="C?"  Part="1" 
-AR Path="/5CFABACD/5D2103A8/5D12D19B" Ref="C?"  Part="1" 
-F 0 "C58" H 2755 4506 50  0000 L CNN
-F 1 "100nF" H 2755 4415 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2678 4310 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 2640 4460 50  0001 C CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 2755 4606 50  0001 C CNN "Description"
-F 5 "Taiyo Yuden" H -2660 -2240 50  0001 C CNN "MFR"
-F 6 "TMK107BJ104KA-T" H -2660 -2240 50  0001 C CNN "MPN"
-F 7 "963-TMK107BJ104KA-T" H 2755 4606 50  0001 C CNN "SPN"
-F 8 "Mouser" H -2660 -2240 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H -2660 -2240 50  0001 C CNN "SPURL"
-	1    2640 4460
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C57
-U 1 1 5D12D1A7
-P 2220 4460
-AR Path="/5CFABACD/5D12D1A7" Ref="C57"  Part="1" 
-AR Path="/5D12D1A7" Ref="C?"  Part="1" 
-AR Path="/5D2A5E4A/5D12D1A7" Ref="C?"  Part="1" 
-AR Path="/5CFABACD/5D2103A8/5D12D1A7" Ref="C?"  Part="1" 
-F 0 "C57" H 2335 4506 50  0000 L CNN
-F 1 "100nF" H 2335 4415 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2258 4310 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 2220 4460 50  0001 C CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 25V X5R +/-10% 0603 Gen Purp" H 2335 4606 50  0001 C CNN "Description"
-F 5 "Taiyo Yuden" H -3080 -2240 50  0001 C CNN "MFR"
-F 6 "TMK107BJ104KA-T" H -3080 -2240 50  0001 C CNN "MPN"
-F 7 "963-TMK107BJ104KA-T" H 2335 4606 50  0001 C CNN "SPN"
-F 8 "Mouser" H -3080 -2240 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/963-TMK107BJ104KA-T" H -3080 -2240 50  0001 C CNN "SPURL"
-	1    2220 4460
-	1    0    0    -1  
-$EndComp
-Text GLabel 2445 4250 1    50   Output ~ 0
-3V3
-Wire Wire Line
-	2445 4310 2445 4250
-Wire Wire Line
-	2445 4610 2445 4690
-Wire Wire Line
-	2220 4610 2445 4610
-Wire Wire Line
-	2220 4310 2445 4310
-Connection ~ 2445 4310
-Wire Wire Line
-	2445 4310 2640 4310
-Connection ~ 2445 4610
-Wire Wire Line
-	2445 4610 2640 4610
+Text GLabel 4365 800  0    50   Input ~ 0
+A17_F
+Text GLabel 4365 900  0    50   Input ~ 0
+A16_F
+Text GLabel 4390 6435 0    50   Input ~ 0
+A19_F
+Text GLabel 4390 6535 0    50   Input ~ 0
+A18_F
+Text GLabel 4390 6035 0    50   Input ~ 0
+A23_F
+Text GLabel 4390 6135 0    50   Input ~ 0
+A22_F
+Text GLabel 4390 6235 0    50   Input ~ 0
+A21_F
+Text GLabel 4390 6335 0    50   Input ~ 0
+A20_F
 $EndSCHEMATC

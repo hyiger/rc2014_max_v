@@ -1,5 +1,7 @@
 EESchema Schematic File Version 4
 LIBS:rc2014_max_v-cache
+LIBS:sbc_z80-cache
+LIBS:power_share-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -22,7 +24,7 @@ AR Path="/5D0F9837/5D0FEAD2" Ref="J5"  Part="1"
 AR Path="/5CFABACD/5D0BF766/5D0FEAD2" Ref="J5"  Part="1" 
 F 0 "J5" H 9430 3580 50  0000 R CNN
 F 1 "AVR-JTAG-10" H 9150 4080 50  0000 R CNN
-F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal" V 9240 3730 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" V 9240 3730 50  0001 C CNN
 F 3 "~" H 8115 3030 50  0001 C CNN
 	1    9390 3580
 	1    0    0    -1  
@@ -671,8 +673,8 @@ P 6200 4030
 AR Path="/5D013565" Ref="U8"  Part="1" 
 AR Path="/5D0F9837/5D013565" Ref="U8"  Part="1" 
 AR Path="/5CFABACD/5D0BF766/5D013565" Ref="U9"  Part="1" 
-F 0 "U9" H 6200 6411 50  0000 C CNN
-F 1 "FT2232H" H 6200 6320 50  0000 C CNN
+F 0 "U9" H 6205 4175 50  0000 C CNN
+F 1 "FT2232H" H 6215 4035 50  0000 C CNN
 F 2 "Package_QFP:TQFP-64_10x10mm_P0.5mm" H 6200 4030 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/163/DS_FT2232H-17353.pdf" H 6200 4030 50  0001 C CNN
 F 4 "USB Interface IC USB HS to Dual UART/ FIFO/SPI/JTAG/I2C" H 6200 6511 50  0001 C CNN "Description"
@@ -714,30 +716,6 @@ F 3 "~" H 5540 1200 50  0001 C CNN
 $EndComp
 Text GLabel 2100 2930 2    50   Output ~ 0
 5V_U
-Text GLabel 6550 1750 1    50   Output ~ 0
-3V3
-Text GLabel 6100 1750 1    50   Output ~ 0
-1V8
-Text GLabel 3520 980  0    50   Output ~ 0
-3V3
-Text GLabel 3520 1200 0    50   Output ~ 0
-3V3
-Text GLabel 3530 3740 1    50   Output ~ 0
-3V3
-Text GLabel 10335 2480 1    50   Output ~ 0
-3V3
-Text GLabel 9290 2770 1    50   Output ~ 0
-3V3
-Text GLabel 7970 4580 1    50   Output ~ 0
-3V3
-Text GLabel 1390 5790 1    50   Output ~ 0
-3V3
-Text GLabel 1640 6850 1    50   Output ~ 0
-1V8
-Text GLabel 2940 4630 1    50   Output ~ 0
-3V3
-Text GLabel 4470 3630 0    50   Output ~ 0
-3V3
 Wire Wire Line
 	5000 5830 5000 6230
 Wire Wire Line
@@ -751,7 +729,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 1830 6100 1750
 Wire Wire Line
-	6550 1830 6550 1750
+	6550 1830 6550 1755
 Wire Wire Line
 	1600 3130 1700 3130
 Wire Wire Line
@@ -1095,8 +1073,6 @@ Wire Wire Line
 	3990 5655 3990 5355
 Wire Wire Line
 	3990 5355 4290 5355
-Text GLabel 4290 5265 1    50   Output ~ 0
-3V3
 Wire Wire Line
 	4290 5265 4290 5355
 Connection ~ 4290 5355
@@ -1199,4 +1175,172 @@ Text HLabel 8060 2430 2    50   Output ~ 0
 TMS
 Text HLabel 10520 3580 2    50   Output ~ 0
 TMS
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D9343EB
+P 4470 3630
+AR Path="/5D9343EB" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5D9343EB" Ref="#PWR060"  Part="1" 
+F 0 "#PWR060" H 4470 3480 50  0001 C CNN
+F 1 "+3V3" H 4485 3803 50  0000 C CNN
+F 2 "" H 4470 3630 50  0001 C CNN
+F 3 "" H 4470 3630 50  0001 C CNN
+	1    4470 3630
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D94566F
+P 3530 3740
+AR Path="/5D94566F" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5D94566F" Ref="#PWR062"  Part="1" 
+F 0 "#PWR062" H 3530 3590 50  0001 C CNN
+F 1 "+3V3" H 3545 3913 50  0000 C CNN
+F 2 "" H 3530 3740 50  0001 C CNN
+F 3 "" H 3530 3740 50  0001 C CNN
+	1    3530 3740
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D956672
+P 2940 4630
+AR Path="/5D956672" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5D956672" Ref="#PWR064"  Part="1" 
+F 0 "#PWR064" H 2940 4480 50  0001 C CNN
+F 1 "+3V3" H 2955 4803 50  0000 C CNN
+F 2 "" H 2940 4630 50  0001 C CNN
+F 3 "" H 2940 4630 50  0001 C CNN
+	1    2940 4630
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D9675DE
+P 4290 5265
+AR Path="/5D9675DE" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5D9675DE" Ref="#PWR065"  Part="1" 
+F 0 "#PWR065" H 4290 5115 50  0001 C CNN
+F 1 "+3V3" H 4305 5438 50  0000 C CNN
+F 2 "" H 4290 5265 50  0001 C CNN
+F 3 "" H 4290 5265 50  0001 C CNN
+	1    4290 5265
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D9784C6
+P 1390 5790
+AR Path="/5D9784C6" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5D9784C6" Ref="#PWR067"  Part="1" 
+F 0 "#PWR067" H 1390 5640 50  0001 C CNN
+F 1 "+3V3" H 1405 5963 50  0000 C CNN
+F 2 "" H 1390 5790 50  0001 C CNN
+F 3 "" H 1390 5790 50  0001 C CNN
+	1    1390 5790
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR068
+U 1 1 5D9891A4
+P 1640 6850
+F 0 "#PWR068" H 1640 6700 50  0001 C CNN
+F 1 "+1V8" H 1655 7023 50  0000 C CNN
+F 2 "" H 1640 6850 50  0001 C CNN
+F 3 "" H 1640 6850 50  0001 C CNN
+	1    1640 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D995718
+P 6550 1755
+AR Path="/5D995718" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5D995718" Ref="#PWR057"  Part="1" 
+F 0 "#PWR057" H 6550 1605 50  0001 C CNN
+F 1 "+3V3" H 6565 1928 50  0000 C CNN
+F 2 "" H 6550 1755 50  0001 C CNN
+F 3 "" H 6550 1755 50  0001 C CNN
+	1    6550 1755
+	1    0    0    -1  
+$EndComp
+Connection ~ 6550 1755
+Wire Wire Line
+	6550 1755 6550 1750
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D9AC54D
+P 9290 2770
+AR Path="/5D9AC54D" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5D9AC54D" Ref="#PWR059"  Part="1" 
+F 0 "#PWR059" H 9290 2620 50  0001 C CNN
+F 1 "+3V3" H 9305 2943 50  0000 C CNN
+F 2 "" H 9290 2770 50  0001 C CNN
+F 3 "" H 9290 2770 50  0001 C CNN
+	1    9290 2770
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D9B1E4B
+P 10335 2480
+AR Path="/5D9B1E4B" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5D9B1E4B" Ref="#PWR058"  Part="1" 
+F 0 "#PWR058" H 10335 2330 50  0001 C CNN
+F 1 "+3V3" H 10350 2653 50  0000 C CNN
+F 2 "" H 10335 2480 50  0001 C CNN
+F 3 "" H 10335 2480 50  0001 C CNN
+	1    10335 2480
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D9D4519
+P 3520 980
+AR Path="/5D9D4519" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5D9D4519" Ref="#PWR054"  Part="1" 
+F 0 "#PWR054" H 3520 830 50  0001 C CNN
+F 1 "+3V3" H 3535 1153 50  0000 C CNN
+F 2 "" H 3520 980 50  0001 C CNN
+F 3 "" H 3520 980 50  0001 C CNN
+	1    3520 980 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D9DFE3B
+P 3520 1200
+AR Path="/5D9DFE3B" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5D9DFE3B" Ref="#PWR055"  Part="1" 
+F 0 "#PWR055" H 3520 1050 50  0001 C CNN
+F 1 "+3V3" H 3535 1373 50  0000 C CNN
+F 2 "" H 3520 1200 50  0001 C CNN
+F 3 "" H 3520 1200 50  0001 C CNN
+	1    3520 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+1V8 #PWR056
+U 1 1 5D9EC038
+P 6100 1750
+F 0 "#PWR056" H 6100 1600 50  0001 C CNN
+F 1 "+1V8" H 6115 1923 50  0000 C CNN
+F 2 "" H 6100 1750 50  0001 C CNN
+F 3 "" H 6100 1750 50  0001 C CNN
+	1    6100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D9F9447
+P 7970 4580
+AR Path="/5D9F9447" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5D9F9447" Ref="#PWR063"  Part="1" 
+F 0 "#PWR063" H 7970 4430 50  0001 C CNN
+F 1 "+3V3" H 7985 4753 50  0000 C CNN
+F 2 "" H 7970 4580 50  0001 C CNN
+F 3 "" H 7970 4580 50  0001 C CNN
+	1    7970 4580
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
