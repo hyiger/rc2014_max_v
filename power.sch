@@ -1115,9 +1115,11 @@ Wire Wire Line
 Wire Wire Line
 	1730 1135 2160 1135
 $Comp
-L power_share-rescue:IRLR8726PBF-Transistor_FET Q2
+L rc2014_max_v-rescue:IRLR8726PBF-Transistor_FET-power_share-rescue Q2
 U 1 1 5D16AE64
 P 2460 2735
+AR Path="/5D16AE64" Ref="Q2"  Part="1" 
+AR Path="/5CFABACD/5D2103A8/5D16AE64" Ref="Q2"  Part="1" 
 F 0 "Q2" H 2666 2789 50  0000 L CNN
 F 1 "IRLR8726PBF" H 2666 2698 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin4" H 2660 2635 50  0001 L CNN
@@ -1126,9 +1128,11 @@ F 3 "http://www.irf.com/product-info/datasheets/data/irf8721pbf-1.pdf" H 2360 27
 	0    1    1    0   
 $EndComp
 $Comp
-L power_share-rescue:IRLR8726PBF-Transistor_FET Q1
+L rc2014_max_v-rescue:IRLR8726PBF-Transistor_FET-power_share-rescue Q1
 U 1 1 5D1697F4
 P 2460 1235
+AR Path="/5D1697F4" Ref="Q1"  Part="1" 
+AR Path="/5CFABACD/5D2103A8/5D1697F4" Ref="Q1"  Part="1" 
 F 0 "Q1" V 2666 1289 50  0000 L CNN
 F 1 "IRLR8726PBF" V 2630 640 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin4" H 2660 1135 50  0001 L CNN
@@ -1138,7 +1142,7 @@ F 3 "http://www.irf.com/product-info/datasheets/data/irf8721pbf-1.pdf" H 2360 12
 $EndComp
 Connection ~ 2960 1900
 $Comp
-L power_share-rescue:LTC4370-Power_Management U18
+L rc2014_max_v-rescue:LTC4370-Power_Management-power_share-rescue U18
 U 1 1 5D15CEC4
 P 2260 1985
 F 0 "U18" H 2085 2060 50  0000 C CNN
